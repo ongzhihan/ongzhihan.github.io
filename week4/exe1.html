@@ -16,7 +16,7 @@
             padding-left: 0px;
             padding-right: 0px;
             margin-left: 20px;
-            align-items: center;
+
         }
 
         a {
@@ -43,9 +43,14 @@
         }
 
         #header {
+
+            background-color: #2c8eec;
+        }
+
+        #aaa div {
             display: flex;
             justify-content: space-between;
-            background-color: #2c8eec;
+            align-items: center;
         }
     </style>
 </head>
@@ -53,14 +58,18 @@
 <body>
     <!-- div = a bloack/section-->
     <header id="header">
-        <div class="logo"><img src="images/photoshop.png" alt="ps logo" width="30" /></div>
-        <div id="nav">
-            <div class="menu"><a href="#">Home</a></div>
-            <div class="menu"><a href="#">About</a></div>
-            <div class="menu"><a href="#">Services</a></div>
-            <div class="menu"><a href="#">Team</a></div>
-            <div class="menu"><a href="#">Contact</a></div>
+        <div id="aaa">
+            <div class="logo"><img src="images/photoshop.png" alt="ps logo" width="30" /></div>
+            <div id="nav">
+                <div class="menu"><a href="#">Home</a></div>
+                <div class="menu"><a href="#">About</a></div>
+                <div class="menu"><a href="#">Services</a></div>
+                <div class="menu"><a href="#">Team</a></div>
+                <div class="menu"><a href="#">Contact</a></div>
+            </div>
+
         </div>
+
     </header>
 
 
