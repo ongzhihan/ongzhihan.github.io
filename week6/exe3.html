@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Lesson 6 - Exercise 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        h1 {
+            font-size: 28px;
+            font-family: 'Times New Roman', Times, serif;
+            color: #121212;
+        }
+
+        p {
+            font-size: 14px;
+            font-family: sans-serif;
+            color: #121212;
+        }
+
+        .main {
+            display: flex;
+        }
+
+        .flex {
+            flex: 1;
+            flex-direction: row;
+        }
+
+        .button {
+            background-color: #c3b9b2;
+            color: #fffefc;
+            padding: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border: #fffefc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .button:hover {
+            background-color: #9b8474;
+            color: #fffefc;
+            padding: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border: #fffefc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .section {
+            position: relative;
+            background-color: #fffefc;
+        }
+
+        .minorsection {
+            position: absolute;
+            top: 150px;
+            left: 100px;
+            width: 560px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .main {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .minorsection {
+                position: absolute;
+                top: auto;
+                left: auto;
+                width: auto;
+            }
+        }
+
+        .left {
+            float: left;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="flex section">
+            <div class="minorsection">
+                <h1> Elevate your style, embrace timeless elegance.</h1>
+                <p>Discover a world of exquisite craftsmanship and unparalleled beauty with our stunning collection of
+                    fine jewelry. Each piece is meticulously designed to capture the essence of grace and
+                    sophistication, reflecting your unique sense of style. </p>
+                <button class="button">view catalog</button>
+            </div>
+        </div>
+        <div class="left flex section">
+            <img src="images/lady.jpg" alt="lady" width="100%">
+        </div>
+    </div>
+
+</body>
+
+</html>
