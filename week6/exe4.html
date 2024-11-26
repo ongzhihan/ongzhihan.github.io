@@ -46,6 +46,7 @@
         }
 
         .content {
+            position: relative;
             top: 80px;
             left: 50px;
             padding: 15px;
@@ -60,24 +61,42 @@
         }
 
         .logo {
-            background-color: rgb(147, 19, 19);
+            position: absolute;
+            top: -30px;
+            right: 45%;
+            background-color: white;
             width: 60px;
             height: 60px;
             align-content: center;
-            vertical-align: middle;
         }
 
-        @media screen and (max-width: 600px) {}
+        @media screen and (max-width: 800px) {
+            .main {
+                height: 600px;
+                align-items: center;
+            }
+
+            .content {
+                align-items: center;
+            }
+
+            .image {
+                height: 500px;
+                width: auto;
+            }
+
+        }
     </style>
 
 </head>
 
 <body>
-    <div class="main"><img src="images/roofers.jpg" alt="roofers" width="100%">
-        <div class="logo">
-            <img src="images/logo.png" alt="logo" width="50px">
-        </div>
+    <div class="main"><img src="images/roofers.jpg" class="image" alt="roofers" width="100%">
+
         <div class="content">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo" width="50px">
+            </div>
             <h1>Build Your Dream Home with Solid Structures Builders!</h1>
             <p>Looking for a reliable and experienced building company to bring your vision to life?
                 Solid Structures Builders is here to make your dream home a reality.
