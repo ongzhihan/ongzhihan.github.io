@@ -11,19 +11,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <style>
-        .title {
-            color: #D5D30F;
-            text-align: center;
-            font-family: Oswald;
-            font-size: 222px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 198px;
-            /* 89.189% */
-            letter-spacing: -4.44px;
-            text-transform: uppercase;
-        }
-
         @media screen and (max-width: 600px) {}
     </style>
 
@@ -105,17 +92,35 @@
     </header>
 
 
-    <!-- hero -->
+    <!-- hero hero hero hero hero hero hero hero hero hero hero hero hero hero hero hero hero hero hero hero hero hero hero hero  hero -->
 
     <div class="hero">
-        <p class="title">Post Malone</p>
         <div>
-
+            <video autoplay muted loop id="herovideo">
+                <source src="images/homepage/hero video.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div style="position: absolute; top: 100px; left: 50%; transform: translate(-50%, -0%);
+            top: 0px; background-color: #161616; width: 100%; height: 109px; text-align: center; z-index: 1;">
+        </div>
+        <div class=" blackgradient" style="position: absolute; top: 107px; width: 100%; height:232px; z-index: 1;">
+        </div>
+        <div style="text-align: center;">
+            <p class="title" style="position: absolute; top: 0%; left: 0%; transform: translate(12%, 0%);">Post
+                Malone</p>
+        </div>
+        <div style="margin: auto; width: 50%; height: 150px; align-items: center;">
+            <h2 style="position: absolute; top: 51%; left: 50%; transform: translate(-50%, -50%);">LATEST SINGLE</h2>
+            <h3 style="position: absolute; top: 58%; left: 50%; transform: translate(-50%, -50%);">Pour Me A Drink ft.
+                Blake Shelton Out Now</h3>
+            <br /><br />
+            <button class="whitebutton" style="padding-left: 15px; padding-right: 15px; position: absolute; top: 67%; left: 50%;
+            transform: translate(-50%, -50%);">Stream / download</button>
         </div>
     </div>
 
 
-    <!-- about -->
+    <!-- about about about about about about about about about about about about about about about about about about about about about -->
 
     <div class="section">
         <div class="container" style="height: 185px; margin-top: 76px;">
@@ -170,28 +175,79 @@
     </div>
     <hr class="whitestroke">
 
-    <!-- music -->
+    <!-- music music music music music music music music music music music music music music music music music music music music music -->
 
     <div class="section">
         <div class="container" style="height: 185px; margin-top: 76px;">
             <h1 style="position: absolute; top: 52px; left:40px">music</h1>
         </div>
-
-        <div class="musiccontainer">
-            <img src="images/album/pour me a drink.png" style="margin-top: 19px;" alt="pmad cover" width="353px"
-                height="353px">
-            <div class="mcdetails">
-                <p style="position: absolute;  color: #D5D30F; font-weight: 700;">Pour Me A Drink ft. Blake Shelton</p>
-                <p>2024 - Single</p>
-                <div class="mcstroke"></div>
-                <p style="position: absolute; bottom: 0px; left: 0px;">Country</p>
-                <p style="position: absolute; bottom: 0px; right: 0px;">2 Min 58 Sec</p>
-            </div>
+        <div class="musiccarousel">
+            <button class="musiccontainer">
+                <img src="images/album/pour me a drink.png" style="margin-top: 19px;" alt="pmad cover" width="353px"
+                    height="353px">
+                <div class="mcdetails">
+                    <p class="musictitle">Pour Me A Drink ft. Blake Shelton</p>
+                    <p class="musictext" style="position: absolute; top: 20px;">2024 - Single</p>
+                    <hr class="mcstroke" style="position: absolute; top: 52px;">
+                    <p class="musictext" style="position: absolute; bottom: 0px; left: 0px;">Country</p>
+                    <p class="musictext" style="position: absolute; bottom: 0px; right: 0px;">2 Min 58 Sec</p>
+                </div>
+            </button>
+            <button class="musiccontainer">
+                <img src="images/album/austin.png" style="margin-top: 19px;" alt="austin cover" width="353px"
+                    height="353px">
+                <div class="mcdetails">
+                    <p class="musictitle">AUSTIN</p>
+                    <p class="musictext" style="position: absolute; top: 20px;">2023 - Album</p>
+                    <hr class="mcstroke" style="position: absolute; top: 52px;">
+                    <p class="musictext" style="position: absolute; bottom: 0px; left: 0px;">Folk / Country / Rap / Pop
+                        / R&B</p>
+                    <p class="musictext" style="position: absolute; bottom: 0px; right: 0px;">51 Min 47 Sec</p>
+                </div>
+            </button>
+            <button class="musiccontainer">
+                <img src="images/album/twelve carat toothache.jpg" style="margin-top: 19px;" alt="tct cover"
+                    width="353px" height="353px">
+                <div class="mcdetails">
+                    <p class="musictitle">Twelve Carat Toothache</p>
+                    <p class="musictext" style="position: absolute; top: 20px;">2022 - Album</p>
+                    <hr class="mcstroke" style="position: absolute; top: 52px;">
+                    <p class="musictext" style="position: absolute; bottom: 0px; left: 0px;">Folk / Country / Rap / Pop
+                        / R&B</p>
+                    <p class="musictext" style="position: absolute; bottom: 0px; right: 0px;">43 min 18 sec</p>
+                </div>
+            </button>
+            <button class="musiccontainer">
+                <img src="images/album/beerbongs & bentleys.jpg" style="margin-top: 19px;" alt="bnb cover" width="353px"
+                    height="353px">
+                <div class="mcdetails">
+                    <p class="musictitle">Beerbongs & Bentleys</p>
+                    <p class="musictext" style="position: absolute; top: 20px;">2018 - Album</p>
+                    <hr class="mcstroke" style="position: absolute; top: 52px;">
+                    <p class="musictext" style="position: absolute; bottom: 0px; left: 0px;">Folk / Country / Rap / Pop
+                        /
+                        R&B</p>
+                    <p class="musictext" style="position: absolute; bottom: 0px; right: 0px;">1 Hr 4 Min</p>
+                </div>
+            </button>
         </div>
     </div>
 
 
     <!-- tour -->
+
+    <div class="section" style="position: relative;">
+        <div style="position: absolute;
+        top: 50%;
+        left: 50%; 
+        transform: translate(-50%, -50%);
+        height: 300px; align-items: center;">
+            <h1 style="align-self: center;">Tour</h1>
+            <h2>Germania Insurance Amphitheater</h2>
+            <h3>Oct 27, 2023</h3>
+            <h3>Austin, Texas, United States</h3>
+        </div>
+    </div>
 </body>
 
 </html>
