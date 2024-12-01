@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" href="general.css" />
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <style>
         .title {
             color: #D5D30F;
@@ -101,34 +103,95 @@
             </div>
         </div>
     </header>
-    <div class="hero section">
+
+
+    <!-- hero -->
+
+    <div class="hero">
         <p class="title">Post Malone</p>
         <div>
 
         </div>
     </div>
+
+
+    <!-- about -->
+
     <div class="section">
-        <div style="position: relative;">
+        <div class="container" style="height: 185px; margin-top: 76px;">
             <div>
-                <h1 style="position: absolute; top:-12px; left: 40px;">
+                <h1 style="position: absolute; top: 52px; left:40px">
                     ABOUT
                 </h1>
-                <h1 style="position: absolute; top:78px; left: 40px;">
+                <h1 style="position: absolute; top:141px; left: 40px;">
                     POST MALONE
                 </h1>
             </div>
 
-            <div style="position: absolute; right: 40px;">
-                <p style="width: 387px; letter-spacing: 0.56px;">
+            <div style="position: absolute; right: 40px; top: 0px;">
+                <p style="width: 387px; letter-spacing: 0.7px;">
                     Austin, known professionally as Post Malone, a genre-defying artist whose music blends hip-hop, pop,
                     rock, and alternative sounds, connecting with fans worldwide through his unfiltered authenticity and
                     relatable themes of resilience, self-discovery, and raw emotion.
                 </p>
             </div>
+
+            <button class="yellowbutton"
+                style="position: absolute; right: 40px; width: 387px; right: 40px; bottom: 0px;">View
+                More</button>
+        </div>
+
+        <div class="carouselcontainer">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiperwrapper">
+                    <!-- Slides -->
+                    <div class="swiperslide">
+                        <img src="images/homepage/about1.jpg" alt="about1" width="270px">
+                    </div>
+                    <div class="swiperslide">
+                        <img src="images/homepage/about2.webp" alt="about2" width="270px">
+                    </div>
+                    <div class="swiperslide">
+                        <img src="images/homepage/about3.jpg" alt="about3" width="270px">
+                    </div>
+                    <div class="swiperslide">
+                        <img src="images/homepage/about4.jpg" alt="about4" width="270px">
+                    </div>
+                    <div class="swiperslide">
+                        <img src="images/homepage/about5.webp" alt="about5" width="270px">
+                    </div>
+                    <div class="swiperslide">
+                        <img src="images/homepage/about6.webp" alt="about6" width="270px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="whitestroke">
+
+    <!-- music -->
+
+    <div class="section">
+        <div class="container" style="height: 185px; margin-top: 76px;">
+            <h1 style="position: absolute; top: 52px; left:40px">music</h1>
+        </div>
+
+        <div class="musiccontainer">
+            <img src="images/album/pour me a drink.png" style="margin-top: 19px;" alt="pmad cover" width="353px"
+                height="353px">
+            <div class="mcdetails">
+                <p style="position: absolute;  color: #D5D30F; font-weight: 700;">Pour Me A Drink ft. Blake Shelton</p>
+                <p>2024 - Single</p>
+                <div class="mcstroke"></div>
+                <p style="position: absolute; bottom: 0px; left: 0px;">Country</p>
+                <p style="position: absolute; bottom: 0px; right: 0px;">2 Min 58 Sec</p>
+            </div>
         </div>
     </div>
 
 
+    <!-- tour -->
 </body>
 
 </html>

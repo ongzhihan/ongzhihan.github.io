@@ -1,5 +1,61 @@
-.hero {}
+.hero {
+    height: 703px;
+}
 
-.flexstart {
-    align-items: flex-start;
+.title {
+    color: #D5D30F;
+    text-align: center;
+    font-family: Oswald;
+    font-size: 222px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0px;
+    letter-spacing: -4.44px;
+    text-transform: uppercase;
+}
+
+.section {
+    background: #161616;
+    padding-top: 15px;
+    height: 766px;
+    margin-left: -8px;
+    margin-right: -8px;
+    z-index: -10;
+}
+
+.container {
+    position: relative;
+}
+
+.carouselcontainer {
+    padding-top: 49px;
+}
+
+.swiperwrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.musiccontainer {
+    width: 387px;
+    height: 480px;
+    border: 1px;
+    border-color: #ebebeb;
+    border-style: solid;
+    justify-items: center;
+}
+
+.mcdetails {
+    position: relative;
+    width: 353px;
+    height: 86px;
+}
+
+.mcstroke {
+    position: absolute;
+    border: #ebebeb;
+    height: 1pt;
+    width: 353px;
+    z-index: 1;
 }
