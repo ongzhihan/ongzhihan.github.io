@@ -132,7 +132,8 @@ header {
 
 footer {
     position: relative;
-    height: 668px;
+    height: 728px;
+    margin-top: -800px;
     margin-left: -8px;
     margin-right: -8px;
     margin-bottom: -8px;
@@ -155,11 +156,23 @@ footer {
     text-align: left;
 }
 
-.footerlinktext {}
+
+.footerlinktext {
+    color: #161616;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.footerlinktext:hover {
+    color: #161616;
+    text-decoration: underline;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
 
 .subscribeforupdates {
     color: #161616;
-    text-align: center;
+    text-align: left;
     font-family: Oswald;
     font-size: 70px;
     font-style: normal;
@@ -168,6 +181,21 @@ footer {
     /* 63px */
     letter-spacing: -1.4px;
     text-transform: uppercase;
+}
+
+.majorfootercontainer {
+    width: auto;
+    padding-top: 100px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.footercontainer {
+    display: flex;
 }
 
 /* footer end*/
