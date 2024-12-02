@@ -1,0 +1,65 @@
+.swiper {
+    width: 100%;
+    height: 480px;
+}
+
+.swiper-slide {
+    border: none;
+    outline: none;
+    background-color: #161616;
+    width: 400px;
+    height: 500px;
+    justify-items: center;
+
+    .mcdetails {
+        position: relative;
+        width: 353px;
+        height: 102px;
+    }
+
+    .mcstroke {
+        position: absolute;
+        width: 353px;
+        border: 1px solid #ebebeb;
+    }
+
+    .musictitle {
+        position: absolute;
+        color: #D5D30F;
+        font-weight: 700;
+        top: 3px;
+    }
+
+    .musictext {
+        position: absolute;
+        color: #ebebeb
+    }
+}
+
+.swiper-slide:hover {
+    background-color: #D5D30F;
+
+    .mcdetails {
+        position: relative;
+        width: 353px;
+        height: 102px;
+    }
+
+    .mcstroke {
+        border: 1px solid #161616;
+    }
+
+    .musictitle {
+        color: #161616;
+    }
+
+    .musictext {
+        color: #161616
+    }
+}
+
+.swiper-slide {
+    display: flex;
+    flex: auto;
+    gap: 20px;
+}
