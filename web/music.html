@@ -14,10 +14,65 @@
     <style>
       @media screen and (max-width: 600px) {
       }
+
+      * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+
+    .cover {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; /* Aligns content vertically */
+  align-items: center; /* Centers items horizontally */
+  justify-content: center; /* Centers items vertically */
+  text-align: center;
+  gap: 20px; /* Adds space between columns */
+}
+
+    body, html {
+      height: 100%;
+    }
+
+  
+
+
+    .gradient-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(100% 100% at 50% 50%, rgba(0, 0, 0, 0) 3%, black 28%, rgba(0, 0, 0, 0.5) 44%, rgba(0, 0, 0, 0) 61%, rgba(0, 0, 0, 0) 63%, rgba(5, 5, 5, 0.11) 72%, rgba(0, 0, 0, 0.12) 75%, rgba(128, 128, 128, 0) 82%);
+      z-index: 1;
+    }
+
+    .background-image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 100%;
+      height: auto;
+      z-index: 0;
+    }
+
+    .cover p {
+      position: relative;
+      z-index: 2;
+      font-size: 3rem;
+      color: white;
+    }
+
     </style>
   </head>
 
-    <header>
+  <header>
       <div class="headercontainer">
         <button class="logo">PM</button>
       </div>
@@ -121,563 +176,84 @@
         </div>
       </div>
     </header>
-  
-    <body>
-      <div
-        style="
-          width: 100%;
-          height: 100%;
-          position: relative;
-          background: #161616;
-        "
-      >
-        <div
-          style="
-            width: 1321.21px;
-            height: 1198px;
-            left: -21px;
-            top: -215px;
-            position: absolute;
-            opacity: 0.9;
-          "
-        >
+
+
+  <body>
+    
+    <section class="cover">
+      <div class="gradient-overlay"></div>
+      <p>MUSIC</p>
+      <img class="background-image" src="images/music/music hero.webp" alt="Music Hero Image">
+    </section>
+
         
-          <div style="width: 100%; height: 100%; background: radial-gradient(100% 100% at 50% 50%, rgba(0, 0, 0, 0) 3%, black 28%, rgba(0, 0, 0, 0.50) 44%, rgba(0, 0, 0, 0) 61%, rgba(0, 0, 0, 0) 63%, rgba(4.88, 4.88, 4.88, 0.11) 72%, rgba(0, 0, 0, 0.12) 72%, rgba(0, 0, 0, 0.12) 75%, rgba(127.5, 127.5, 127.5, 0) 82%)"></div>
+    <div class="section" style="height: 800px;">
+        <div class="container" style="height: 125px; margin-top: 76px;">
+            <h1 style="position: absolute; top: 52px; left:40px">music</h1>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <section>
+                <button class="swiper-slide">
+                    <img src="images/music/pour me a drink.png" style="margin-top: 19px;" alt="pmad cover" width="353px"
+                        height="353px">
+                    <div class="mcdetails">
+                        <p class="musictitle">Pour Me A Drink ft. Blake Shelton</p>
+                        <p class="musictext" style="top: 20px;">2024 - Single</p>
+                        <hr class="mcstroke" style="top: 52px;">
+                        <p class="musictext" style="bottom: 0px; left: 0px;">Country</p>
+                        <p class="musictext" style="bottom: 0px; right: 0px;">2 Min 58 Sec</p>
+                    </div>
+                </button>
+                </section>
 
-          <img
-            style="
-              width: 1,396.36px;
-              height: 907.89px;
-              left: -83.91px;
-              top: 255.15px;
-              position: absolute;
-            "
-            src="images/music/music hero.webp"/>
+                
+                <button class="swiper-slide">
+                    <img src="images/music/austin.png" style="margin-top: 19px;" alt="austin cover" width="353px"
+                        height="353px">
+                    <div class="mcdetails">
+                        <p class="musictitle">AUSTIN</p>
+                        <p class="musictext" style="top: 20px;">2023 - Album</p>
+                        <hr class="mcstroke" style="top: 52px;">
+                        <p class="musictext" style="bottom: 0px; left: 0px;">Folk / Country / Rap / Pop
+                            / R&B</p>
+                        <p class="musictext" style="bottom: 0px; right: 0px;">51 Min 47 Sec</p>
+                    </div>
+                </button>
+                <button class="swiper-slide">
+                    <img src="images/music/twelve carat toothache.jpg" style="margin-top: 19px;" alt="tct cover"
+                        width="353px" height="353px">
+                    <div class="mcdetails">
+                        <p class="musictitle">Twelve Carat Toothache</p>
+                        <p class="musictext" style="top: 20px;">2022 - Album</p>
+                        <hr class="mcstroke" style="top: 52px;">
+                        <p class="musictext" style="bottom: 0px; left: 0px;">Folk / Country / Rap / Pop
+                            / R&B</p>
+                        <p class="musictext" style="bottom: 0px; right: 0px;">43 min 18 sec</p>
+                    </div>
+                </button>
+                <button class="swiper-slide">
+                    <img src="images/music/beerbongs & bentleys.jpg" style="margin-top: 19px;" alt="bnb cover"
+                        width="353px" height="353px">
+                    <div class="mcdetails">
+                        <p class="musictitle">Beerbongs & Bentleys</p>
+                        <p class="musictext" style="top: 20px;">2018 - Album</p>
+                        <hr class="mcstroke" style="top: 52px;">
+                        <p class="musictext" style="bottom: 0px; left: 0px;">Folk / Country / Rap / Pop
+                            /
+                            R&B</p>
+                        <p class="musictext" style="bottom: 0px; right: 0px;">1 Hr 4 Min</p>
+                    </div>
+                </button>
+              
+            </div>
+        </div>
+        <button class="yellowbutton"
+            style="position: absolute; width: 387px; top: 0px; left: 50%; transform: translate(0%, -50%)">View
+            More</button>
+    </div>
 
-        </div>
-        <div
-          style="
-            width: 1004px;
-            height: 992.05px;
-            left: 134px;
-            top: 712px;
-            position: absolute;
-          "
-        >
-          <div
-            style="
-              width: 127.6px;
-              height: 40.29px;
-              left: 0px;
-              top: 0px;
-              position: absolute;
-              color: #d5d30f;
-              font-size: 40px;
-              font-family: Oswald;
-              font-weight: 700;
-              text-transform: uppercase;
-              line-height: 36px;
-              word-wrap: break-word;
-            "
-          >
-            Single
-          </div>
-          <div
-            style="
-              width: 151.1px;
-              height: 40.29px;
-              left: -0px;
-              top: 530.54px;
-              position: absolute;
-              color: #d5d30f;
-              font-size: 40px;
-              font-family: Oswald;
-              font-weight: 700;
-              text-transform: uppercase;
-              line-height: 36px;
-              word-wrap: break-word;
-            "
-          >
-            Albums
-          </div>
-          <img
-            style="
-              width: 319.58px;
-              height: 319.58px;
-              left: 1.12px;
-              top: 66.04px;
-              position: absolute;
-            "
-            src="images/music/pour me a drink.png"
-          />
-          <div
-            style="
-              width: 321.24px;
-              height: 394.35px;
-              left: -0px;
-              top: 597.7px;
-              position: absolute;
-            "
-          >
-            <div
-              style="
-                width: 252.96px;
-                height: 16.79px;
-                left: -0px;
-                top: 330.19px;
-                position: absolute;
-                color: #d5d30f;
-                font-size: 14px;
-                font-family: Roboto;
-                font-weight: 700;
-                word-wrap: break-word;
-              "
-            >
-              AUSTIN
-            </div>
-            <div
-              style="
-                width: 236.17px;
-                height: 13.43px;
-                left: -0px;
-                top: 351.46px;
-                position: absolute;
-                color: #ebebeb;
-                font-size: 14px;
-                font-family: Roboto;
-                font-weight: 400;
-                word-wrap: break-word;
-              "
-            >
-              2023 - Album
-            </div>
-            <div
-              style="
-                width: 206.42px;
-                height: 12.67px;
-                left: -0px;
-                top: 381.68px;
-                position: absolute;
-                color: #ebebeb;
-                font-size: 14px;
-                font-family: Roboto;
-                font-weight: 400;
-                word-wrap: break-word;
-              "
-            >
-              Folk / Country / Rap / Pop / R&B
-            </div>
-            <div
-              style="
-                width: 95.97px;
-                height: 12.67px;
-                left: 222.74px;
-                top: 381.68px;
-                position: absolute;
-                text-align: right;
-                color: #ebebeb;
-                font-size: 14px;
-                font-family: Roboto;
-                font-weight: 400;
-                word-wrap: break-word;
-              "
-            >
-              51 Min 47 Sec
-            </div>
-            <div
-              style="
-                width: 319.58px;
-                height: 0px;
-                left: 1.65px;
-                top: 379.34px;
-                position: absolute;
-              "
-            ></div>
-            <div
-              style="
-                width: 319px;
-                height: 0px;
-                left: -0px;
-                top: 374.96px;
-                position: absolute;
-                border: 1px #ebebeb solid;
-              "
-            ></div>
-            <img
-              style="
-                width: 319px;
-                height: 319px;
-                left: 0px;
-                top: 0px;
-                position: absolute;
-              "
-              src="images/music/austin.png"
-            />
-          </div>
-          <div
-            style="
-              width: 321.24px;
-              height: 64.16px;
-              left: -0px;
-              top: 397.35px;
-              position: absolute;
-            "
-          >
-            <div
-              style="
-                width: 252.96px;
-                height: 16.79px;
-                left: 0px;
-                top: 0px;
-                position: absolute;
-                color: #d5d30f;
-                font-size: 14px;
-                font-family: Roboto;
-                font-weight: 700;
-                word-wrap: break-word;
-              "
-            >
-              Pour Me A Drink ft. Blake Shelton
-            </div>
-            <div
-              style="
-                width: 236.17px;
-                height: 13.43px;
-                left: -0px;
-                top: 21.27px;
-                position: absolute;
-                color: #ebebeb;
-                font-size: 14px;
-                font-family: Roboto;
-                font-weight: 400;
-                word-wrap: break-word;
-              "
-            >
-              2024 - Single
-            </div>
-            <div
-              style="
-                width: 206.42px;
-                height: 12.67px;
-                left: -0px;
-                top: 51.49px;
-                position: absolute;
-                color: #ebebeb;
-                font-size: 14px;
-                font-family: Roboto;
-                font-weight: 400;
-                word-wrap: break-word;
-              "
-            >
-              Country
-            </div>
-            <div
-              style="
-                width: 95.97px;
-                height: 12.67px;
-                left: 222.74px;
-                top: 51.49px;
-                position: absolute;
-                text-align: right;
-                color: #ebebeb;
-                font-size: 14px;
-                font-family: Roboto;
-                font-weight: 400;
-                word-wrap: break-word;
-              "
-            >
-              2 Min 58 Sec
-            </div>
-            <div
-              style="
-                width: 319.58px;
-                height: 0px;
-                left: 1.65px;
-                top: 49.15px;
-                position: absolute;
-              "
-            ></div>
-            <div
-              style="
-                width: 319px;
-                height: 0px;
-                left: -0px;
-                top: 44.77px;
-                position: absolute;
-                border: 1px #ebebeb solid;
-              "
-            ></div>
-          </div>
-          <div
-            style="
-              width: 321.24px;
-              height: 394.35px;
-              left: 341.38px;
-              top: 597.7px;
-              position: absolute;
-            "
-          >
-            <img
-              style="
-                width: 319px;
-                height: 319px;
-                left: 0px;
-                top: 0px;
-                position: absolute;
-              "
-              src="images/music/twelve carat toothache.jpg"
-            />
-            <div
-              style="
-                width: 252.96px;
-                height: 16.79px;
-                left: -0px;
-                top: 330.19px;
-                position: absolute;
-                color: #d5d30f;
-                font-size: 14px;
-                font-family: Roboto;
-                font-weight: 700;
-                word-wrap: break-word;
-              "
-            >
-              Twelve Carat Toothache
-            </div>
-            <div
-              style="
-                width: 236.17px;
-                height: 13.43px;
-                left: -0px;
-                top: 351.46px;
-                position: absolute;
-                color: #ebebeb;
-                font-size: 14px;
-                font-family: Roboto;
-                font-weight: 400;
-                word-wrap: break-word;
-              "
-            >
-              2022 - Album
-            </div>
-            <div
-              style="
-                width: 206.42px;
-                height: 12.67px;
-                left: -0px;
-                top: 381.68px;
-                position: absolute;
-                color: #ebebeb;
-                font-size: 14px;
-                font-family: Roboto;
-                font-weight: 400;
-                word-wrap: break-word;
-              "
-            >
-              Folk / Country / Rap / Pop / R&B
-            </div>
-            <div
-              style="
-                width: 95.97px;
-                height: 12.67px;
-                left: 222.74px;
-                top: 381.68px;
-                position: absolute;
-                text-align: right;
-                color: #ebebeb;
-                font-size: 14px;
-                font-family: Roboto;
-                font-weight: 400;
-                word-wrap: break-word;
-              "
-            >
-              43 min 18 sec
-            </div>
-            <div
-              style="
-                width: 319.58px;
-                height: 0px;
-                left: 1.65px;
-                top: 379.34px;
-                position: absolute;
-              "
-            ></div>
-            <div
-              style="
-                width: 319px;
-                height: 0px;
-                left: -0px;
-                top: 374.96px;
-                position: absolute;
-                border: 1px #ebebeb solid;
-              "
-            ></div>
-          </div>
-          <div
-            style="
-              width: 321.24px;
-              height: 394.35px;
-              left: 682.76px;
-              top: 597.7px;
-              position: absolute;
-            "
-          >
-            <img
-              style="
-                width: 319px;
-                height: 319px;
-                left: 2.24px;
-                top: -0px;
-                position: absolute;
-              "
-              src="images/music/beerbongs & bentleys.jpg"
-            />
-            <div
-              style="
-                width: 252.96px;
-                height: 16.79px;
-                left: -0px;
-                top: 330.19px;
-                position: absolute;
-                color: #d5d30f;
-                font-size: 14px;
-                font-family: Roboto;
-                font-weight: 700;
-                word-wrap: break-word;
-              "
-            >
-              Beerbongs & Bentleys
-            </div>
-            <div
-              style="
-                width: 236.17px;
-                height: 13.43px;
-                left: -0px;
-                top: 351.46px;
-                position: absolute;
-                color: #ebebeb;
-                font-size: 14px;
-                font-family: Roboto;
-                font-weight: 400;
-                word-wrap: break-word;
-              "
-            >
-              2018 - Album
-            </div>
-            <div
-              style="
-                width: 206.42px;
-                height: 12.67px;
-                left: -0px;
-                top: 381.68px;
-                position: absolute;
-                color: #ebebeb;
-                font-size: 14px;
-                font-family: Roboto;
-                font-weight: 400;
-                word-wrap: break-word;
-              "
-            >
-              Folk / Country / Rap / Pop / R&B
-            </div>
-            <div
-              style="
-                width: 95.97px;
-                height: 12.67px;
-                left: 222.74px;
-                top: 381.68px;
-                position: absolute;
-                text-align: right;
-                color: #ebebeb;
-                font-size: 14px;
-                font-family: Roboto;
-                font-weight: 400;
-                word-wrap: break-word;
-              "
-            >
-              1 Hr 4 Min
-            </div>
-            <div
-              style="
-                width: 319.58px;
-                height: 0px;
-                left: 1.65px;
-                top: 379.34px;
-                position: absolute;
-              "
-            ></div>
-            <div
-              style="
-                width: 319px;
-                height: 0px;
-                left: -0px;
-                top: 374.96px;
-                position: absolute;
-                border: 1px #ebebeb solid;
-              "
-            ></div>
-          </div>
-        </div>
-        <div
-          style="
-            width: 974px;
-            left: 153px;
-            top: 341px;
-            position: absolute;
-            text-align: center;
-            color: #ebebeb;
-            font-size: 96px;
-            font-family: Oswald;
-            font-weight: 700;
-            text-transform: uppercase;
-            line-height: 86.4px;
-            word-wrap: break-word;
-          "
-        >
-          Music
-        </div>
-        <div
-          style="
-            width: 1280px;
-            height: 668px;
-            left: 0px;
-            top: 1811px;
-            position: absolute;
-          "
-        >
-          <div
-            style="
-              width: 1280px;
-              height: 668px;
-              left: 0px;
-              top: 0px;
-              position: absolute;
-            "
-          >
-            <div
-              style="
-                width: 1280px;
-                height: 668px;
-                left: 0px;
-                top: 0px;
-                position: absolute;
-                background: #ebebeb;
-              "
-            ></div>
-            <div
-              style="
-                width: 1280px;
-                height: 146px;
-                left: 0px;
-                top: 402px;
-                position: absolute;
-                text-align: center;
-                color: #161616;
-                font-size: 220px;
-                font-family: Oswald;
-                font-weight: 700;
-                text-transform: uppercase;
-                line-height: 198px;
-                word-wrap: break-word;
-              "
-            >
-  </body>
+    
+
+</body>
+</html>
