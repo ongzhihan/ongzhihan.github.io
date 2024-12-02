@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="web/general.css" />
+    <link rel="stylesheet" href="testing.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <style>
+        @media screen and (max-width: 600px) {}
+    </style>
+
+</head>
+
+<body>
+    <div class="section" style="height: 900px;">
+        <div class="container" style="height: 125px; margin-top: 76px;">
+            <h1 style="position: absolute; top: 52px; left:40px">music</h1>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <button class="swiper-slide">
+                    <img src="images/album/pour me a drink.png" style="margin-top: 19px;" alt="pmad cover" width="353px"
+                        height="353px">
+                    <div class="mcdetails">
+                        <p class="musictitle">Pour Me A Drink ft. Blake Shelton</p>
+                        <p class="musictext" style="top: 20px;">2024 - Single</p>
+                        <hr class="mcstroke" style="top: 52px;">
+                        <p class="musictext" style="bottom: 0px; left: 0px;">Country</p>
+                        <p class="musictext" style="bottom: 0px; right: 0px;">2 Min 58 Sec</p>
+                    </div>
+                </button>
+                <button class="swiper-slide">
+                    <img src="images/album/austin.png" style="margin-top: 19px;" alt="austin cover" width="353px"
+                        height="353px">
+                    <div class="mcdetails">
+                        <p class="musictitle">AUSTIN</p>
+                        <p class="musictext" style="top: 20px;">2023 - Album</p>
+                        <hr class="mcstroke" style="top: 52px;">
+                        <p class="musictext" style="bottom: 0px; left: 0px;">Folk / Country / Rap / Pop
+                            / R&B</p>
+                        <p class="musictext" style="bottom: 0px; right: 0px;">51 Min 47 Sec</p>
+                    </div>
+                </button>
+                <button class="swiper-slide">
+                    <img src="images/album/twelve carat toothache.jpg" style="margin-top: 19px;" alt="tct cover"
+                        width="353px" height="353px">
+                    <div class="mcdetails">
+                        <p class="musictitle">Twelve Carat Toothache</p>
+                        <p class="musictext" style="top: 20px;">2022 - Album</p>
+                        <hr class="mcstroke" style="top: 52px;">
+                        <p class="musictext" style="bottom: 0px; left: 0px;">Folk / Country / Rap / Pop
+                            / R&B</p>
+                        <p class="musictext" style="bottom: 0px; right: 0px;">43 min 18 sec</p>
+                    </div>
+                </button>
+                <button class="swiper-slide">
+                    <img src="images/album/beerbongs & bentleys.jpg" style="margin-top: 19px;" alt="bnb cover"
+                        width="353px" height="353px">
+                    <div class="mcdetails">
+                        <p class="musictitle">Beerbongs & Bentleys</p>
+                        <p class="musictext" style="top: 20px;">2018 - Album</p>
+                        <hr class="mcstroke" style="top: 52px;">
+                        <p class="musictext" style="bottom: 0px; left: 0px;">Folk / Country / Rap / Pop
+                            /
+                            R&B</p>
+                        <p class="musictext" style="bottom: 0px; right: 0px;">1 Hr 4 Min</p>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </button>
+
+                <!-- Swiper JS -->
+                <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper(".mySwiper", {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                        freeMode: true,
+                        pagination: {
+                            el: ".swiper-pagination",
+                            clickable: true,
+                        },
+                    });
+                </script>
+            </div>
+        </div>
+        <button class="yellowbutton"
+            style="position: absolute; width: 387px; top: 0px; left: 50%; transform: translate(0%, -50%)">View
+            More</button>
+    </div>
+</body>
