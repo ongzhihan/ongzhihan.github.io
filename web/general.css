@@ -130,6 +130,62 @@ header {
 
 /* header end */
 
+footer {
+    position: relative;
+    height: 668px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: -8px;
+    background-color: #ebebeb;
+}
+
+.footerlink {
+    border: none;
+    outline: none;
+    background-color: #EBEBEB;
+    color: #161616;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.84px;
+    z-index: 10;
+    padding: 1px;
+    text-align: left;
+}
+
+.footerlinktext {}
+
+.subscribeforupdates {
+    color: #161616;
+    text-align: center;
+    font-family: Oswald;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 90%;
+    /* 63px */
+    letter-spacing: -1.4px;
+    text-transform: uppercase;
+}
+
+/* footer end*/
+
+.title {
+    margin-top: 170px;
+    color: #D5D30F;
+    font-family: Oswald;
+    font-size: 258px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0px;
+    letter-spacing: -4.44px;
+    text-transform: uppercase;
+    align-self: center;
+    z-index: 1;
+}
+
 .iconmargin {
     margin-left: 2px;
 }
