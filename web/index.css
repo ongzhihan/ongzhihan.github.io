@@ -25,20 +25,6 @@
     width: fit-content%;
 }
 
-.title {
-    margin-top: 170px;
-    color: #D5D30F;
-    font-family: Oswald;
-    font-size: 222px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 0px;
-    letter-spacing: -4.44px;
-    text-transform: uppercase;
-    align-self: center;
-    z-index: 1;
-}
-
 .section {
     background: #161616;
     padding-top: 15px;
