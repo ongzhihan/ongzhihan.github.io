@@ -133,7 +133,7 @@ header {
 footer {
     position: relative;
     height: 728px;
-    margin-top: -800px;
+    margin-top: 0px;
     margin-left: -8px;
     margin-right: -8px;
     margin-bottom: -8px;
@@ -198,11 +198,8 @@ footer {
     display: flex;
 }
 
-/* footer end*/
-
-.title {
+.footertitle {
     margin-top: 170px;
-    color: #D5D30F;
     font-family: Oswald;
     font-size: 258px;
     font-style: normal;
@@ -212,7 +209,12 @@ footer {
     text-transform: uppercase;
     align-self: center;
     z-index: 1;
+    color: #161616;
+    text-align: center;
+    margin-bottom: 148px;
 }
+
+/* footer end*/
 
 .iconmargin {
     margin-left: 2px;
