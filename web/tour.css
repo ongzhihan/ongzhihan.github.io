@@ -142,3 +142,23 @@ h2 {
     color: white;
 
 }
+
+.tour1 {
+    display: flex;
+    justify-content: center;
+    display: block;
+    justify-items: center;
+    padding-bottom: 20px;
+
+}
+
+.tour1 h2 {
+    display: flex-start;
+    text-align: start;
+    width: 50px;
+
+}
+
+.tou1 p {
+    text-align: start;
+}
