@@ -140,25 +140,65 @@ body {
 
 h2 {
     color: white;
-
 }
 
+/*tour 1*/
 .tour1 {
+    display: flex;
+    justify-content: flex-start;
+    display: block;
+}
+
+.tour1img {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+
+.tour1h2 {
+    font-family: Oswald Bold;
+    font-size: 50pt;
+    margin: 50px;
+    font-size: 5vw;
+    position: absolute;
+    top: 150px;
+}
+
+.tour1p {
+    margin: 20px;
+    text-align: start;
+    margin: 20px;
+}
+
+/*tour 2*/
+.tour2 {
     display: flex;
     justify-content: center;
     display: block;
-    justify-items: center;
-    padding-bottom: 20px;
+}
+
+img {
+    width: 100%;
+    height: 80%;
+}
+
+.tour2img {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.tour2h2 {
+    font-size: 50pt;
+    display: flex;
+    font-size: 5vw;
+
 
 }
 
-.tour1 h2 {
-    display: flex-start;
+.tour2p {
+    display: flex;
     text-align: start;
-    width: 50px;
-
-}
-
-.tou1 p {
-    text-align: start;
+    margin: 20px;
 }
