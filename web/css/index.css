@@ -224,10 +224,9 @@
 /* tour */
 .toursection {
     background-color: #161616;
-    height: 800px;
+    height: 600px;
     margin-left: -8px;
     margin-right: -8px;
-    align-items: center;
     justify-items: center;
 }
 
@@ -257,11 +256,50 @@
     margin-right: -8px;
 }
 
-.subvideo {
-    display: block;
+/* video */
+.videosection {
+    background-color: #161616;
+    height: fit-content;
+    padding-bottom: 100px;
+    margin-left: -8px;
+    margin-right: -8px;
+    justify-items: center;
 }
 
-.display {
+.videovideo {
+    width: 794px;
+    height: 465px;
+}
+
+.videocontainer {
+    padding-top: 50px;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+}
+
+.videocontainerb {
+    align-items: center;
+    text-align: center;
+}
+
+.videosubtitle {
+    margin-top: -10px;
+    font-weight: 700;
+}
+
+.videodescription {
+    width: 650px;
+    margin-top: -10px;
+    color: #A3A3A3;
+}
+
+.videobutton {
+    margin: 10px;
+    width: 200px;
+}
+
+.subvideo {
     display: block;
 }
 
@@ -282,6 +320,8 @@
         margin-left: 10px;
         margin-right: 10px;
     }
+
+    /* about */
 
     .aboutsection {
         height: 900px;
@@ -371,5 +411,53 @@
             font-weight: 700;
             text-align: left;
         }
+    }
+
+    /* video */
+    .videosection {
+        background-color: #161616;
+        height: fit-content;
+        padding-bottom: 100px;
+        margin-left: -8px;
+        margin-right: -8px;
+        justify-items: center;
+    }
+
+    .videovideo {
+        width: 394px;
+        height: auto;
+    }
+
+    .videocontainer {
+        padding-top: 50px;
+        height: 100%;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .videocontainerb {
+        width: 90%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .videosubtitle {
+        margin-top: -10px;
+        font-weight: 700;
+    }
+
+    .videodescription {
+        width: 100%;
+        margin-top: -10px;
+        color: #A3A3A3;
+    }
+
+    .videobutton {
+        margin: 10px;
+        width: 200px;
+    }
+
+    .subvideo {
+        display: block;
     }
 }
