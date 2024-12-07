@@ -8,6 +8,7 @@ p {
     letter-spacing: 0.84px;
 }
 
+
 /* header */
 header {
     position: fixed;
@@ -265,6 +266,7 @@ h3 {
 
 .yellowbutton {
     height: 34px;
+    width: 180px;
     border: 1px solid #D5D30F;
     align-items: center;
     align-content: center;
@@ -289,6 +291,7 @@ h3 {
 
 .whitebutton {
     height: 34px;
+    width: 180px;
     border: 1px solid #EBEBEB;
     align-items: center;
     align-content: center;
@@ -364,7 +367,7 @@ h3 {
     }
 
     .yellowbutton {
-        width: 480px;
+        width: 380px;
         height: 34px;
         border: 1px solid #D5D30F;
         align-items: center;
@@ -389,7 +392,7 @@ h3 {
     }
 
     .whitebutton {
-        width: 480px;
+        width: 380px;
         height: 34px;
         border: 1px solid #EBEBEB;
         align-items: center;
