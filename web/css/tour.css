@@ -7,44 +7,45 @@ h2 {
 }
 
 /*tour 1*/
-.T1 {
-    display: flex;
-    justify-content: flex-start;
-    display: block;
-    font-family: Oswald;
-    text-transform: uppercase;
-    font-size: 50pt;
-    margin: 20px;
-    font-size: 5vw;
-    width: auto;
+.Tour {
     margin-left: 10px;
     margin-right: 10px;
-
 }
 
-.tour1 h2 {
-    padding-bottom: 80px;
-    padding-left: 10px;
-    width: 30px;
-    font-size: fixed;
+.Tour h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
 }
 
-
-.tour1 p {
-    margin: 20px;
-    text-align: start;
+.Tour h2 {
     display: flex;
     justify-content: flex-start;
-    text-align: justify;
-    margin-bottom: 0px;
+    color: white;
+    width: 30px;
+    font-size: 96pt;
+    font-size: 10vw;
+    line-height: auto;
+    text-align: left;
+    margin: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.T1 p {
+    padding-left: 20px;
+    padding-top: 120px;
+    padding-bottom: 50px;
+    display: flex;
 }
 
 .p2 {
     display: flex;
     justify-content: flex-end;
-    padding-right: 10px;
-    padding-bottom: 30px;
 }
+
+
+
 
 /*tour 2*/
 .tour2 {
