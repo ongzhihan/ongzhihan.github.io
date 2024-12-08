@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    background-color: #161616;
+    font-family: Arial, sans-serif;
+  }
+  
+  .musicBackground {
+    height: 100vh;
+    width: 100%;
+    background: url('../images/music/musichero2.png');
+    background-color: #161616;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .musicTitle {
+    color: white;
+  }
+  
+  .singlewrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 530px;
+    background-color: #161616;
+
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  
+.singletitle{
+    margin-left: 20px;
+    font-size: 60px;
+}
+
+  .single {
+    border: none;
+    outline: none;
+    background-color: #161616;
+    height: 411px;
+    width: 290px;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
+  
+  .single:hover {
+    background-color: #D5D30F;
+  }
+
+
+  .single:hover .underpour {
+    color: #161616;
+}
+
+  .single:hover .pour {
+    color: #161616;
+}
+
+.single:hover .mcstroke {
+        border: 0.5px solid #161616;
+}
+  
+  .single img {
+    margin-bottom: 10px; /* Space between image and text */
+  }
+  
+  .details {
+    color: white;
+    text-align: center;
+  }
+
+
+  .container1 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+
+  .pour {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom:-10px;
+    color: #D5D30F;
+  }
+  
+  .container2 {
+    gap: 125px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+  }
+
+  .underpour {
+    font-size: 12px;
+    color: #EBEBEB;
+  }
+  
+  .mcstroke {
+    border: 0.5px solid #EBEBEB;
+    width: 100%;
+   
+  }
+  
+
+  .album {
+    border: none;
+    outline: none;
+    background-color: #161616;
+    height: 411px;
+    width: 290px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+  }

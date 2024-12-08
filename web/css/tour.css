@@ -12,51 +12,57 @@ h2 {
     margin-right: 10px;
 }
 
+.T1 {
+    color: white;
+}
+
+.T1.p2 {
+    display: flex;
+    justify-content: space-between;
+}
+
 .Tour h1 {
     display: flex;
     justify-content: center;
     padding-top: 50px;
+    padding-bottom: 10px;
 }
 
-.Tour h2 {
+.h2 {
     display: flex;
     justify-content: flex-start;
     color: white;
-    font-size: 96pt;
-    font-size: 10vw;
-    line-height: auto;
-    text-align: left;
+    font-size: 96px;
+    width: 30px;
     margin: 10px;
     padding-top: 10px;
     padding-left: 10px;
+    font-family: Oswald;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 100px;
 }
 
 .T1 p {
     padding-left: 20px;
-    padding-top: 150px;
-    padding-bottom: 50px;
     display: flex;
+    margin-top: 20px;
 }
 
-.p2 {
+.p1 {
     display: flex;
-    justify-content: flex-end;
+    align-items: flex-end;
+    margin-left: 20px;
 }
-
-
 
 
 /*tour 2*/
 
-
-.T2 p {
-    padding-left: 20px;
-    padding-top: 150px;
-    padding-bottom: 50px;
-    display: flex;
+.T2 {
+    color: white;
 }
 
 .p2 {
     display: flex;
-    justify-content: flex-end;
+    margin-left: 20px;
 }
