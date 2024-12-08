@@ -26,7 +26,6 @@ body {
     justify-content: center;
     height: 530px;
     background-color: #161616;
-
     margin-left: 100px;
     margin-right: 100px;
   }
@@ -110,18 +109,97 @@ body {
    
   }
   
+  .albumtitle{
+    position: relative;
+    left: 111px;
+    margin-left: 20px;
+    font-size: 60px;
+  }
 
   .album {
     border: none;
     outline: none;
     background-color: #161616;
-    height: 411px;
+    height: 412px;
     width: 290px;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-direction: column;
     justify-content: center;
     cursor: pointer;
     text-align: center;
     transition: background-color 0.3s;
   }
+
+  .album:hover {
+    background-color: #D5D30F;
+  }
+
+
+  .album:hover .underaustin {
+    color: #161616;
+}
+
+  .album:hover .austin {
+    color: #161616;
+}
+
+.album:hover .mcstroke {
+        border: 0.5px solid #161616;
+}
+  
+.albumbigfamily {
+  display: flex;
+  height: 700px;
+  justify-content: center;
+  flex-direction: row;
+  gap: 30px; /* Adjust the gap as needed */
+
+}
+
+.austin {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom:-10px;
+  color: #D5D30F;
+}
+
+.underaustin {
+  font-size: 12px;
+  color: #EBEBEB;
+  text-align: left;
+  flex-direction: row;
+}
+
+.container3 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+
+.container4 {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.container5 {
+  position: relative;
+  left: 15px;
+  display: flex;
+  flex-direction: row;
+}      
+
+
+.underaustinspecial {
+  font-size: 12px;
+  color: #EBEBEB;
+  text-align: right;
+  flex-direction: row;
+  margin-right: 10px;
+}
+
+.album:hover .underaustinspecial {
+  color: #161616;
