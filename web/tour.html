@@ -12,12 +12,11 @@
     <style>
         .T1 {
             background-image: url(images/tour/tour1.jpeg);
-            background-size: cover;
+            background-position: top center;
             background-repeat: no-repeat;
-            height: 500px;
-            justify-content: center;
+            background-size: cover;
             width: auto;
-            height: auto;
+            height: 100%;
             margin-left: 10px;
             margin-right: 10px;
             margin-bottom: 50px;
@@ -25,18 +24,24 @@
 
         .T2 {
             background-image: url(images/tour/tour2.jpg);
-            background-size: cover;
+            background-position: top center;
             background-repeat: no-repeat;
-            height: 500px;
-            justify-content: center;
+            background-size: cover;
             width: auto;
-            height: auto;
+            height: 100%;
             margin-left: 10px;
             margin-right: 10px;
-            margin-bottom: 50px;
+
         }
 
-        @media screen and (max-width: 600px) {}
+        /* On screens that are 600px wide or less, the align-items is center */
+        @media screen and (max-width: 600px) {
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
     </style>
 
 </head>
@@ -48,20 +53,16 @@
     <div class="Tour">
         <h1>TOUR</h1>
         <div class="T1">
-            <div class="h2">Germania Insurance Amphitheater</div>
-            <div class="p1">Oct 27, 2024 Austin, Texas, US</div>
-            <div class="p1">Click And View More</div>
+            <div class="Tn1">Germania Insurance Amphitheater</div>
+            <div class="T1p">Oct 27, 2024 Austin, Texas, US</div>
+            <div class="T1p2">Click And View More</div>
         </div>
 
         <div class="T2">
-            <div class="h2">The Cynthia Woods Mitchell Pavilion</div>
-            <div class="p2">Oct 27, 2023 The Woodlands, Texas, US</div>
-            <div class="p2">Click And View More</div>
-
-
-
+            <div class="Tn2">The Cynthia Woods Mitchell Pavilion</div>
+            <div class="T2p">Oct 27, 2023 The Woodlands, Texas, US </div>
+            <div class="T2p2">Click And View More</div>
         </div>
-
     </div>
 
 
