@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/video.css" />
+    <link rel="stylesheet" href="css/lightbox.css">
 </head>
 
 <body>
@@ -15,7 +16,7 @@
             <br />
             <h1 class="titlemargintop">ft. Blake Shelton</h1>
         </div>
-        <img src="images/videos/pour me a drink video.jpg" alt="pmad video" class="video">
+        <img src="images/videos/pour me a drink video.jpg" alt="pmad video" class="video" onclick="openModal()">
     </div>
     <div class="videocontainerb">
         <div class="videocontainerbl">
@@ -149,4 +150,7 @@
             <img src="images/icons/rightarrow.svg" alt="rightarrow" width="35px">
         </button>
     </div>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/lightbox.js"></script>
 </body>
