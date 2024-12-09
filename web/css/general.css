@@ -222,7 +222,9 @@ footer {
 /* footer end*/
 
 .iconmargin {
-    margin-left: 2px;
+    margin-left: -4px;
+    width: 30px;
+    height: 18px;
 }
 
 .ebebeb {
@@ -340,6 +342,38 @@ h3 {
     z-index: 1;
     color: #161616;
     margin-left: 40px;
+}
+
+.footertext {
+    color: #161616;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.84px;
+}
+
+.checkboxcontainer {
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.checkboxminorcontainer {
+    align-items: center;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    border-radius: 0px;
+}
+
+.emailcolumn {
+    height: 35px;
+    width: 380px;
 }
 
 @media screen and (max-width: 700px) {

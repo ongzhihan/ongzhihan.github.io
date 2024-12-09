@@ -12,31 +12,122 @@
     <style>
         .T1 {
             background-image: url(images/tour/tour1.jpeg);
-            background-size: cover;
+            background-position: top center;
             background-repeat: no-repeat;
-            height: 500px;
-            justify-content: center;
+            background-size: cover;
             width: auto;
-            height: auto;
+            height: 100%;
             margin-left: 10px;
             margin-right: 10px;
-            margin-bottom: 50px;
+            margin-bottom: 20px;
         }
 
         .T2 {
             background-image: url(images/tour/tour2.jpg);
-            background-size: cover;
+            background-position: top center;
             background-repeat: no-repeat;
-            height: 500px;
-            justify-content: center;
+            background-size: cover;
             width: auto;
-            height: auto;
+            height: 100%;
             margin-left: 10px;
             margin-right: 10px;
-            margin-bottom: 50px;
+
         }
 
-        @media screen and (max-width: 600px) {}
+
+        @media screen and (max-width: 600px) {
+
+            .Tour h1 {
+                font-size: 48px;
+                display: flex;
+                justify-content: center;
+                margin-left: 0px;
+            }
+
+            .Tour {
+                margin-left: 5px;
+                margin-right: 5px;
+                color: white;
+
+            }
+
+            .T1 {
+                background-position: top center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 100%;
+                height: 268px;
+            }
+
+            .Tn1 {
+                font-size: 32px;
+                line-height: 40px;
+                width: 30px;
+                display: flex;
+                text-align: center;
+                margin-left: 120px;
+                padding-top: 20px;
+            }
+
+            .T1p {
+                font-size: 16px;
+                justify-content: center;
+                padding-top: 50px;
+                margin-left: 140px;
+                width: 150px;
+                text-align: center;
+                height: 10px;
+                padding-top: 15px;
+            }
+
+            .T1p2 {
+                font-size: 12px;
+                margin-right: 0px;
+                padding-top: 20px;
+                justify-content: center;
+                text-align: center;
+                display: flex;
+            }
+
+            .Tn2 {
+                font-size: 32px;
+                line-height: 40px;
+                width: 200px;
+                display: flex;
+                text-align: center;
+                margin-left: 120px;
+                padding-top: 20px;
+            }
+
+            .T2 {
+                background-position: top center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 100%;
+                height: 268px;
+
+            }
+
+            .T2p {
+                font-size: 16px;
+                justify-content: center;
+                padding-top: 50px;
+                margin-left: 120px;
+                width: 200px;
+                text-align: center;
+                height: 10px;
+                padding-top: 15px;
+            }
+
+            .T2p2 {
+                font-size: 12px;
+                margin-right: 0px;
+                padding-top: 20px;
+                justify-content: center;
+                text-align: center;
+                display: flex;
+            }
+        }
     </style>
 
 </head>
@@ -48,20 +139,16 @@
     <div class="Tour">
         <h1>TOUR</h1>
         <div class="T1">
-            <div class="h2">Germania Insurance Amphitheater</div>
-            <div class="p1">Oct 27, 2024 Austin, Texas, US</div>
-            <div class="p1">Click And View More</div>
+            <div class="Tn1">Germania Insurance Amphitheater</div>
+            <div class="T1p">Oct 27, 2024 Austin, Texas, US</div>
+            <div class="T1p2">Click And View More</div>
         </div>
 
         <div class="T2">
-            <div class="h2">The Cynthia Woods Mitchell Pavilion</div>
-            <div class="p2">Oct 27, 2023 The Woodlands, Texas, US</div>
-            <div class="p2">Click And View More</div>
-
-
-
+            <div class="Tn2">The Cynthia Woods Mitchell Pavilion</div>
+            <div class="T2p">Oct 27, 2023 The Woodlands, Texas, US </div>
+            <div class="T2p2">Click And View More</div>
         </div>
-
     </div>
 
 
