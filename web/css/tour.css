@@ -11,9 +11,15 @@ body {
 }
 
 h1 {
-    display: flex;
+    color: #D5D30F;
+    font-family: Oswald;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 0px;
+    letter-spacing: -1.92px;
+    text-transform: uppercase;
     justify-content: center;
-    margin: 100px;
 }
 
 .Tn1 {
@@ -99,4 +105,96 @@ h1 {
     margin-bottom: 50px;
     padding-bottom: 40px;
     color: #a3a3a3;
+}
+
+/*tour 1 Detail page*/
+.top {
+    color: white;
+}
+
+.TD1 {
+    font-family: Oswald;
+    font-weight: bold;
+    font-size: 96pt;
+    justify-content: center;
+    padding-top: 100px;
+    text-align: center;
+    padding-left: 100px;
+}
+
+.name {
+    display: flex;
+    justify-content: end;
+    padding-top: 200px;
+    margin-right: 20px;
+
+}
+
+.GIA {
+    color: #D5D30F;
+    font-family: Oswald;
+    font-weight: Bold;
+    font-size: 40pt;
+    width: 500px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    margin-left: 300px;
+    border-bottom: 2px solid white;
+    padding-bottom: 50px;
+}
+
+.location1 {
+    color: white;
+    font-family: Roboto;
+    display: flex;
+    margin-left: 320px;
+}
+
+.l1 {
+    padding-left: 30px;
+}
+
+.l1name {
+    padding-left: 175px;
+    font-family: Roboto Roman;
+    color: #a3a3a3;
+}
+
+.date1 {
+    color: white;
+    display: flex;
+    font-family: Roboto;
+    margin-left: 320px;
+}
+
+.d1 {
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.d1name {
+    color: #a3a3a3;
+    padding-left: 210px;
+    font-family: Roboto Roman;
+    padding-top: 10px;
+}
+
+.time1 {
+    color: white;
+    display: flex;
+    font-family: Roboto;
+    margin-left: 320px;
+}
+
+.t1 {
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.t1name {
+    color: #a3a3a3;
+    padding-left: 210px;
+    font-family: Roboto Roman;
+    padding-top: 10px;
 }
