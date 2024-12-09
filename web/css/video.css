@@ -73,6 +73,44 @@ body {
     font-weight: 700;
 }
 
+.arrow {
+    padding-top: 50px;
+    margin: 40px;
+    display: flex;
+    justify-content: end;
+}
+
+.arrowbutton {
+    border: none;
+    background-color: #161616;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+
+    .boldtext {
+        font-weight: 700;
+        padding: 10px;
+    }
+}
+
+.arrowbutton:hover {
+    border: none;
+    background-color: #161616;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+
+    .boldtext {
+        color: #D5D30F;
+        font-weight: 700;
+        padding: 10px;
+    }
+}
+
 .creditsr {
     font-family: Roboto;
     text-align: right;
@@ -110,6 +148,7 @@ body {
     }
 
     .videocontainerbr {
+        margin-top: -100px;
         width: auto;
         padding-left: 20px;
         padding-right: 20px;
@@ -125,4 +164,6 @@ body {
         text-align: left !important;
         letter-spacing: 1px;
     }
+
+    .rightarrow {}
 }
