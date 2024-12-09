@@ -16,6 +16,11 @@ body {
     margin-top: 10px;
 }
 
+.videobutton {
+    border: none;
+    background-color: #161616;
+}
+
 .video {
     margin-top: 20px;
     width: 1200px;
@@ -50,6 +55,7 @@ body {
 .text {
     color: #a3a3a3;
     letter-spacing: 1.4px;
+    line-height: 130%;
 }
 
 .textjustify {
@@ -71,13 +77,29 @@ body {
     color: #a3a3a3;
     text-align: left;
     font-weight: 700;
+    line-height: 130%;
 }
 
-.arrow {
+.creditsr {
+    font-family: Roboto;
+    color: #a3a3a3;
+    text-align: right;
+    line-height: 130%;
+}
+
+.arrow1 {
     padding-top: 50px;
     margin: 40px;
     display: flex;
     justify-content: end;
+}
+
+.arrow2 {
+    padding-top: 50px;
+    margin: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .arrowbutton {
@@ -111,10 +133,19 @@ body {
     }
 }
 
-.creditsr {
-    font-family: Roboto;
-    text-align: right;
-    color: #a3a3a3;
+.modal {
+    display: none;
+    z-index: 1;
+    padding-top: 100px;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 700px) {
@@ -163,5 +194,10 @@ body {
     .lyrics {
         text-align: left !important;
         letter-spacing: 1px;
+    }
+
+    .arrow {
+        margin-left: 40px;
+        margin-right: 40px;
     }
 }
