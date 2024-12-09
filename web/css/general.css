@@ -222,7 +222,9 @@ footer {
 /* footer end*/
 
 .iconmargin {
-    margin-left: 2px;
+    margin-left: -4px;
+    width: 30px;
+    height: 18px;
 }
 
 .ebebeb {

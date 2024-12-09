@@ -32,6 +32,7 @@
     height: 800px;
     background-image: url('https://www.postmalone.com/files/2024/06/pm-poster-scaled.jpg');
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     margin-top: -112px;
     margin-left: -8px;
@@ -44,11 +45,12 @@
 }
 
 .herotitlecontainer {
-    height: 100px;
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .title {
-    width: 100%;
     margin-top: 170px;
     color: #D5D30F;
     font-family: Oswald;
@@ -266,13 +268,35 @@
     justify-items: center;
 }
 
+.videovideocontainer {
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
 .videovideo {
     width: 794px;
     height: 465px;
 }
 
+.videosubvideol {
+    display: block;
+    margin-left: -200px;
+    width: 480px;
+}
+
+.videosubvideor {
+    display: block;
+    margin-right: -200px;
+    width: 480px;
+}
+
 .videocontainer {
     padding-top: 50px;
+    width: 100%;
     height: 100%;
     justify-items: center;
     align-items: center;
@@ -457,7 +481,16 @@
         width: 200px;
     }
 
-    .subvideo {
-        display: block;
+    .videovideocontainer {
+        justify-items: center;
+        align-items: center;
+    }
+
+    .videosubvideol {
+        display: none;
+    }
+
+    .videosubvideor {
+        display: none;
     }
 }
