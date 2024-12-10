@@ -133,24 +133,24 @@
       </div>
     </div>
 
-    <div class="carouselcontainer">
+    <div class="carouselcontainer swiper mySwiper">
       <div class="aboutswiperwrapper">
-        <div class="swiperslide">
+        <div class="swiper-slide">
           <img src="images/homepage/about1.jpg" alt="about1" width="270px" />
         </div>
-        <div class="swiperslide">
+        <div class="swiper-slide">
           <img src="images/homepage/about2.webp" alt="about2" width="270px" />
         </div>
-        <div class="swiperslide">
+        <div class="swiper-slide">
           <img src="images/homepage/about3.jpg" alt="about3" width="270px" />
         </div>
-        <div class="swiperslide">
+        <div class="swiper-slide">
           <img src="images/homepage/about4.jpg" alt="about4" width="270px" />
         </div>
-        <div class="swiperslide">
+        <div class="swiper-slide">
           <img src="images/homepage/about5.webp" alt="about5" width="270px" />
         </div>
-        <div class="swiperslide">
+        <div class="swipers-lide">
           <img src="images/homepage/about6.webp" alt="about6" width="270px" />
         </div>
       </div>
@@ -282,8 +282,30 @@
       </div>
     </div>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      direction: 'vertical',
+      loop: true,
 
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
 
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });
+  </script>
 </body>
 
 </html>
