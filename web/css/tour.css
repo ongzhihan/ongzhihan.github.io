@@ -198,3 +198,14 @@ h1 {
     font-family: Roboto Roman;
     padding-top: 10px;
 }
+
+.performances {
+    color: white;
+    text-align: left;
+}
+
+.PL {
+    color: white;
+    font-size: 14px;
+
+}
