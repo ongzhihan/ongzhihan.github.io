@@ -165,10 +165,26 @@ h1 {
 
 .Videoname {
     font-size: 14px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .GIAdetail {
     color: #D5D30F;
     font-weight: bold;
     font-size: 40px;
+}
+
+.location1 {
+    display: flex;
+}
+
+.Location {
+    font-weight: bold;
+    padding-right: 20px;
+}
+
+.performances {
+    display: flex;
+    justify-content: flex-end;
 }
