@@ -25,6 +25,7 @@ h1 {
     background-size: cover;
     height: auto;
     font-family: Roboto;
+    font-weight: Bold;
 }
 
 
@@ -47,7 +48,7 @@ h1 {
     justify-content: space-between;
     margin: 10px;
     margin: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     padding-top: 80px;
     font-size: 14px;
     margin-bottom: 20px;
@@ -57,4 +58,44 @@ h1 {
 
 .viewmore {
     color: #a3a3a3;
+}
+
+@media screen and (max-width: 600px) {
+
+    .Tour1 {
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top center;
+        height: 100%;
+        display: block;
+        justify-items: center;
+
+    }
+
+    .Tour1 h2 {
+        font-size: 42px;
+        line-height: 40px;
+        padding-top: 10px;
+        display: flex;
+        justify-items: center;
+        text-align: center;
+        flex-direction: column;
+        padding-bottom: 0px;
+    }
+
+    .tour1dateandlocation {
+        display: block;
+        justify-content: center;
+        text-align: center;
+        padding-top: 0px;
+        line-height: 40px;
+    }
+
+    .viewmore {
+        margin-bottom: 20px;
+        padding-top: 10px;
+    }
+
+
+
 }
