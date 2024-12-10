@@ -2,14 +2,6 @@ body {
     background-color: #161616;
 }
 
-
-/*tour 1*/
-.Tour {
-    margin-left: 10px;
-    margin-right: 10px;
-    color: white;
-}
-
 h1 {
     color: #D5D30F;
     font-family: Oswald;
@@ -19,193 +11,50 @@ h1 {
     line-height: 0px;
     letter-spacing: -1.92px;
     text-transform: uppercase;
+    display: flex;
     justify-content: center;
 }
 
-.Tn1 {
-    font-size: 96px;
-    font-family: Oswald;
-    font-weight: bold;
-    width: 30px;
-    line-height: 100px;
-    padding-left: 20px;
-    padding-top: 40px;
-}
-
-.T1p {
-    display: inline-block;
-    justify-content: flex-start;
-    padding-top: 150px;
-    padding-left: 10px;
-    font-size: 14pt;
-    font-family: Roboto;
-    font-weight: bold;
-    padding-left: 20px;
-    padding-bottom: 0px;
-    padding-top: 300px;
-    width: 200px;
-}
-
-.T1p2 {
-    display: flex;
-    justify-content: flex-end;
-    font-family: Roboto;
-    font-weight: bold;
-    font-size: 14pt;
-    margin-right: 40px;
-    padding-bottom: 40px;
-    color: #a3a3a3;
-
-}
-
-/*tour 2*/
-.Tour {
+/*tour 1*/
+.Tour1 {
     margin-left: 10px;
     margin-right: 10px;
     color: white;
+    background-image: url(file:///c%3A/Users/junxl/OneDrive/%E6%A1%8C%E9%9D%A2/ongzhihan.github.io/web/images/tour/tour1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    font-family: Roboto;
 }
 
-h1 {
+
+
+.Tour1 h2 {
+    color: white;
     display: flex;
-    justify-content: center;
-    margin: 100px;
-}
-
-.Tn2 {
-    font-size: 96px;
-    font-family: Oswald;
-    font-weight: bold;
-    line-height: 100px;
-    padding-left: 20px;
-    padding-top: 40px;
-    width: 700px;
-}
-
-.T2p {
-    display: inline-block;
     justify-content: flex-start;
-    padding-top: 150px;
-    padding-left: 10px;
-    font-size: 14pt;
-    font-family: Roboto;
-    font-weight: bold;
-    padding-left: 20px;
-    padding-bottom: 0px;
-    padding-top: 300px;
-    width: 200px;
-}
-
-.T2p2 {
-    display: flex;
-    justify-content: flex-end;
-    font-family: Roboto;
-    font-weight: bold;
-    font-size: 14pt;
-    margin-right: 40px;
-    margin-bottom: 50px;
-    padding-bottom: 40px;
-    color: #a3a3a3;
-}
-
-/*tour 1 Detail page*/
-.top {
-    color: white;
-}
-
-.TD1 {
-    font-family: Oswald;
-    font-weight: bold;
     font-size: 96pt;
-    justify-content: center;
-    padding-top: 100px;
-    text-align: center;
-    padding-left: 100px;
+    text-align: start;
+    width: 200px;
+    margin: 20px;
+    line-height: 130px;
+    padding-bottom: 80px;
 }
 
-.name {
+
+.tour1dateandlocation {
     display: flex;
-    justify-content: end;
-    padding-top: 200px;
-    margin-right: 20px;
-
-}
-
-.GIA {
-    color: #D5D30F;
-    font-family: Oswald;
-    font-weight: Bold;
-    font-size: 40pt;
-    width: 500px;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 60px;
-    margin-left: 300px;
-    border-bottom: 2px solid white;
-    padding-bottom: 50px;
-}
-
-.location1 {
-    color: white;
-    font-family: Roboto;
-    display: flex;
-    margin-left: 320px;
-}
-
-.l1 {
-    padding-left: 30px;
-}
-
-.l1name {
-    padding-left: 175px;
-    font-family: Roboto Roman;
-    color: #a3a3a3;
-}
-
-.date1 {
-    color: white;
-    display: flex;
-    font-family: Roboto;
-    margin-left: 320px;
-}
-
-.d1 {
-    padding-left: 30px;
-    padding-top: 10px;
-}
-
-.d1name {
-    color: #a3a3a3;
-    padding-left: 210px;
-    font-family: Roboto Roman;
-    padding-top: 10px;
-}
-
-.time1 {
-    color: white;
-    display: flex;
-    font-family: Roboto;
-    margin-left: 320px;
-}
-
-.t1 {
-    padding-left: 30px;
-    padding-top: 10px;
-}
-
-.t1name {
-    color: #a3a3a3;
-    padding-left: 210px;
-    font-family: Roboto Roman;
-    padding-top: 10px;
-}
-
-.performances {
-    color: white;
-    text-align: left;
-}
-
-.PL {
-    color: white;
+    justify-content: space-between;
+    margin: 10px;
+    margin: 20px;
+    padding-bottom: 20px;
+    padding-top: 80px;
     font-size: 14px;
+    margin-bottom: 20px;
+    color: white;
 
+}
+
+.viewmore {
+    color: #a3a3a3;
 }
