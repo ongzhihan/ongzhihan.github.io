@@ -17,13 +17,14 @@ h1 {
 
 /*tour 1*/
 .Tour1 {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 5px;
     color: white;
     background-image: url(file:///c%3A/Users/junxl/OneDrive/%E6%A1%8C%E9%9D%A2/ongzhihan.github.io/web/images/tour/tour1.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: auto;
+    height: 576px;
     font-family: Roboto;
     font-weight: Bold;
 }
@@ -37,7 +38,7 @@ h1 {
     font-size: 96pt;
     text-align: start;
     width: 200px;
-    margin: 20px;
+    margin: 30px;
     line-height: 130px;
     padding-bottom: 80px;
 }
@@ -46,21 +47,63 @@ h1 {
 .tour1dateandlocation {
     display: flex;
     justify-content: space-between;
-    margin: 10px;
-    margin: 20px;
-    padding-bottom: 40px;
-    padding-top: 80px;
+    margin: 30px;
+    padding-bottom: 30px;
+    padding-top: 0px;
     font-size: 14px;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     color: white;
-
 }
 
 .viewmore {
     color: #a3a3a3;
 }
 
-@media screen and (max-width: 600px) {
+/*Tour 2*/
+.Tour2 {
+
+    padding-top: 5px;
+    color: white;
+    background-image: url(file:///c%3A/Users/junxl/OneDrive/%E6%A1%8C%E9%9D%A2/ongzhihan.github.io/web/images/tour/tour2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 576px;
+    font-family: Roboto;
+    font-weight: Bold;
+}
+
+
+
+.Tour2 h2 {
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 96pt;
+    text-align: start;
+    width: 200px;
+    margin: 30px;
+    line-height: 130px;
+    padding-bottom: 80px;
+}
+
+
+.tour2dateandlocation {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding-bottom: 30px;
+    padding-top: 0px;
+    font-size: 14px;
+    margin-bottom: 60px;
+    color: white;
+}
+
+.viewmore {
+    color: #a3a3a3;
+}
+
+
+@media screen and (max-width: 800px) {
 
     .Tour1 {
         background-repeat: no-repeat;
@@ -69,31 +112,36 @@ h1 {
         height: 100%;
         display: block;
         justify-items: center;
-
+        margin: 0px;
     }
 
     .Tour1 h2 {
         font-size: 42px;
         line-height: 40px;
-        padding-top: 10px;
         display: flex;
         justify-items: center;
         text-align: center;
-        flex-direction: column;
+        margin-left: 0px;
         padding-bottom: 0px;
+        margin-bottom: 10px;
     }
 
     .tour1dateandlocation {
         display: block;
         justify-content: center;
         text-align: center;
+        align-items: center;
         padding-top: 0px;
         line-height: 40px;
+        margin-bottom: 30px;
+        font-size: 21px;
+        margin-top: 0px
     }
 
     .viewmore {
         margin-bottom: 20px;
-        padding-top: 10px;
+        padding-top: 5px;
+        font-size: 14px;
     }
 
 
