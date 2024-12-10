@@ -147,3 +147,28 @@ h1 {
 
 
 }
+
+.tourdetail1 {
+    color: white;
+    font-family: Roboto Roman;
+}
+
+.top {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    font-family: Oswald;
+    font-weight: bold;
+    font-size: 96px;
+    margin: 100px;
+}
+
+.Videoname {
+    font-size: 14px;
+}
+
+.GIAdetail {
+    color: #D5D30F;
+    font-weight: bold;
+    font-size: 40px;
+}
