@@ -1,3 +1,10 @@
+.heromajorcontainer {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .herocontainer {
     display: flex;
     flex-direction: column;
