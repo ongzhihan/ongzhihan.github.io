@@ -1,7 +1,7 @@
 .herocontainer {
     display: flex;
     flex-direction: column;
-    height: 80%;
+    min-height: 800px;
     align-items: center;
     justify-items: center;
     align-content: space-between;
