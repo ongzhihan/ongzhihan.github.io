@@ -148,15 +148,29 @@ h1 {
 
 }
 
+/*Tour Detail Page1*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
 .tourdetail1 {
     color: white;
     font-family: Roboto Roman;
+    justify-content: space-between;
 }
 
 .top {
-    display: block;
-    justify-content: center;
-    text-align: center;
+    background-image: url(file:///c%3A/Users/junxl/OneDrive/%E6%A1%8C%E9%9D%A2/ongzhihan.github.io/web/images/tour/tour1.jpeg);
+    background-size: center cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
     font-family: Oswald;
     font-weight: bold;
     font-size: 96px;
@@ -173,18 +187,44 @@ h1 {
     color: #D5D30F;
     font-weight: bold;
     font-size: 40px;
+    display: flex;
 }
 
 .location1 {
     display: flex;
 }
 
-.Location {
+.LOCATION {
+    font-weight: bold;
+    padding-right: 40px;
+}
+
+.location-name {
+    color: #a3a3a3;
+}
+
+.date1 {
+    display: flex;
+}
+
+.DATE {
     font-weight: bold;
     padding-right: 20px;
 }
 
-.performances {
+.date-name {
+    color: #a3a3a3;
+}
+
+.time1 {
     display: flex;
-    justify-content: flex-end;
+}
+
+.TIME {
+    font-weight: bold;
+    padding-right: 80px;
+}
+
+.time-name {
+    color: #a3a3a3;
 }
