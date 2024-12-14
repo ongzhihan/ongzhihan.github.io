@@ -1,10 +1,11 @@
 .herocontainer {
     height: 95%;
     align-self: center;
+    padding-top: 80px;
 }
 
 .herocontainerb {
-    padding-top: 70px;
+    padding-top: 90px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,7 +20,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    min-height: 820px;
+    min-height: 740px;
     display: grid;
 }
 
@@ -29,18 +30,16 @@
 }
 
 .herotitlecontainer {
-    padding-top: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-top: 5px;
 }
 
 .title {
     color: #D5D30F;
     font-family: Oswald;
-    font-size: 15em;
+    font-size: 13em;
     font-weight: 700;
-    line-height: 240px;
-    letter-spacing: -4.44px;
+    line-height: 200px;
+    letter-spacing: -7.74px;
     text-transform: uppercase;
     text-align: center;
     margin: 0px;
@@ -51,7 +50,6 @@
     background: #161616;
     padding-top: 15px;
     padding-bottom: 75px;
-    height: 766px;
 }
 
 .aboutcontainer {
@@ -199,16 +197,21 @@
 
 /* tour */
 .toursection {
-    background-color: #161616;
-    height: 600px;
-    justify-items: center;
+    min-height: 680px;
+    padding-top: 15px;
+    padding-bottom: 75px;
+    display: grid;
 }
 
 .tourcontainer {
-    padding-top: 50px;
-    height: 100%;
+    padding-bottom: 70px;
+    height: 480px;
+    align-self: center;
     justify-items: center;
     align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .tourcontainert {
@@ -217,15 +220,26 @@
 
 .tourcontainerb {
     padding-top: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
     justify-items: center;
 }
 
 .tourbackground {
     width: 100%;
-    height: 100%;
     background-image: url('http://127.0.0.1:5500/web/images/tour/tour1.jpeg');
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center 0px;
+}
+
+.toursubtitle {
+    color: #ebebeb;
+}
+
+.tourtext {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 /* video */
@@ -464,6 +478,22 @@
         flex: 1;
         margin-left: 10px;
         margin-right: 10px;
+    }
+
+    /* tour */
+    .toursection {
+        min-height: 580px;
+        padding-top: 15px;
+        padding-bottom: 60px;
+    }
+
+    .tourcontainer {
+        padding-bottom: 50px;
+        height: 420px;
+    }
+
+    .tourcontainert {
+        text-align: center;
     }
 
     /* video */
