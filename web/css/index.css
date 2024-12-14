@@ -52,7 +52,6 @@
     padding-top: 15px;
     padding-bottom: 75px;
     height: 766px;
-    z-index: -1;
 }
 
 .aboutcontainer {
@@ -115,10 +114,7 @@
 .musicsection {
     background: #161616;
     padding-top: 15px;
-    height: 766px;
-    z-index: -1;
-    height: 800px;
-    justify-items: center;
+    padding-bottom: 75px;
 }
 
 .musiccontainer {
@@ -138,25 +134,26 @@
 }
 
 .swiper {
-    width: 100%;
-    height: 470px;
+    padding-left: 40px;
+    overflow: hidden;
 }
 
 .musicswipermargintop {
     margin-top: 19px;
 }
 
-.musiccontainer {
+.musicslidecontainer {
     border: none;
     outline: none;
     background-color: #161616;
-    width: 390px;
-    height: 300px;
+    padding: 10px;
     display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
 
     .mcdetails {
-        width: 353px;
-        height: 102px;
+        padding-top: 20px;
     }
 
     .musiccontainert {
@@ -165,7 +162,7 @@
     }
 
     .mcstroke {
-        width: 353px;
+        width: 420px;
         border: 1px solid #ebebeb;
         margin-top: -5px;
         margin-bottom: -5px;
@@ -177,13 +174,8 @@
     }
 }
 
-.musiccontainer:hover {
+.musicslidecontainer:hover {
     background-color: #D5D30F;
-
-    .mcdetails {
-        width: 353px;
-        height: 102px;
-    }
 
     .mcstroke {
         border: 1px solid #161616;
@@ -204,7 +196,6 @@
     margin-left: 10px;
     margin-right: 10px;
 }
-
 
 /* tour */
 .toursection {
@@ -304,6 +295,18 @@
     display: block;
 }
 
+/* other */
+.displaygrid {
+    display: grid;
+}
+
+.musicbutton {
+    justify-self: center;
+    margin-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
 @media screen and (max-width: 700px) {
     .submenu {
         display: none;
@@ -374,15 +377,25 @@
         justify-content: space-around;
     }
 
-    /* music container */
-
-    .musicsection {
-        height: fit-content;
-        padding-bottom: 100px;
+    /* music */
+    .musiccontainer {
+        margin-top: 40px;
+        margin-bottom: 15px;
     }
 
-    .swiper {
+    .musicsection {
+        background: #161616;
+        padding-top: 15px;
+        padding-bottom: 75px;
+    }
+
+    .musiccontainer {
         height: fit-content;
+        padding: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        justify-items: center;
     }
 
     .musicswiperwrapper {
@@ -390,23 +403,26 @@
         flex-direction: column;
     }
 
-    .swiper-slide {
-        display: flex;
-        flex: 1;
-        margin-left: 10px;
-        margin-right: 10px;
+    .swiper {
+        padding-left: 0px;
     }
 
-    .musiccontainer {
-        width: 390px;
-        height: 300px;
+    .musicswipermargintop {
+        margin-top: 19px;
+        width: 85%;
+    }
+
+    .musicslidecontainer {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
         justify-items: center;
+        margin-left: 0px;
+        margin-right: 0px;
 
         .mcdetails {
-            width: 400px;
-            height: fit-content;
+            padding-top: 20px;
+            width: 85%;
         }
 
         .musiccontainert {
@@ -415,7 +431,7 @@
         }
 
         .mcstroke {
-            width: 400px;
+            width: 100%;
             border: 1px solid #ebebeb;
             margin-top: -5px;
             margin-bottom: -5px;
@@ -424,33 +440,30 @@
         .musictitle {
             color: #D5D30F;
             font-weight: 700;
-            text-align: left;
         }
     }
 
-    .swiper-slide:hover {
-        .mcdetails {
-            width: 400px;
-            height: fit-content;
-        }
-
-        .musiccontainert {
-            display: flex;
-            justify-content: space-between;
-        }
+    .musicslidecontainer:hover {
+        background-color: #D5D30F;
 
         .mcstroke {
-            width: 400px;
             border: 1px solid #161616;
-            margin-top: -5px;
-            margin-bottom: -5px;
         }
 
         .musictitle {
             color: #161616;
-            font-weight: 700;
-            text-align: left;
         }
+
+        .musictext {
+            color: #161616
+        }
+    }
+
+    .swiper-slide {
+        display: flex;
+        flex: 1;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     /* video */
