@@ -165,7 +165,6 @@ h1 {
     .tourdetail1 {
         background-size: contain;
         background-repeat: no-repeat;
-        background-size: contain;
     }
 
     .infoleft h3 {
@@ -192,10 +191,23 @@ h1 {
     }
 
     .gallery {
-        display: inline;
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+    }
 
+    .gallery img {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .performances p {
+        font-size: 16px;
+        text-align: start;
+        padding-left: 20px;
     }
 
 }
@@ -270,7 +282,6 @@ body {
 .infoleft div {
     display: flex;
     justify-content: space-between;
-
 }
 
 .infoleft p {
@@ -283,8 +294,16 @@ body {
     font-family: Roboto;
 }
 
+.performances p {
+    padding-left: 25px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
 .list {
     column-count: 2;
+    margin-left: 20px;
+    font-size: 14px;
 }
 
 .gallery {
