@@ -143,13 +143,23 @@ h1 {
         font-size: 14px;
     }
 
+    .tourdetail1 .top {
+        background-size: cover;
+        margin: 0;
+        height: 200px;
+    }
+
     .tourdetail1 .top h2 {
         display: none;
     }
 
+    .top .Videoname {
+        display: flex;
+    }
+
     .tour-information {
         flex-direction: column;
-        display: flex;
+
     }
 
     .tourdetail1 {
@@ -161,6 +171,30 @@ h1 {
     .infoleft h3 {
         display: flex;
         justify-content: center;
+        align-items: center;
+        font-size: 32px;
+
+    }
+
+    .infoleft div {
+        justify-content: flex-start;
+    }
+
+    .infoleft p {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .list {
+        display: flex;
+        justify-content: flex-start;
+        column-count: 1;
+    }
+
+    .gallery {
+        display: inline;
+        justify-content: center;
+        align-items: center;
 
     }
 
@@ -171,7 +205,6 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0px;
-
 }
 
 .tourdetail1 {
@@ -220,9 +253,9 @@ body {
 
 .tour-information {
     display: flex;
-    align-items: center;
     justify-content: center;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .infoleft h3 {
@@ -237,7 +270,6 @@ body {
 .infoleft div {
     display: flex;
     justify-content: space-between;
-    padding-right: 20px;
 
 }
 
@@ -257,58 +289,45 @@ body {
 
 .gallery {
     display: grid;
-
     grid-template-columns: 2fr 1fr;
-    /* 左侧大列，右侧小列 */
     grid-template-rows: repeat(4, 1fr);
-    /* 定义4行布局 */
     gap: 10px;
-    /* 图片间的间距 */
-    width: 80%;
-    max-width: 1200px;
 }
 
 .gallery img {
+    display: block;
     justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 100%;
     object-fit: cover;
-    /* 保持图片比例 */
 }
 
-/* 左侧大图部分 */
 .main-image {
     width: 100%;
     grid-row: span 2;
-    /* 占满4行 */
     grid-column: 1 / 2;
-    /* 占左侧第1列 */
 }
 
-/* 右侧小图部分 */
 
 
 .small-image:nth-child(3) {
     grid-row: 1 / 3;
-    /* 第二行 */
     grid-column: 2 / 3;
+    width: 100%;
     gap: 10;
 }
 
 .small-image:nth-child(4) {
     grid-row: 2 / 4;
-    /* 第三行 */
     grid-column: 2 / 3;
 }
 
 .small-image:nth-child(5) {
     grid-row: 3 / 5;
-    /* 第四行 */
     grid-column: 2 / 3;
 }
 
 .small-image:nth-child(6) {
     grid-row: 4 / 6;
-    /* 第四行 */
     grid-column: 2 / 3;
 }
