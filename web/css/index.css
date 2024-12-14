@@ -1,17 +1,10 @@
-.heromajorcontainer {
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 .herocontainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    height: 95%;
+    align-self: center;
 }
 
 .herocontainerb {
+    padding-top: 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,7 +19,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    min-height: 740px;
+    min-height: 820px;
+    display: grid;
 }
 
 .backgroundcontainer {
@@ -35,6 +29,7 @@
 }
 
 .herotitlecontainer {
+    padding-top: 40px;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -48,7 +43,6 @@
     letter-spacing: -4.44px;
     text-transform: uppercase;
     text-align: center;
-    z-index: 1;
     margin: 0px;
 }
 
@@ -56,12 +50,15 @@
 .aboutsection {
     background: #161616;
     padding-top: 15px;
+    padding-bottom: 75px;
     height: 766px;
     z-index: -1;
 }
 
 .aboutcontainer {
-    height: 205px;
+    height: fit-content;
+    padding-left: 40px;
+    padding-right: 40px;
     margin-top: 76px;
     display: flex;
     flex-direction: row;
@@ -69,6 +66,7 @@
 }
 
 .aboutcontainerlt {
+    width: fit-content;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -76,20 +74,20 @@
 
 .aboutcontainerright {
     display: flex;
+    width: 30%;
     flex-direction: column;
     justify-content: space-around;
 }
 
 .aboutcontainerrt {
     align-items: end;
-    width: 387px;
     letter-spacing: 0.7px;
+    line-height: 20px;
 }
 
 .aboutcontainerrb {
+    width: 100%;
     align-items: end;
-    width: 387px;
-    letter-spacing: 0.7px;
 }
 
 .aboutpmmargintop {
@@ -97,7 +95,7 @@
 }
 
 .carouselcontainer {
-    padding-top: 49px;
+    padding-top: 70px;
     max-width: 100%;
     overflow: hidden;
 }
@@ -106,6 +104,10 @@
     gap: 10px;
     display: flex;
     flex-direction: row;
+}
+
+.aboutslide {
+    width: 270px;
 }
 
 
@@ -120,9 +122,9 @@
 }
 
 .musiccontainer {
-    height: 125px;
+    height: fit-content;
+    padding: 20px;
     margin-top: 76px;
-    width: auto;
     margin-left: 40px;
     margin-right: 40px;
     display: flex;
@@ -144,7 +146,7 @@
     margin-top: 19px;
 }
 
-.swiper-slide {
+.musiccontainer {
     border: none;
     outline: none;
     background-color: #161616;
@@ -175,7 +177,7 @@
     }
 }
 
-.swiper-slide:hover {
+.musiccontainer:hover {
     background-color: #D5D30F;
 
     .mcdetails {
@@ -307,27 +309,55 @@
         display: none;
     }
 
-    .title {
-        padding-top: 90px;
-        margin-top: 170px;
-        color: #D5D30F;
-        font-family: Oswald;
-        font-size: 6em;
-        font-weight: 700;
-        line-height: 90px;
+    .background {
+        background-image: url('https://www.postmalone.com/files/2024/06/pm-poster-scaled.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        min-height: 740px;
+        display: grid;
     }
 
     .herocontainer {
-        margin-top: 230px;
+        height: 95%;
+        align-self: center;
+        display: grid;
+    }
+
+    .herocontainerb {
+        padding-bottom: 90px;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+    }
+
+    .herotextmargin {
+        margin: 0px;
+    }
+
+    .backgroundcontainer {
         width: 100%;
-        margin-left: 10px;
-        margin-right: 10px;
+        height: 100%;
+    }
+
+    .herotitlecontainer {
+        padding-top: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .title {
+        font-size: 6em;
+        line-height: 100px;
     }
 
     /* about */
 
     .aboutsection {
-        height: 900px;
+        height: fit-content;
+        background: #161616;
+        padding-top: 5px;
+        padding-bottom: 55px;
     }
 
     .aboutcontainer {
@@ -335,6 +365,13 @@
         flex-direction: column;
         align-items: center;
         height: fit-content;
+    }
+
+    .aboutcontainerright {
+        display: flex;
+        width: 95%;
+        flex-direction: column;
+        justify-content: space-around;
     }
 
     /* music container */
@@ -360,7 +397,7 @@
         margin-right: 10px;
     }
 
-    .swiper-slide {
+    .musiccontainer {
         width: 390px;
         height: 300px;
         display: flex;

@@ -262,7 +262,10 @@ h3 {
 }
 
 .yellowbutton {
-    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     border: 1px solid #D5D30F;
     align-items: center;
     background-color: #161616;
@@ -281,7 +284,10 @@ h3 {
 }
 
 .whitebutton {
-    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     border: 1px solid #EBEBEB;
     background-color: rgb(235, 235, 235, 0.2);
     color: #EBEBEB;
@@ -365,6 +371,7 @@ h3 {
         width: 100%;
         font-size: 48px;
         text-align: center;
+        line-height: 50px;
     }
 
     h2 {
