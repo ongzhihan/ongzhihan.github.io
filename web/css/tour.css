@@ -2,6 +2,10 @@ body {
     background-color: #161616;
 }
 
+.headercontainer {
+    display: flex;
+}
+
 h1 {
     color: #D5D30F;
     font-family: Oswald;
@@ -13,6 +17,8 @@ h1 {
     text-transform: uppercase;
     display: flex;
     justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 50px;
 }
 
 /*tour 1*/
@@ -24,7 +30,7 @@ h1 {
     background-image: url(file:///c%3A/Users/junxl/OneDrive/%E6%A1%8C%E9%9D%A2/ongzhihan.github.io/web/images/tour/tour1.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 576px;
+    height: 600px;
     font-family: Roboto;
     font-weight: Bold;
 }
@@ -49,7 +55,7 @@ h1 {
     justify-content: space-between;
     margin: 30px;
     padding-bottom: 30px;
-    padding-top: 0px;
+    padding-top: 30px;
     font-size: 14px;
     margin-bottom: 60px;
     color: white;
@@ -66,7 +72,7 @@ h1 {
     background-image: url(file:///c%3A/Users/junxl/OneDrive/%E6%A1%8C%E9%9D%A2/ongzhihan.github.io/web/images/tour/tour2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 576px;
+    height: 600px;
     font-family: Roboto;
     font-weight: Bold;
 }
@@ -79,7 +85,7 @@ h1 {
     justify-content: flex-start;
     font-size: 96pt;
     text-align: start;
-    width: 200px;
+    width: 1000px;
     margin: 30px;
     line-height: 130px;
     padding-bottom: 80px;
@@ -91,7 +97,7 @@ h1 {
     justify-content: space-between;
     margin: 30px;
     padding-bottom: 30px;
-    padding-top: 0px;
+    padding-top: 30px;
     font-size: 14px;
     margin-bottom: 60px;
     color: white;
@@ -104,18 +110,24 @@ h1 {
 
 @media screen and (max-width: 800px) {
 
+    h1 {
+        padding-bottom: 20px;
+        padding-top: 60px;
+    }
+
     .Tour1 {
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         background-position: top center;
-        height: 100%;
+        height: 270px;
+        width: 400px;
         display: block;
         justify-items: center;
         margin: 0px;
     }
 
     .Tour1 h2 {
-        font-size: 42px;
+        font-size: 32px;
         line-height: 40px;
         display: flex;
         justify-items: center;
@@ -133,7 +145,42 @@ h1 {
         padding-top: 0px;
         line-height: 40px;
         margin-bottom: 30px;
-        font-size: 21px;
+        font-size: 16px;
+        margin-top: 0px;
+    }
+
+    .Tour2 {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        height: 270px;
+        width: 400px;
+        display: block;
+        justify-items: center;
+        margin: 0px;
+    }
+
+    .Tour2 h2 {
+        font-size: 32px;
+        line-height: 40px;
+        display: flex;
+        justify-items: center;
+        text-align: center;
+        margin-left: 0px;
+        padding-bottom: 0px;
+        margin-bottom: 10px;
+        width: 250px;
+    }
+
+    .tour2dateandlocation {
+        display: block;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding-top: 0px;
+        line-height: 40px;
+        margin-bottom: 30px;
+        font-size: 16px;
         margin-top: 0px;
     }
 
@@ -147,10 +194,15 @@ h1 {
         background-size: cover;
         margin: 0;
         height: 200px;
+        margin-top: 80px;
     }
 
+
     .tourdetail1 .top h2 {
-        display: none;
+        color: #D5D30F;
+        display: flex;
+        font-size: 8vw;
+        line-height: 40px;
     }
 
     .top .Videoname {
@@ -167,10 +219,7 @@ h1 {
     }
 
     .infoleft h3 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 32px;
+        display: none;
     }
 
     .infoleft div {
@@ -241,10 +290,12 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     align-items: center;
-    height: 700px;
+    height: 750px;
     width: 100%;
     font-family: Oswald;
     font-size: 96px;
+    padding-top: 50px;
+    padding-bottom: 20px;
 }
 
 .Videoname {
@@ -253,6 +304,7 @@ body {
     justify-content: flex-end;
     margin: 20px;
     font-family: Roboto Regular;
+    padding-top: 50px;
 }
 
 .top {
@@ -268,6 +320,7 @@ body {
     text-align: center;
     align-items: center;
     height: 620px;
+    line-height: 100px;
 }
 
 .tourdetail1 {
