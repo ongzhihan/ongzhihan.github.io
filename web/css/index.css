@@ -1,17 +1,11 @@
-.heromajorcontainer {
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 .herocontainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    height: 95%;
+    align-self: center;
+    padding-top: 80px;
 }
 
 .herocontainerb {
+    padding-top: 90px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,6 +21,7 @@
     background-position: center;
     background-size: cover;
     min-height: 740px;
+    display: grid;
 }
 
 .backgroundcontainer {
@@ -35,20 +30,18 @@
 }
 
 .herotitlecontainer {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-top: 5px;
 }
 
 .title {
     color: #D5D30F;
     font-family: Oswald;
-    font-size: 15em;
+    font-size: 13em;
     font-weight: 700;
-    line-height: 240px;
-    letter-spacing: -4.44px;
+    line-height: 200px;
+    letter-spacing: -7.74px;
     text-transform: uppercase;
     text-align: center;
-    z-index: 1;
     margin: 0px;
 }
 
@@ -56,12 +49,13 @@
 .aboutsection {
     background: #161616;
     padding-top: 15px;
-    height: 766px;
-    z-index: -1;
+    padding-bottom: 75px;
 }
 
 .aboutcontainer {
-    height: 205px;
+    height: fit-content;
+    padding-left: 40px;
+    padding-right: 40px;
     margin-top: 76px;
     display: flex;
     flex-direction: row;
@@ -69,6 +63,7 @@
 }
 
 .aboutcontainerlt {
+    width: fit-content;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -76,20 +71,20 @@
 
 .aboutcontainerright {
     display: flex;
+    width: 30%;
     flex-direction: column;
     justify-content: space-around;
 }
 
 .aboutcontainerrt {
     align-items: end;
-    width: 387px;
     letter-spacing: 0.7px;
+    line-height: 20px;
 }
 
 .aboutcontainerrb {
+    width: 100%;
     align-items: end;
-    width: 387px;
-    letter-spacing: 0.7px;
 }
 
 .aboutpmmargintop {
@@ -97,7 +92,7 @@
 }
 
 .carouselcontainer {
-    padding-top: 49px;
+    padding-top: 70px;
     max-width: 100%;
     overflow: hidden;
 }
@@ -108,21 +103,22 @@
     flex-direction: row;
 }
 
+.aboutslide {
+    width: 270px;
+}
+
 
 /* music */
 .musicsection {
     background: #161616;
     padding-top: 15px;
-    height: 766px;
-    z-index: -1;
-    height: 800px;
-    justify-items: center;
+    padding-bottom: 75px;
 }
 
 .musiccontainer {
-    height: 125px;
+    height: fit-content;
+    padding: 20px;
     margin-top: 76px;
-    width: auto;
     margin-left: 40px;
     margin-right: 40px;
     display: flex;
@@ -136,25 +132,26 @@
 }
 
 .swiper {
-    width: 100%;
-    height: 470px;
+    padding-left: 40px;
+    overflow: hidden;
 }
 
 .musicswipermargintop {
     margin-top: 19px;
 }
 
-.swiper-slide {
+.musicslidecontainer {
     border: none;
     outline: none;
     background-color: #161616;
-    width: 390px;
-    height: 300px;
+    padding: 10px;
     display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
 
     .mcdetails {
-        width: 353px;
-        height: 102px;
+        padding-top: 20px;
     }
 
     .musiccontainert {
@@ -163,7 +160,7 @@
     }
 
     .mcstroke {
-        width: 353px;
+        width: 420px;
         border: 1px solid #ebebeb;
         margin-top: -5px;
         margin-bottom: -5px;
@@ -175,13 +172,8 @@
     }
 }
 
-.swiper-slide:hover {
+.musicslidecontainer:hover {
     background-color: #D5D30F;
-
-    .mcdetails {
-        width: 353px;
-        height: 102px;
-    }
 
     .mcstroke {
         border: 1px solid #161616;
@@ -203,19 +195,23 @@
     margin-right: 10px;
 }
 
-
 /* tour */
 .toursection {
-    background-color: #161616;
-    height: 600px;
-    justify-items: center;
+    min-height: 680px;
+    padding-top: 15px;
+    padding-bottom: 75px;
+    display: grid;
 }
 
 .tourcontainer {
-    padding-top: 50px;
-    height: 100%;
+    padding-bottom: 70px;
+    height: 480px;
+    align-self: center;
     justify-items: center;
     align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .tourcontainert {
@@ -224,15 +220,26 @@
 
 .tourcontainerb {
     padding-top: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
     justify-items: center;
 }
 
 .tourbackground {
     width: 100%;
-    height: 100%;
     background-image: url('http://127.0.0.1:5500/web/images/tour/tour1.jpeg');
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center 0px;
+}
+
+.toursubtitle {
+    color: #ebebeb;
+}
+
+.tourtext {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 /* video */
@@ -302,32 +309,72 @@
     display: block;
 }
 
+/* other */
+.displaygrid {
+    display: grid;
+}
+
+.musicbutton {
+    justify-self: center;
+    margin-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
 @media screen and (max-width: 700px) {
     .submenu {
         display: none;
     }
 
-    .title {
-        padding-top: 90px;
-        margin-top: 170px;
-        color: #D5D30F;
-        font-family: Oswald;
-        font-size: 6em;
-        font-weight: 700;
-        line-height: 90px;
+    .background {
+        background-image: url('https://www.postmalone.com/files/2024/06/pm-poster-scaled.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        min-height: 740px;
+        display: grid;
     }
 
     .herocontainer {
-        margin-top: 230px;
+        height: 95%;
+        align-self: center;
+        display: grid;
+    }
+
+    .herocontainerb {
+        padding-bottom: 90px;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+    }
+
+    .herotextmargin {
+        margin: 0px;
+    }
+
+    .backgroundcontainer {
         width: 100%;
-        margin-left: 10px;
-        margin-right: 10px;
+        height: 100%;
+    }
+
+    .herotitlecontainer {
+        padding-top: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .title {
+        font-size: 6em;
+        line-height: 100px;
     }
 
     /* about */
 
     .aboutsection {
-        height: 900px;
+        height: fit-content;
+        background: #161616;
+        padding-top: 5px;
+        padding-bottom: 55px;
     }
 
     .aboutcontainer {
@@ -337,20 +384,93 @@
         height: fit-content;
     }
 
-    /* music container */
-
-    .musicsection {
-        height: fit-content;
-        padding-bottom: 100px;
+    .aboutcontainerright {
+        display: flex;
+        width: 95%;
+        flex-direction: column;
+        justify-content: space-around;
     }
 
-    .swiper {
+    /* music */
+    .musiccontainer {
+        margin-top: 40px;
+        margin-bottom: 15px;
+    }
+
+    .musicsection {
+        background: #161616;
+        padding-top: 15px;
+        padding-bottom: 75px;
+    }
+
+    .musiccontainer {
         height: fit-content;
+        padding: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        justify-items: center;
     }
 
     .musicswiperwrapper {
         display: flex;
         flex-direction: column;
+    }
+
+    .swiper {
+        padding-left: 0px;
+    }
+
+    .musicswipermargintop {
+        margin-top: 19px;
+        width: 85%;
+    }
+
+    .musicslidecontainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        margin-left: 0px;
+        margin-right: 0px;
+
+        .mcdetails {
+            padding-top: 20px;
+            width: 85%;
+        }
+
+        .musiccontainert {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .mcstroke {
+            width: 100%;
+            border: 1px solid #ebebeb;
+            margin-top: -5px;
+            margin-bottom: -5px;
+        }
+
+        .musictitle {
+            color: #D5D30F;
+            font-weight: 700;
+        }
+    }
+
+    .musicslidecontainer:hover {
+        background-color: #D5D30F;
+
+        .mcstroke {
+            border: 1px solid #161616;
+        }
+
+        .musictitle {
+            color: #161616;
+        }
+
+        .musictext {
+            color: #161616
+        }
     }
 
     .swiper-slide {
@@ -360,60 +480,20 @@
         margin-right: 10px;
     }
 
-    .swiper-slide {
-        width: 390px;
-        height: 300px;
-        display: flex;
-        flex-direction: row;
-        justify-items: center;
-
-        .mcdetails {
-            width: 400px;
-            height: fit-content;
-        }
-
-        .musiccontainert {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .mcstroke {
-            width: 400px;
-            border: 1px solid #ebebeb;
-            margin-top: -5px;
-            margin-bottom: -5px;
-        }
-
-        .musictitle {
-            color: #D5D30F;
-            font-weight: 700;
-            text-align: left;
-        }
+    /* tour */
+    .toursection {
+        min-height: 580px;
+        padding-top: 15px;
+        padding-bottom: 60px;
     }
 
-    .swiper-slide:hover {
-        .mcdetails {
-            width: 400px;
-            height: fit-content;
-        }
+    .tourcontainer {
+        padding-bottom: 50px;
+        height: 420px;
+    }
 
-        .musiccontainert {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .mcstroke {
-            width: 400px;
-            border: 1px solid #161616;
-            margin-top: -5px;
-            margin-bottom: -5px;
-        }
-
-        .musictitle {
-            color: #161616;
-            font-weight: 700;
-            text-align: left;
-        }
+    .tourcontainert {
+        text-align: center;
     }
 
     /* video */

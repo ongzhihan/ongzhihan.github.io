@@ -157,7 +157,7 @@ body {
 
     .video {
         margin-top: 10px;
-        width: 480px;
+        width: 100%;
         justify-self: center;
         align-self: center;
     }
@@ -181,8 +181,8 @@ body {
     }
 
     .videocontainerbr {
-        margin-top: -100px;
         width: auto;
+        margin-top: 70px;
         padding-left: 20px;
         padding-right: 20px;
         display: flex;
@@ -194,7 +194,8 @@ body {
     }
 
     .lyrics {
-        text-align: left !important;
+        margin-top: 0px;
+        text-align: left;
         letter-spacing: 1px;
     }
 
