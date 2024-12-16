@@ -1,0 +1,115 @@
+/* header */
+header {
+    position: fixed;
+    width: 100%;
+    background: #161616;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+}
+
+.headercontainer {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.headerflex {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.logo {
+    border: none;
+    outline: none;
+    background-color: #161616;
+    color: #EBEBEB;
+    font-family: Oswald;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.4px;
+    text-transform: uppercase;
+}
+
+.submenu {
+    float: left;
+    overflow: hidden;
+}
+
+.submenubtn {
+    border: none;
+    outline: none;
+    background-color: #161616;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+
+    p {
+        color: #EBEBEB;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.84px;
+    }
+}
+
+.submenubtn:hover {
+    p {
+        color: #D5D30F;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.84px;
+    }
+}
+
+.subcontent {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    text-align: left;
+}
+
+.subcontent a {
+    padding: 16px;
+    padding-left: 8px;
+    background-color: #161616;
+    color: #EBEBEB;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.subcontent a:hover {
+    background-color: #D5D30F;
+    color: #161616;
+    z-index: 1;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.84px;
+}
+
+.submenu:hover .subcontent {
+    display: block;
+}
+
+.submenu .subcontent {
+    color: #EBEBEB;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.84px;
+}
