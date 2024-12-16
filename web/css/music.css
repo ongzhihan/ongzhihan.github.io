@@ -7,7 +7,7 @@ body {
 .musicBackground {
   height: 100vh;
   width: 100%;
-  background: url('../images/music/musichero2.png');
+  background: url("../images/music/musichero2.png") no-repeat center center;
   background-color: #161616;
   background-size: cover;
   display: flex;
@@ -20,13 +20,17 @@ body {
   color: white;
 }
 
-.singlewrapper {
+.wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  justify-self: center;
+  justify-content: flex-start;
+  margin: 0 160px;
   height: 530px;
   background-color: #161616;
+}
+
+.singletitle {
+  margin-left: 20px;
 }
 
 .single {
@@ -37,7 +41,6 @@ body {
   width: 290px;
   display: flex;
   flex-direction: column;
-  /* Stack content vertically */
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -46,9 +49,8 @@ body {
 }
 
 .single:hover {
-  background-color: #D5D30F;
+  background-color: #d5d30f;
 }
-
 
 .single:hover .underpour {
   color: #161616;
@@ -60,6 +62,7 @@ body {
 
 .single:hover .mcstroke {
   border: 0.5px solid #161616;
+  width: 100%;
 }
 
 .single img {
@@ -72,23 +75,21 @@ body {
   text-align: center;
 }
 
-
 .container1 {
   display: flex;
   flex-direction: column;
   text-align: left;
 }
 
-
 .pour {
   font-size: 14px;
   font-weight: bold;
   margin-bottom: -10px;
-  color: #D5D30F;
+  color: #d5d30f;
 }
 
 .container2 {
-  gap: 125px;
+  gap: 140px;
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -96,25 +97,24 @@ body {
 
 .underpour {
   font-size: 12px;
-  color: #EBEBEB;
+  color: #ebebeb;
 }
 
 .mcstroke {
-  border: 0.5px solid #EBEBEB;
-  width: 100%;
-
+  border: 0.5px solid #ebebeb;
+  box-sizing: border-box;
+  width: 250px;
 }
 
-.title {
-  text-align: center;
-  font-size: 60px;
+.albumtitle {
+  margin-left: 18px;
 }
 
 .album {
   border: none;
   outline: none;
   background-color: #161616;
-  height: 412px;
+  height: 410px;
   width: 290px;
   display: flex;
   padding-left: 20px;
@@ -127,9 +127,8 @@ body {
 }
 
 .album:hover {
-  background-color: #D5D30F;
+  background-color: #d5d30f;
 }
-
 
 .album:hover .underaustin {
   color: #161616;
@@ -146,22 +145,20 @@ body {
 .albumbigfamily {
   display: flex;
   height: 700px;
-  justify-content: center;
   flex-direction: row;
   gap: 30px;
-  /* Adjust the gap as needed */
 }
 
 .austin {
   font-size: 14px;
   font-weight: bold;
   margin-bottom: -10px;
-  color: #D5D30F;
+  color: #d5d30f;
 }
 
 .underaustin {
   font-size: 12px;
-  color: #EBEBEB;
+  color: #ebebeb;
   text-align: left;
   flex-direction: row;
 }
@@ -172,48 +169,48 @@ body {
   text-align: left;
 }
 
-
 .container4 {
   display: flex;
   flex-direction: row;
   text-align: center;
+  justify-content: flex-start;
 }
 
 .container5 {
-  left: 15px;
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
 }
 
+.gap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
 
 .underaustinspecial {
   font-size: 12px;
-  color: #EBEBEB;
+  color: #ebebeb;
   text-align: right;
   flex-direction: row;
-  margin-right: 10px;
 }
 
 .album:hover .underaustinspecial {
   color: #161616;
 }
 
+/*-----------------------------mobile------------------------------*/
 @media screen and (max-width: 700px) {
-  .albumbigfamily {
-    display: flex;
-    height: 700px;
-    justify-content: center;
-    justify-self: center;
-    flex-direction: column;
-    /* Adjust the gap as needed */
+  .musicBackground {
+    background-size: contain;
+    height: auto;
+    padding: 20px 10px;
   }
 
-  .singlewrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-self: center;
-    height: 530px;
-    background-color: #161616;
+  .musicTitle {
+    font-size: 2em;
   }
-}
+
+
