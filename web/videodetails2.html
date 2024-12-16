@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 
+<html>
+
 <head>
-    <title>Pour Me A Drink ft. Blake Shelton - Post Malone</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Post Malone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/video.css" />
@@ -18,25 +20,90 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Pinyon+Script&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+    <!-- Header / Add Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
+    <header>
+        <div>
+            <a href="index.html">
+                <button class="logo">PM</button>
+            </a>
+        </div>
+        <!-- Checkbox to toggle menu on mobile -->
+        <input type="checkbox" id="menu-checkbox" style="display: none;">
+        <label for="menu-checkbox" class="menu-toggle">&#9776;</label>
+        <div class="menu">
+            <!-- Close button for mobile view -->
+            <label for="menu-checkbox" class="close-btn">&times;</label>
+            <div class="menu-item">
+                <a href="index.html">
+                    <button class="submenubtn">
+                        <p class="submenubtntext">HOME</p>
+                    </button>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="about.html">
+                    <button class="submenubtn">
+                        <p class="submenubtntext">ABOUT</p>
+                    </button>
+                </a>
+            </div>
+            <div class="menu-item">
+                <button class="submenubtn">
+                    <p class="submenubtntext">MUSIC</p>
+                    <img src="images/icons/down.svg" alt="down" class="iconmargin">
+                </button>
+                <div class="submenu">
+                    <a href="music.html">All</a>
+                    <a href="music1.html">Pour Me A Drink</a>
+                    <a href="music2.html">Beerbongs & Bentleys</a>
+                    <a href="music3.html">Twelve Carat Toothache</a>
+                    <a href="music4.html">AUSTIN</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <button class="submenubtn">
+                    <p class="submenubtntext">TOUR</p>
+                    <img src="images/icons/down.svg" alt="down" class="iconmargin">
+                </button>
+                <div class="submenu">
+                    <a href="tour.html">All</a>
+                    <a href="tourdetails1.html">Germania Insurance Amphitheater</a>
+                    <a href="tourdetails2.html">The Cynthia Woods Mitchell Pavilion</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <button class="submenubtn">
+                    <p class="submenubtntext">VIDEOS</p>
+                    <img src="images/icons/down.svg" alt="down" class="iconmargin">
+                    </svg>
+                </button>
+                <div class="submenu">
+                    <a href="video.html">All</a>
+                    <a href="videodetails1.html">Pour Me A Drink</a>
+                    <a href="videodetails2.html">I Had Some Help</a>
+                    <a href="videodetails3.html">Chemical</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <a href="contact.html">
+                    <button class="submenubtn">
+                        <p class="submenubtntext">CONTACT</p>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </header>
     <div class="videocontainert">
         <div class="videotitlecontainer">
-            <h1>Pour Me A Drink</h1>
-            <br />
-            <h1 class="titlemargintop">ft. Blake Shelton</h1>
+            <h1>I Had Some Help<br />ft. Morgan Wallen</h1>
         </div>
         <button id="myBtn" class="videobutton"><img src="images/videos/i had some help.jpg" alt="ihsh video"
                 class="video"></button>
     </div>
-
-    <!--<div id="myModal" class="modal">
-        <div class="modal-content">
-            <img src="images/videos/pour me a drink video.jpg" alt="pmad video" class="video">
-            <video src></video>
-        </div>
-    </div>-->
 
     <div class="videocontainerb">
         <div class="videocontainerbl">
@@ -160,31 +227,96 @@
         </a>
     </div>
 
-    <script>
-        // Get the modal
-        var modal = document.getElementById("myModal");
+    <footer>
+        <div class="majorfootercontainer">
+            <div class="footercontainert">
+                <div class="footercontainerl">
+                    <text class="subscribeforupdates">Subscribe For Updates!</text>
+                    <p class="footerdescription">Subscribe to Emails Updates from:</p>
+                    <form>
+                        <div class="checkboxcontainer">
+                            <div class="checkboxminorcontainer">
+                                <input type="checkbox" id="pm" name="pm" value="Post Malone" class="checkbox">
+                                <label for="pm" class="footertext">Post Malone</label>
+                            </div>
+                            <div class="checkboxminorcontainer">
+                                <input type="checkbox" id="rr" name="rr" value="Republic Records" class="checkbox">
+                                <label for="rr" class="footertext">Republic Records</label>
+                            </div>
+                        </div>
+                        <br />
+                        <input type="text" id="email" name="email" value="Your Email Address" class="emailcolumn">
+                    </form>
+                    <p class="footerdescription">Emails will be sent by or on behalf of Universal Music Group 2220
+                        Colorado Avenue, Santa Monica , CA
+                        90404 (310) 865-4000. You may withdraw our consent at any time</p>
+                </div>
 
-        // Get the button that opens the modal
-        var btn = document.getElementById("myBtn");
+                <div class="footercontainerlink">
+                    <div class="footercontainerrt">
+                        <p class="footercategoriestitle">Contact</p>
+                        <div class="footerlinktext"><a href="https://www.instagram.com/postmalone/" target="_blank"
+                                class="footerlink">
+                                Instagram
+                            </a></div>
+                        <div class="footerlinktext"><a href="https://x.com/PostMalone" target="_blank"
+                                class="footerlink">
+                                X(Twitter)
+                            </a></div>
+                        <div class="footerlinktext"><a href="https://www.tiktok.com/@postmalone?lang=en" target="_blank"
+                                class="footerlink">
+                                Tik Tok
+                            </a></div>
+                        <div class="footerlinktext"><a href="https://discord.com/invite/post-malone" target="_blank"
+                                class="footerlink">
+                                Discord
+                            </a></div>
+                        <div class="footerlinktext"><a href="https://www.facebook.com/postmalone" target="_blank"
+                                class="footerlink">
+                                Facebook
+                            </a></div>
+                        <div class="footerlinktext"><a href="https://www.youtube.com/POSTMALONE" target="_blank"
+                                class="footerlink">
+                                Youtube
+                            </a></div>
+                        <div class="footerlinktext"><a href="https://www.twitch.tv/postmalone" target="_blank"
+                                class="footerlink">
+                                Twitch
+                            </a></div>
+                    </div>
 
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
+                    <div class="footercontainerrt">
+                        <p class="footercategoriestitle">Menu</p>
+                        <div class="footerlinktext"><a href="index.html" class="footerlink">
+                                Home
+                            </a></div>
+                        <div class="footerlinktext"><a href="about.html" class="footerlink">
+                                About
+                            </a></div>
+                        <div class="footerlinktext"><a href="music.html" class="footerlink">
+                                Music
+                            </a></div>
+                        <div class="footerlinktext"><a href="tour.html" class="footerlink">
+                                Tour
+                            </a></div>
+                        <div class="footerlinktext"><a href="videos.html" class="footerlink">
+                                Videos
+                            </a></div>
+                        <div class="footerlinktext"><a href="contact.html" class="footerlink">
+                                Contact
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        // When the user clicks the button, open the modal 
-        btn.onclick = function () {
-            modal.style.display = "block";
-        }
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
+        <div class="footercontainerb">
+            <p class="footerpm">
+                Post Malone</p>
+            <hr class="footerline">
+            <p class="footercopyright">© 2024 Post Malone</p>
+        </div>
+    </footer>
 </body>
+
+</html>
