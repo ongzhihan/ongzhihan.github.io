@@ -1,241 +1,218 @@
 <!DOCTYPE html>
 
-<head>
-    <title>Pour Me A Drink ft. Blake Shelton - Post Malone</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/video.css" />
-    <!--Oswald-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Pinyon+Script&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <!--Roboto-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Pinyon+Script&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-</head>
-
-<body>
-    <header>
-        <div class="headercontainer">
+<header>
+    <div>
+        <a href="index.html">
+            <button class="logo">PM</button>
+        </a>
+    </div>
+    <!-- Checkbox to toggle menu on mobile -->
+    <input type="checkbox" id="menu-checkbox" style="display: none;">
+    <label for="menu-checkbox" class="menu-toggle">&#9776;</label>
+    <div class="menu">
+        <!-- Close button for mobile view -->
+        <label for="menu-checkbox" class="close-btn">&times;</label>
+        <div class="menu-item">
             <a href="index.html">
-                <button class="logo">PM</button>
+                <button class="submenubtn">
+                    <p class="submenubtntext">HOME</p>
+                </button>
             </a>
         </div>
-        <div class="headercontainer headerflex">
-            <div class="submenu">
-                <a href="index.html">
-                    <button class="submenubtn">
-                        <p>HOME</p>
-                    </button>
-                </a>
-            </div>
-            <div class="submenu">
+        <div class="menu-item">
+            <a href="about.html">
                 <button class="submenubtn">
-                    <p>ABOUT</p>
+                    <p class="submenubtntext">ABOUT</p>
                 </button>
-            </div>
-            <div class="submenu">
-                <button class="submenubtn">
-                    <p>MUSIC</p>
-                    <img src="images/icons/down.svg" alt="down" class="iconmargin">
-                </button>
-                <div class="subcontent">
-                    <a href="music.html">All</a>
-                    <a href="#">Pour Me A Drink</a>
-                    <a href="#">Beerbongs & Bentleys</a>
-                    <a href="#">Twelve Carat Toothache</a>
-                    <a href="musicalbumaustin.html">AUSTIN</a>
-                </div>
-            </div>
-            <div class="submenu">
-                <button class="submenubtn">
-                    <p>TOUR</p>
-                    <img src="images/icons/down.svg" alt="down" class="iconmargin">
-                </button>
-                <div class="subcontent">
-                    <a href="tour.html">All</a>
-                    <a href="tourdetails1.html">Germania Insurance Amphitheater</a>
-                    <a href="#">The Cynthia Woods Mitchell Pavilion</a>
-                </div>
-            </div>
-            <div class="submenu">
-                <button class="submenubtn">
-                    <p>VIDEOS</p>
-                    <img src="images/icons/down.svg" alt="down" class="iconmargin">
-                    </svg>
-                </button>
-                <div class="subcontent">
-                    <a href="#">All</a>
-                    <a href="videodetails1.html">Pour Me A Drink</a>
-                    <a href="videodetails2.html">I Had Some Help</a>
-                    <a href="videodetails3.html">Chemical</a>
-                </div>
-            </div>
-            <div class="submenu">
-                <button class="submenubtn">
-                    <p>CONTACT</p>
-                </button>
-            </div>
-            <div class="menucontainer" onclick="myFunction(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
-
-            <script>
-                function myFunction(x) {
-                    x.classList.toggle("change");
-                }
-            </script>
+            </a>
         </div>
-    </header>
-    <div class="videocontainert">
-        <div class="videotitlecontainer">
-            <h1>Pour Me A Drink ft. Blake Shelton</h1>
+        <div class="menu-item">
+            <button class="submenubtn">
+                <p class="submenubtntext">MUSIC</p>
+                <img src="images/icons/down.svg" alt="down" class="iconmargin">
+            </button>
+            <div class="submenu">
+                <a href="music.html">All</a>
+                <a href="music1.html">Pour Me A Drink</a>
+                <a href="music2.html">Beerbongs & Bentleys</a>
+                <a href="music3.html">Twelve Carat Toothache</a>
+                <a href="music4.html">AUSTIN</a>
+            </div>
         </div>
-        <button id="myBtn" class="videobutton"><img src="images/videos/pour me a drink video.jpg" alt="pmad video"
-                class="video"></button>
+        <div class="menu-item">
+            <button class="submenubtn">
+                <p class="submenubtntext">TOUR</p>
+                <img src="images/icons/down.svg" alt="down" class="iconmargin">
+            </button>
+            <div class="submenu">
+                <a href="tour.html">All</a>
+                <a href="tourdetails1.html">Germania Insurance Amphitheater</a>
+                <a href="tourdetails2.html">The Cynthia Woods Mitchell Pavilion</a>
+            </div>
+        </div>
+        <div class="menu-item">
+            <button class="submenubtn">
+                <p class="submenubtntext">VIDEOS</p>
+                <img src="images/icons/down.svg" alt="down" class="iconmargin">
+                </svg>
+            </button>
+            <div class="submenu">
+                <a href="video.html">All</a>
+                <a href="videodetails1.html">Pour Me A Drink</a>
+                <a href="videodetails2.html">I Had Some Help</a>
+                <a href="videodetails3.html">Chemical</a>
+            </div>
+        </div>
+        <div class="menu-item">
+            <a href="contact.html">
+                <button class="submenubtn">
+                    <p class="submenubtntext">CONTACT</p>
+                </button>
+            </a>
+        </div>
     </div>
+</header>
+<div class="videocontainert">
+    <div class="videotitlecontainer">
+        <h1>Pour Me A Drink ft. Blake Shelton</h1>
+    </div>
+    <button id="myBtn" class="videobutton"><img src="images/videos/pour me a drink video.jpg" alt="pmad video"
+            class="video"></button>
+</div>
 
-    <div class="videocontainerb">
-        <div class="videocontainerbl">
-            <div class="year">
-                <p class="title">Year</p>
-                <p class="text">2024</p>
-            </div>
-            <div class="description">
-                <p class="title">Description</p>
-                <p class="text textjustify">"Pour Me A Drink" is a collaboration between Post Malone and Blake
-                    Shelton,
-                    featured on Post Malone’s sixth studio album F-1 Trillion, which marks his debut in the country
-                    genre.
-                    <br />
-                    <br />
-                    The song is a lively anthem about unwinding after a tough week, showcasing a mix of themes from
-                    both
-                    artists: Post Malone's frustration with daily grind and Shelton's portrayal of romantic regret.
-                    <br />
-                    <br />
-                    The music video enhances this mood with scenes of a spirited lakeside party that turns out to be
-                    part of Post Malone's dream sequence. Their chemistry and playful vibe are captured through
-                    lighthearted scenes, reflecting the song's feel-good nature.
-                </p>
-            </div>
-            <div>
-                <p class="title">Credits</p>
-                <div class="creditscontainer">
-                    <div class="creditsl">
-                        Directer
-                        <br />
-                        Creative Direction
-                        <br />
-                        DP
-                        <br />
-                        EP
-                        <br />
-                        Head of Production
-                        <br />
-                        Production Company
-                        <br />
-                        Local Production EP
-                        <br />
-                        Producer
-                        <br />
-                        Production Manager
-                        <br />
-                        Production Coordinator
-                    </div>
-                    <div class="creditsr">
-                        Chris Villa
-                        <br />
-                        Bobby Greenleaf, Chris Villa
-                        <br />
-                        Chris Fenner
-                        <br />
-                        Harrison Corwin
-                        <br />
-                        Dylan D. Underhill
-                        <br />
-                        Shotclock
-                        <br />
-                        Patrick Tohill
-                        <br />
-                        Katie Babbage
-                        <br />
-                        Meghan Ashley
-                        <br />
-                        Marion Burnette
-                    </div>
-                </div>
-            </div>
+<div class="videocontainerb">
+    <div class="videocontainerbl">
+        <div class="year">
+            <p class="title">Year</p>
+            <p class="text">2024</p>
         </div>
-        <div class="videocontainerbr">
-            <p class="title">Lyrics</p>
-            <p class="lyrics text">
-                Forty hours got me goin' out my mind
-                <br />Dallas dropped another game in overtime
-                <br />Caught a ticket speeding down the 65
-                <br />Don't know where I'm goin'
-                <br /><br />
-                Guess I really went and messed it up again
-                <br />Now, my baby's goner than the Tulsa wind
-                <br />Judgin' by the stone-sober state I'm in
-                <br />Need to crack one wide open
-                <br /><br />
-                Somebody pour me a drink, somebody bum me a smoke
-                <br />I'm 'bout to get on a buzz, I'm 'bout to get on a roll
-                <br />Yeah, I been breakin' my back just keepin' up with the Joneses
-                <br />Y'all know what I mean, and y'all know how it goes
-                <br />When it's up on a Friday and I'm paid, slide one over my way
-                <br />I can't even think when I can hear one callin' my name (hey)
-                <br />Somebody pour me a drink
-                <br />Pour me a drink
-                <br /><br />
-                Bourbon-brown eyes tryna get me drunk
-                <br />Ain't stoppin' 'til the bottle and the job is done
-                <br />Hey, I think I might've found my future love
-                <br />(Buddy, you should probably buy her one)
-                <br /><br />
-                Somebody pour me a drink, somebody bum me a smoke
-                <br />I'm 'bout to get on a buzz, I'm 'bout to get on a roll
-                <br />Yeah, I been breakin' my back just keepin' up with the Joneses
-                <br />Y'all know what I mean, yeah, y'all know how it goes
-                <br />When it's up on a Friday and I'm paid, slide one over my way
-                <br />I can't even think when I can hear one callin' my name (hey)
-                <br /><br />
-                Somebody pour me a drink
-                <br />Somebody pour me a drink
-                <br /><br />
-                Ooh-ooh-ooh-ooh
-                <br /><br />
-                Somebody pour me a drink, somebody bum me a smoke
-                <br />I'm 'bout to get on a buzz (I'm 'bout to get on a roll)
-                <br />Yeah, I been breakin' my back (just keepin' up with the Joneses)
-                <br />Y'all know what I mean (yeah, y'all know how it goes)
-                <br />When it's up on a Friday and I'm paid, slide one over my way
-                <br />I can't even think when I can hear one callin' my name (hey)
-                <br /><br />
-                Somebody pour me a drink
-                <br />(Somebody pour me a drink)
-                <br />Yeah, somebody pour me a drink
-                <br /><br />
-                Hey, yessir, pour me a drink
-                <br />(I'm on it, buddy)
-                <br />Pour me a drink
+        <div class="description">
+            <p class="title">Description</p>
+            <p class="text textjustify">"Pour Me A Drink" is a collaboration between Post Malone and Blake
+                Shelton,
+                featured on Post Malone’s sixth studio album F-1 Trillion, which marks his debut in the country
+                genre.
+                <br />
+                <br />
+                The song is a lively anthem about unwinding after a tough week, showcasing a mix of themes from
+                both
+                artists: Post Malone's frustration with daily grind and Shelton's portrayal of romantic regret.
+                <br />
+                <br />
+                The music video enhances this mood with scenes of a spirited lakeside party that turns out to be
+                part of Post Malone's dream sequence. Their chemistry and playful vibe are captured through
+                lighthearted scenes, reflecting the song's feel-good nature.
             </p>
         </div>
+        <div>
+            <p class="title">Credits</p>
+            <div class="creditscontainer">
+                <div class="creditsl">
+                    Directer
+                    <br />
+                    Creative Direction
+                    <br />
+                    DP
+                    <br />
+                    EP
+                    <br />
+                    Head of Production
+                    <br />
+                    Production Company
+                    <br />
+                    Local Production EP
+                    <br />
+                    Producer
+                    <br />
+                    Production Manager
+                    <br />
+                    Production Coordinator
+                </div>
+                <div class="creditsr">
+                    Chris Villa
+                    <br />
+                    Bobby Greenleaf, Chris Villa
+                    <br />
+                    Chris Fenner
+                    <br />
+                    Harrison Corwin
+                    <br />
+                    Dylan D. Underhill
+                    <br />
+                    Shotclock
+                    <br />
+                    Patrick Tohill
+                    <br />
+                    Katie Babbage
+                    <br />
+                    Meghan Ashley
+                    <br />
+                    Marion Burnette
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="arrow1">
-        <a href="videodetails2.html">
-            <button class="arrowbutton">
-                <p class="boldtext">I Had Some Help ft. Morgan Wallen</p>
-                <img src="images/icons/rightarrow.svg" alt="rightarrow" width="35px">
-            </button></a>
+    <div class="videocontainerbr">
+        <p class="title">Lyrics</p>
+        <p class="lyrics text">
+            Forty hours got me goin' out my mind
+            <br />Dallas dropped another game in overtime
+            <br />Caught a ticket speeding down the 65
+            <br />Don't know where I'm goin'
+            <br /><br />
+            Guess I really went and messed it up again
+            <br />Now, my baby's goner than the Tulsa wind
+            <br />Judgin' by the stone-sober state I'm in
+            <br />Need to crack one wide open
+            <br /><br />
+            Somebody pour me a drink, somebody bum me a smoke
+            <br />I'm 'bout to get on a buzz, I'm 'bout to get on a roll
+            <br />Yeah, I been breakin' my back just keepin' up with the Joneses
+            <br />Y'all know what I mean, and y'all know how it goes
+            <br />When it's up on a Friday and I'm paid, slide one over my way
+            <br />I can't even think when I can hear one callin' my name (hey)
+            <br />Somebody pour me a drink
+            <br />Pour me a drink
+            <br /><br />
+            Bourbon-brown eyes tryna get me drunk
+            <br />Ain't stoppin' 'til the bottle and the job is done
+            <br />Hey, I think I might've found my future love
+            <br />(Buddy, you should probably buy her one)
+            <br /><br />
+            Somebody pour me a drink, somebody bum me a smoke
+            <br />I'm 'bout to get on a buzz, I'm 'bout to get on a roll
+            <br />Yeah, I been breakin' my back just keepin' up with the Joneses
+            <br />Y'all know what I mean, yeah, y'all know how it goes
+            <br />When it's up on a Friday and I'm paid, slide one over my way
+            <br />I can't even think when I can hear one callin' my name (hey)
+            <br /><br />
+            Somebody pour me a drink
+            <br />Somebody pour me a drink
+            <br /><br />
+            Ooh-ooh-ooh-ooh
+            <br /><br />
+            Somebody pour me a drink, somebody bum me a smoke
+            <br />I'm 'bout to get on a buzz (I'm 'bout to get on a roll)
+            <br />Yeah, I been breakin' my back (just keepin' up with the Joneses)
+            <br />Y'all know what I mean (yeah, y'all know how it goes)
+            <br />When it's up on a Friday and I'm paid, slide one over my way
+            <br />I can't even think when I can hear one callin' my name (hey)
+            <br /><br />
+            Somebody pour me a drink
+            <br />(Somebody pour me a drink)
+            <br />Yeah, somebody pour me a drink
+            <br /><br />
+            Hey, yessir, pour me a drink
+            <br />(I'm on it, buddy)
+            <br />Pour me a drink
+        </p>
     </div>
+</div>
+<div class="arrow1">
+    <a href="videodetails2.html">
+        <button class="arrowbutton">
+            <p class="boldtext">I Had Some Help ft. Morgan Wallen</p>
+            <img src="images/icons/rightarrow.svg" alt="rightarrow" width="35px">
+        </button></a>
+</div>
 </body>
