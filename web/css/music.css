@@ -202,6 +202,7 @@ body {
 }
 
 /*-----------------------------mobile------------------------------*/
+
 @media screen and (max-width: 700px) {
   .musicBackground {
     background-size: contain;
@@ -212,5 +213,4 @@ body {
   .musicTitle {
     font-size: 2em;
   }
-
 
