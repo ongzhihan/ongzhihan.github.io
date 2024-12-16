@@ -23,77 +23,75 @@
 
 <body>
     <header>
-        <div class="headercontainer">
+        <div>
             <a href="index.html">
                 <button class="logo">PM</button>
             </a>
         </div>
-        <div class="headercontainer headerflex">
-            <div class="submenu">
+        <!-- Checkbox to toggle menu on mobile -->
+        <input type="checkbox" id="menu-checkbox" style="display: none;">
+        <label for="menu-checkbox" class="menu-toggle">&#9776;</label>
+        <div class="menu">
+            <!-- Close button for mobile view -->
+            <label for="menu-checkbox" class="close-btn">&times;</label>
+            <div class="menu-item">
                 <a href="index.html">
                     <button class="submenubtn">
-                        <p>HOME</p>
+                        <p class="submenubtntext">HOME</p>
                     </button>
                 </a>
             </div>
-            <div class="submenu">
-                <button class="submenubtn">
-                    <p>ABOUT</p>
-                </button>
+            <div class="menu-item">
+                <a href="about.html">
+                    <button class="submenubtn">
+                        <p class="submenubtntext">ABOUT</p>
+                    </button>
+                </a>
             </div>
-            <div class="submenu">
+            <div class="menu-item">
                 <button class="submenubtn">
-                    <p>MUSIC</p>
+                    <p class="submenubtntext">MUSIC</p>
                     <img src="images/icons/down.svg" alt="down" class="iconmargin">
                 </button>
-                <div class="subcontent">
+                <div class="submenu">
                     <a href="music.html">All</a>
-                    <a href="#">Pour Me A Drink</a>
-                    <a href="#">Beerbongs & Bentleys</a>
-                    <a href="#">Twelve Carat Toothache</a>
-                    <a href="musicalbumaustin.html">AUSTIN</a>
+                    <a href="music1.html">Pour Me A Drink</a>
+                    <a href="music2.html">Beerbongs & Bentleys</a>
+                    <a href="music3.html">Twelve Carat Toothache</a>
+                    <a href="music4.html">AUSTIN</a>
                 </div>
             </div>
-            <div class="submenu">
+            <div class="menu-item">
                 <button class="submenubtn">
-                    <p>TOUR</p>
+                    <p class="submenubtntext">TOUR</p>
                     <img src="images/icons/down.svg" alt="down" class="iconmargin">
                 </button>
-                <div class="subcontent">
+                <div class="submenu">
                     <a href="tour.html">All</a>
                     <a href="tourdetails1.html">Germania Insurance Amphitheater</a>
-                    <a href="#">The Cynthia Woods Mitchell Pavilion</a>
+                    <a href="tourdetails2.html">The Cynthia Woods Mitchell Pavilion</a>
                 </div>
             </div>
-            <div class="submenu">
+            <div class="menu-item">
                 <button class="submenubtn">
-                    <p>VIDEOS</p>
+                    <p class="submenubtntext">VIDEOS</p>
                     <img src="images/icons/down.svg" alt="down" class="iconmargin">
                     </svg>
                 </button>
-                <div class="subcontent">
-                    <a href="#">All</a>
+                <div class="submenu">
+                    <a href="video.html">All</a>
                     <a href="videodetails1.html">Pour Me A Drink</a>
                     <a href="videodetails2.html">I Had Some Help</a>
                     <a href="videodetails3.html">Chemical</a>
                 </div>
             </div>
-            <div class="submenu">
-                <button class="submenubtn">
-                    <p>CONTACT</p>
-                </button>
+            <div class="menu-item">
+                <a href="contact.html">
+                    <button class="submenubtn">
+                        <p class="submenubtntext">CONTACT</p>
+                    </button>
+                </a>
             </div>
-            <div class="menucontainer" onclick="myFunction(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
-
-            <script>
-                function myFunction(x) {
-                    x.classList.toggle("change");
-                }
-            </script>
         </div>
     </header>
 
@@ -172,95 +170,89 @@
     <!-- footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer -->
     <footer>
         <div class="majorfootercontainer">
-            <div class="footercontainer" style="width: 880px;  flex-direction: column;">
-                <text class="subscribeforupdates">Subscribe For Updates!</text>
-                <p style="color: #161616;">Subscribe to Emails Updates from:</p>
-                <form>
-                    <div class="checkboxcontainer">
-                        <div class="checkboxminorcontainer">
-                            <input type="checkbox" id="pm" name="pm" value="Post Malone" class="checkbox">
-                            <label for="pm" class="footertext">Post Malone</label>
+            <div class="footercontainert">
+                <div class="footercontainerl">
+                    <text class="subscribeforupdates">Subscribe For Updates!</text>
+                    <p class="footerdescription">Subscribe to Emails Updates from:</p>
+                    <form>
+                        <div class="checkboxcontainer">
+                            <div class="checkboxminorcontainer">
+                                <input type="checkbox" id="pm" name="pm" value="Post Malone" class="checkbox">
+                                <label for="pm" class="footertext">Post Malone</label>
+                            </div>
+                            <div class="checkboxminorcontainer">
+                                <input type="checkbox" id="rr" name="rr" value="Republic Records" class="checkbox">
+                                <label for="rr" class="footertext">Republic Records</label>
+                            </div>
                         </div>
-                        <div class="checkboxminorcontainer">
-                            <input type="checkbox" id="rr" name="rr" value="Republic Records" class="checkbox">
-                            <label for="rr" class="footertext">Republic Records</label>
-                        </div>
-                    </div>
-                    <br />
-                    <input type="text" id="email" name="email" value="Your Email Address" class="emailcolumn">
-                </form>
-                <p style="color: #161616;">Emails will be sent by or on behalf of Universal Music Group 2220
-                    Colorado Avenue, Santa Monica , CA
-                    90404 (310) 865-4000. You may withdraw our consent at any time</p>
-            </div>
-
-            <div class="footercontainer">
-                <div class="footercontainerrt">
-                    <p class="footercategoriestitle">Contact</p>
-                    <a href="https://www.instagram.com/postmalone/" target="_blank">
-                        <button class="footerlink">
-                            <p class="footerlinktext">Instagram</p>
-                        </button>
-                    </a>
-                    <a href="https://x.com/PostMalone" target="_blank">
-                        <button class="footerlink">
-                            <p class="footerlinktext">X(Twitter)</p>
-                        </button>
-                    </a>
-                    <a href="https://www.tiktok.com/@postmalone?lang=en" target="_blank">
-                        <button class="footerlink">
-                            <p class="footerlinktext">Tik Tok</p>
-                        </button>
-                    </a>
-                    <a href="https://discord.com/invite/post-malone" target="_blank">
-                        <button class="footerlink">
-                            <p class="footerlinktext">Discord</p>
-                        </button>
-                    </a>
-                    <a href="https://www.facebook.com/postmalone" target="_blank">
-                        <button class="footerlink">
-                            <p class="footerlinktext">Facebook</p>
-                        </button>
-                    </a>
-                    <a href="https://www.youtube.com/POSTMALONE" target="_blank">
-                        <button class="footerlink">
-                            <p class="footerlinktext">Youtube</p>
-                        </button>
-                    </a>
-                    <a href="https://www.twitch.tv/postmalone" target="_blank">
-                        <button class="footerlink">
-                            <p class="footerlinktext">Twitch</p>
-                        </button>
-                    </a>
-
+                        <br />
+                        <input type="text" id="email" name="email" value="Your Email Address" class="emailcolumn">
+                    </form>
+                    <p class="footerdescription">Emails will be sent by or on behalf of Universal Music Group 2220
+                        Colorado Avenue, Santa Monica , CA
+                        90404 (310) 865-4000. You may withdraw our consent at any time</p>
                 </div>
 
-                <div class="footercontainerrt">
-                    <p class="footercategoriestitle">Menu</p>
-                    <button class="footerlink">
-                        <p class="footerlinktext">Home</p>
-                    </button>
-                    <button class="footerlink">
-                        <p class="footerlinktext">About</p>
-                    </button>
-                    <button class="footerlink">
-                        <p class="footerlinktext">Music</p>
-                    </button>
-                    <button class="footerlink">
-                        <p class="footerlinktext">Tour</p>
-                    </button>
-                    <button class="footerlink">
-                        <p class="footerlinktext">Videos</p>
-                    </button>
-                    <button class="footerlink">
-                        <p class="footerlinktext">Contact</p>
-                    </button>
+                <div class="footercontainerlink">
+                    <div class="footercontainerrt">
+                        <p class="footercategoriestitle">Contact</p>
+                        <div class="footerlinktext"><a href="https://www.instagram.com/postmalone/" target="_blank"
+                                class="footerlink">
+                                Instagram
+                            </a></div>
+                        <div class="footerlinktext"><a href="https://x.com/PostMalone" target="_blank"
+                                class="footerlink">
+                                X(Twitter)
+                            </a></div>
+                        <div class="footerlinktext"><a href="https://www.tiktok.com/@postmalone?lang=en" target="_blank"
+                                class="footerlink">
+                                Tik Tok
+                            </a></div>
+                        <div class="footerlinktext"><a href="https://discord.com/invite/post-malone" target="_blank"
+                                class="footerlink">
+                                Discord
+                            </a></div>
+                        <div class="footerlinktext"><a href="https://www.facebook.com/postmalone" target="_blank"
+                                class="footerlink">
+                                Facebook
+                            </a></div>
+                        <div class="footerlinktext"><a href="https://www.youtube.com/POSTMALONE" target="_blank"
+                                class="footerlink">
+                                Youtube
+                            </a></div>
+                        <div class="footerlinktext"><a href="https://www.twitch.tv/postmalone" target="_blank"
+                                class="footerlink">
+                                Twitch
+                            </a></div>
+                    </div>
+
+                    <div class="footercontainerrt">
+                        <p class="footercategoriestitle">Menu</p>
+                        <div class="footerlinktext"><a href="index.html" class="footerlink">
+                                Home
+                            </a></div>
+                        <div class="footerlinktext"><a href="about.html" class="footerlink">
+                                About
+                            </a></div>
+                        <div class="footerlinktext"><a href="music.html" class="footerlink">
+                                Music
+                            </a></div>
+                        <div class="footerlinktext"><a href="tour.html" class="footerlink">
+                                Tour
+                            </a></div>
+                        <div class="footerlinktext"><a href="videos.html" class="footerlink">
+                                Videos
+                            </a></div>
+                        <div class="footerlinktext"><a href="contact.html" class="footerlink">
+                                Contact
+                            </a></div>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="footercontainerb">
-            <p class="footertitle">
+            <p class="footerpm">
                 Post Malone</p>
             <hr class="footerline">
             <p class="footercopyright">© 2024 Post Malone</p>
