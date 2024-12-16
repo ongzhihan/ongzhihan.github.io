@@ -98,13 +98,13 @@
 }
 
 .aboutswiperwrapper {
-    gap: 10px;
     display: flex;
     flex-direction: row;
 }
 
 .aboutslide {
-    width: 270px;
+    padding-left: 7px;
+    padding-right: 7px;
 }
 
 

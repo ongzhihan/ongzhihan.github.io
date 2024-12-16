@@ -1,35 +1,124 @@
 <!DOCTYPE html>
 
 <html>
+  <head>
+    <title>Music - Post Malone</title>
 
-<head>
-  <title>Music - Post Malone</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="stylesheet" href="css/general.css" />
-  <link rel="stylesheet" href="css/music.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <style></style>
-</head>
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/music.css" />
+    <!--Oswald-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Pinyon+Script&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Pinyon+Script&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<!----------------------------- Header----------------------------->
+  <!----------------------------- Header----------------------------->
 
-<body>
-  <!--------------------- Music Hero ------------------------>
-  <section>
-    <div class="musicBackground">
-      <h1 class="musicTitle">MUSIC</h1>
-    </div>
-  </section>
+  <body>
+    <header>
+        <div class="headercontainer">
+          <a href="index.html">
+            <button class="logo">PM</button>
+          </a>
+        </div>
+        <div class="headercontainer headerflex">
+          <div class="submenu">
+            <a href="index.html">
+              <button class="submenubtn">
+                <p>HOME</p>
+              </button>
+            </a>
+          </div>
+          <div class="submenu">
+            <button class="submenubtn">
+              <p>ABOUT</p>
+            </button>
+          </div>
+          <div class="submenu">
+            <button class="submenubtn">
+              <p>MUSIC</p>
+              <img src="images/icons/down.svg" alt="down" class="iconmargin">
+            </button>
+            <div class="subcontent">
+              <a href="music.html">All</a>
+              <a href="#">Pour Me A Drink</a>
+              <a href="#">Beerbongs & Bentleys</a>
+              <a href="#">Twelve Carat Toothache</a>
+              <a href="musicalbumaustin.html">AUSTIN</a>
+            </div>
+          </div>
+          <div class="submenu">
+            <button class="submenubtn">
+              <p>TOUR</p>
+              <img src="images/icons/down.svg" alt="down" class="iconmargin">
+            </button>
+            <div class="subcontent">
+              <a href="tour.html">All</a>
+              <a href="tourdetails1.html">Germania Insurance Amphitheater</a>
+              <a href="#">The Cynthia Woods Mitchell Pavilion</a>
+            </div>
+          </div>
+          <div class="submenu">
+            <button class="submenubtn">
+              <p>VIDEOS</p>
+              <img src="images/icons/down.svg" alt="down" class="iconmargin">
+              </svg>
+            </button>
+            <div class="subcontent">
+              <a href="#">All</a>
+              <a href="videodetails1.html">Pour Me A Drink</a>
+              <a href="videodetails2.html">I Had Some Help</a>
+              <a href="videodetails3.html">Chemical</a>
+            </div>
+          </div>
+          <div class="submenu">
+            <button class="submenubtn">
+              <p>CONTACT</p>
+            </button>
+          </div>
+          <div class="menucontainer" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+    
+          <script>
+            function myFunction(x) {
+              x.classList.toggle("change");
+            }
+          </script>
+        </div>
+      </header>
+    <!--------------------- Music Hero ------------------------>
+    <section>
+      <div class="musicBackground">
+        <h1 class="musicTitle">MUSIC</h1>
+      </div>
+    </section>
 
-  <!--------------------- Single ------------------------>
+    <!--------------------- Single ------------------------>
 
-  <div>
-    <div class="singlewrapper">
-      <h1 class="title">SINGLE</h1>
-      <div class="albumbigfamily">
+    <div>
+      <div class="wrapper">
+        <h1 class="singletitle">SINGLE</h1>
         <button class="single">
-          <img src="images/music/pour me a drink.png" width="250px" height="250px" />
+          <img
+            src="images/music/pour me a drink.png"
+            width="250px"
+            height="250px"
+          />
           <div class="details">
             <div class="container1">
               <p class="pour">Pour Me A Drink ft. Blake Shelton</p>
@@ -44,75 +133,81 @@
         </button>
       </div>
     </div>
-  </div>
 
-  <!----------------------- Album ------------------------>
+    <!----------------------- Album ------------------------>
 
-  <div>
-    <div class="singlewrapper">
-      <h1 class="title">ALBUM</h1>
-      <div class="albumbigfamily">
-        <button class="album">
-          <img src="images/music/austin.png" width="250px" height="250px" />
-          <div class="details">
-            <div class="container3">
-              <p class="austin">AUSTIN</p>
-              <p class="underaustin">2023 - Album</p>
+
+<div class="wrapper">
+    <h1 class="albumtitle">ALBUM</h1>
+    <div class="albumbigfamily">
+      <button class="album">
+        <img src="images/music/austin.png" width="250px" height="250px" />
+        <div class="details">
+          <div class="container3">
+            <p class="austin">AUSTIN</p>
+            <p class="underaustin">2023 - Album</p>
+          </div>
+          <hr class="mcstroke" />
+          <div class="gap">
+            <div class="container4">
+              <p class="underaustin">Folk/Country/Rap/Pop/R&B</p>
             </div>
-            <hr class="mcstroke" />
-            <div class="gapbt">
-              <div class="container4">
-                <p class="underaustin">Folk / Country / Rap / Pop/ R&B</p>
-                <div class="container5">
-                  <p class="underaustinspecial">51 Min 47 Sec</p>
-                </div>
-              </div>
+              <div class="container5">
+                <p class="underaustinspecial">51 Min 47 Sec</p>
             </div>
           </div>
-        </button>
+        </div>
+      </button>
 
-        <button class="album">
-          <img src="images/music/twelve carat toothache.jpg" width="250px" height="250px" />
-          <div class="details">
-            <div class="container3">
-              <p class="austin">Twelve Carat Toothache</p>
-              <p class="underaustin">2022 - Album</p>
+      <button class="album">
+        <img
+          src="images/music/twelve carat toothache.jpg"
+          width="250px"
+          height="250px"
+        />
+        <div class="details">
+          <div class="container3">
+            <p class="austin">Twelve Carat Toothache</p>
+            <p class="underaustin">2022 - Album</p>
+          </div>
+          <hr class="mcstroke" />
+
+          <div class="gap">
+            <div class="container4">
+              <p class="underaustin">Folk/Country/Rap/Pop/R&B</p>
             </div>
-            <hr class="mcstroke" />
-
-            <div class="helpme">
-              <div class="container4">
-                <p class="underaustin">Folk / Country / Rap / Pop/ R&B</p>
-                <div class="container5">
-                  <p class="underaustinspecial">43 Min 18 Sec</p>
-                </div>
+              <div class="container5">
+                <p class="underaustinspecial">43 Min 18 Sec</p>
               </div>
+          </div>
+        </div>
+      </button>
+
+      <button class="album">
+        <img
+          src="images/music/beerbongs & bentleys.jpg"
+          width="250px"
+          height="250px"
+        />
+        <div class="details">
+          <div class="container3">
+            <p class="austin">Beerbongs & Bentleys</p>
+            <p class="underaustin">2018 - Album</p>
+          </div>
+          <hr class="mcstroke" />
+          <div class="gap">
+            <div class="container4">
+              <p class="underaustin">Folk/Country/Rap/Pop/R&B</p>
+            </div>
+              <div class="container5">
+                <p class="underaustinspecial">1 Hr 4 Min</p>
             </div>
           </div>
-        </button>
-
-        <button class="album">
-          <img src="images/music/beerbongs & bentleys.jpg" width="250px" height="250px" />
-          <div class="details">
-            <div class="container3">
-              <p class="austin">Beerbongs & Bentleys</p>
-              <p class="underaustin">2018 - Album</p>
-            </div>
-            <hr class="mcstroke" />
-            <div class="gap">
-              <div class="container4">
-                <p class="underaustin">Folk / Country / Rap / Pop/ R&B</p>
-                <div class="container5">
-                  <p class="underaustinspecial">1 Hr 4 Min</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </button>
-      </div>
+        </div>
+      </button>
+    </div>
     </div>
 
     <!----------------------Footer-------------------------->
-</body>
-
+  </body>
 </html>
