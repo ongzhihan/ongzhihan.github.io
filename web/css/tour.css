@@ -27,7 +27,7 @@ h1 {
     margin-right: 40px;
     padding-top: 5px;
     color: white;
-    background-image: url(file:///c%3A/Users/junxl/OneDrive/%E6%A1%8C%E9%9D%A2/ongzhihan.github.io/web/images/tour/tour1.jpeg);
+    background-image: url(images/tour/tour1.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
@@ -69,7 +69,7 @@ h1 {
 .Tour2 {
     padding-top: 5px;
     color: white;
-    background-image: url(file:///c%3A/Users/junxl/OneDrive/%E6%A1%8C%E9%9D%A2/ongzhihan.github.io/web/images/tour/tour2.jpg);
+    background-image: url(images/tour/tour2.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
@@ -287,7 +287,7 @@ body {
 }
 
 .tourdetail1 .top {
-    background-image: url(file:///c%3A/Users/junxl/OneDrive/%E6%A1%8C%E9%9D%A2/ongzhihan.github.io/web/images/tour/tour1.jpeg);
+    background-image: url(images/tour/tour1.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -422,7 +422,7 @@ body {
 
 .tourdetail2 .top {
     margin: 0px;
-    background-image: url(file:///c%3A/Users/junxl/OneDrive/%E6%A1%8C%E9%9D%A2/ongzhihan.github.io/web/images/tour/tour2.jpg);
+    background-image: url(images/tour/tour2.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
