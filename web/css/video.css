@@ -157,7 +157,7 @@ body {
 
     .video {
         margin-top: 10px;
-        width: 100%;
+        padding: 40px 0px;
         justify-self: center;
         align-self: center;
     }
