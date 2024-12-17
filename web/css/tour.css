@@ -226,6 +226,7 @@ h1 {
         width: 100%;
     }
 
+
     .infoleft h3 {
         display: none;
     }
@@ -244,7 +245,7 @@ h1 {
         border-top: white 1px solid;
         position: relative;
         right: 70px;
-        width: 700px;
+        width: 100%;
         align-items: center;
         margin-right: 30px;
         padding-right: 50px;
@@ -354,6 +355,8 @@ body {
     padding-top: 50px;
     padding-bottom: 40px;
 }
+
+.infoleft {}
 
 .infoleft h3 {
     color: #D5D30F;
