@@ -42,7 +42,7 @@ h1 {
     color: white;
     display: flex;
     justify-content: flex-start;
-    font-size: 96pt;
+    font-size: 120px;
     text-align: start;
     width: 200px;
     margin: 30px;
@@ -87,7 +87,7 @@ h1 {
     color: white;
     display: flex;
     justify-content: flex-start;
-    font-size: 96pt;
+    font-size: 120px;
     text-align: start;
     width: 1000px;
     margin: 30px;
@@ -111,6 +111,51 @@ h1 {
     color: #a3a3a3;
 }
 
+@media screen and (max-width: 990px) {
+    .Tour1 {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        height: auto;
+        width: 100%;
+        justify-items: flex-start;
+        margin: 0px;
+    }
+
+    .Tour1 h2 {
+        font-size: 70px;
+        line-height: 70px;
+        display: flex;
+        justify-content: flex-start;
+        padding-bottom: 0px;
+        margin-bottom: 10px;
+    }
+
+    .tour1dateandlocation {
+        display: flex;
+
+    }
+
+    .Tour2 {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        height: auto;
+        width: 100%;
+        justify-items: flex-start;
+        margin: 0px;
+    }
+
+    .Tour2 h2 {
+        font-size: 70px;
+        line-height: 70px;
+        display: flex;
+        justify-content: flex-start;
+        padding-bottom: 0px;
+        margin-bottom: 10px;
+        width: 500px;
+    }
+}
 
 @media screen and (max-width: 800px) {
     .all-tour {
@@ -352,11 +397,13 @@ body {
 .tour-information {
     display: flex;
     justify-content: center;
+    justify-items: center;
     padding-top: 50px;
     padding-bottom: 40px;
+    padding: 20px 50px;
 }
 
-.infoleft {}
+
 
 .infoleft h3 {
     color: #D5D30F;
@@ -388,13 +435,11 @@ body {
 
 .performances p {
     padding-left: 25px;
-    margin-left: 70px;
     font-size: 14px;
 }
 
 .list {
     column-count: 2;
-    margin-left: 70px;
     font-size: 14px;
 }
 
