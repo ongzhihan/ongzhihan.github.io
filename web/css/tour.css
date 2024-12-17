@@ -113,6 +113,10 @@ h1 {
 
 
 @media screen and (max-width: 800px) {
+    .all-tour {
+        margin: 0px;
+        justify-items: center;
+    }
 
     h1 {
         padding-bottom: 20px;
@@ -135,7 +139,6 @@ h1 {
         display: flex;
         justify-content: center;
         text-align: center;
-        margin-left: 0px;
         padding-bottom: 0px;
         margin-bottom: 10px;
     }
@@ -147,7 +150,6 @@ h1 {
         align-items: center;
         padding-top: 0px;
         line-height: 40px;
-        margin-bottom: 30px;
         font-size: 16px;
         margin-top: 0px;
     }
@@ -157,11 +159,10 @@ h1 {
         background-size: cover;
         background-position: top center;
         flex-direction: column;
-        align-items: center;
         height: 270px;
         width: 400px;
         justify-items: center;
-        margin: 0px;
+        margin-bottom: 80px;
     }
 
     .Tour2 h2 {
@@ -170,7 +171,6 @@ h1 {
         display: flex;
         justify-content: center;
         text-align: center;
-        margin-left: 0px;
         padding-bottom: 0px;
         margin-bottom: 10px;
         width: 250px;
@@ -183,7 +183,6 @@ h1 {
         align-items: center;
         padding-top: 0px;
         line-height: 40px;
-        margin-bottom: 30px;
         font-size: 16px;
         margin-top: 0px;
     }
@@ -211,7 +210,7 @@ h1 {
 
     .top .Videoname {
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
     }
 
     .tour-information {
@@ -223,8 +222,10 @@ h1 {
         background-repeat: no-repeat;
         background-position: center;
         align-items: center;
-        height: 300px;
+        height: 100px;
+        width: 100%;
     }
+
 
     .infoleft h3 {
         display: none;
@@ -244,7 +245,7 @@ h1 {
         border-top: white 1px solid;
         position: relative;
         right: 70px;
-        width: 700px;
+        width: 100%;
         align-items: center;
         margin-right: 30px;
         padding-right: 50px;
@@ -311,7 +312,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     align-items: center;
-    height: 750px;
+    height: auto;
     width: 100%;
     font-family: Oswald;
     font-size: 96px;
@@ -354,6 +355,8 @@ body {
     padding-top: 50px;
     padding-bottom: 40px;
 }
+
+.infoleft {}
 
 .infoleft h3 {
     color: #D5D30F;
@@ -447,7 +450,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     align-items: center;
-    height: 750px;
+    height: auto;
     width: 100%;
 }
 
