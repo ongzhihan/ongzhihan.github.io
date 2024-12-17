@@ -71,9 +71,10 @@
 
 .aboutcontainerright {
     display: flex;
-    width: 30%;
+    width: 40%;
     flex-direction: column;
     justify-content: space-around;
+    padding-left: 10px;
 }
 
 .aboutcontainerrt {
