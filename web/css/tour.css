@@ -223,6 +223,7 @@ h1 {
         background-repeat: no-repeat;
         background-position: center;
         align-items: center;
+        height: 300px;
     }
 
     .infoleft h3 {
