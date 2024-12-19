@@ -22,6 +22,12 @@ h1 {
 }
 
 /*tour 1*/
+.rectangle {
+    top: 50px;
+    left: 50px;
+    width: 150px;
+    height: 150px;
+}
 
 .Tour1 {
     margin-left: 40px;
