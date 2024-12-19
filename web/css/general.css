@@ -504,7 +504,7 @@ h3 {
     }
 
     .yellowbutton {
-        width: 380px;
+        width: 100%;
         height: fit-content;
         border: 1px solid #D5D30F;
         align-items: center;
@@ -529,7 +529,7 @@ h3 {
     }
 
     .whitebutton {
-        width: 380px;
+        width: 100%;
         height: fit-content;
         border: 1px solid #EBEBEB;
         align-items: center;
