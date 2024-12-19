@@ -97,6 +97,10 @@ header {
     padding-top: 10px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .submenu a {
     font-family: Roboto;
     color: #EBEBEB;
