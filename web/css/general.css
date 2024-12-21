@@ -97,6 +97,10 @@ header {
     padding-top: 10px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .submenu a {
     font-family: Roboto;
     color: #EBEBEB;
@@ -144,7 +148,7 @@ header {
         padding-top: 60px;
         display: none;
         position: fixed;
-        justify-content: left;
+        justify-content: right;
         top: 0;
         left: 0;
         width: 100%;
@@ -378,6 +382,7 @@ svg:hover {
 }
 
 .iconmargin {
+    display: block;
     margin-left: -4px;
     width: 30px;
     height: 18px;
@@ -499,7 +504,7 @@ h3 {
     }
 
     .yellowbutton {
-        width: 380px;
+        width: 100%;
         height: fit-content;
         border: 1px solid #D5D30F;
         align-items: center;
@@ -524,7 +529,7 @@ h3 {
     }
 
     .whitebutton {
-        width: 380px;
+        width: 100%;
         height: fit-content;
         border: 1px solid #EBEBEB;
         align-items: center;
@@ -715,5 +720,9 @@ h3 {
         height: 40px;
         width: 100%;
         font-size: 16px;
+    }
+
+    .iconmargin {
+        display: none;
     }
 }

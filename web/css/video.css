@@ -71,7 +71,15 @@ body {
 
 .creditscontainer {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+}
+
+.creditslist {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 5px;
 }
 
 .creditsl {
@@ -157,7 +165,7 @@ body {
 
     .video {
         margin-top: 10px;
-        width: 100%;
+        padding: 40px 0px;
         justify-self: center;
         align-self: center;
     }
