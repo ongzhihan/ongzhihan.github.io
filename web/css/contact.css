@@ -1,0 +1,49 @@
+body {
+    background-color: #161616;
+}
+
+.contact-infopage {
+    padding: 40px 40px;
+    padding-top: 60px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
+.contact-container {
+    border-top: 1px white solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+h2 {
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    align-content: flex-start;
+    align-items: flex-start;
+    max-width: 400px;
+    padding-top: 20px;
+
+}
+
+.contact-right {
+    color: white;
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+.member-name {
+    color: #D5D30F;
+    font-family: Roboto Roman;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+.member-phonenum {
+    border-bottom: 1px white solid;
+    padding-bottom: 20px;
+}

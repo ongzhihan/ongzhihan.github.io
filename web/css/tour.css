@@ -22,12 +22,6 @@ h1 {
 }
 
 /*tour 1*/
-.rectangle {
-    top: 50px;
-    left: 50px;
-    width: 150px;
-    height: 150px;
-}
 
 .Tour1 {
     margin-left: 40px;
@@ -61,7 +55,6 @@ h1 {
 .tour1dateandlocation {
     display: flex;
     justify-content: space-between;
-
     padding-top: 80px;
     font-size: 14px;
     margin: 30px;
@@ -71,6 +64,8 @@ h1 {
 
 .viewmore {
     color: #a3a3a3;
+    font-family: Roboto bold;
+    font-size: 14px;
 }
 
 /*Tour 2*/
@@ -115,8 +110,10 @@ h1 {
     color: white;
 }
 
-.viewmore {
+.viewmore p {
     color: #a3a3a3;
+    font-family: Roboto bold;
+    font-size: 14px;
 }
 
 @media screen and (max-width: 990px) {
@@ -147,10 +144,9 @@ h1 {
     .Tour2 {
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: top center;
+        background-position: bottom center;
         height: auto;
         width: 100%;
-        margin: 0px;
     }
 
     .Tour2 h2 {
@@ -174,8 +170,8 @@ h1 {
         justify-items: center;
         padding-top: 50px;
         padding-bottom: 40px;
-        padding: 20px 50px;
     }
+
 
     .infoleft h3 {
         color: #D5D30F;
@@ -187,9 +183,17 @@ h1 {
         margin-right: 30px;
         margin-bottom: 10px;
     }
+
+    .list {
+        display: flex;
+        justify-content: flex-start;
+        color: #a3a3a3;
+        font-weight: Regular;
+    }
+
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
     .all-tour {
         margin: 0px;
         justify-items: center;
@@ -235,7 +239,6 @@ h1 {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top center;
-        flex-direction: column;
         height: 270px;
         width: 400px;
         justify-items: center;
@@ -270,12 +273,16 @@ h1 {
         font-size: 14px;
     }
 
+    .tourdetail1 .top {
+        background-size: cover;
+        height: 100px;
+    }
 
     .tourdetail1 .top h2 {
         color: #D5D30F;
         display: flex;
-        font-size: 8vw;
-        line-height: 40px;
+        font-size: 32px;
+        line-height: 8vh;
     }
 
     .tourdetail2 .top h2 {
@@ -286,21 +293,20 @@ h1 {
     }
 
     .top .Videoname {
+        font-size: 16px;
         display: flex;
         justify-content: center;
+        position: relative;
+        top: 30px;
     }
 
     .tour-information {
         flex-direction: column;
+        margin: 0px;
     }
 
-    .tourdetail1 .top {
+    .top {
         background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        align-items: center;
-        height: 100px;
-        width: 100%;
     }
 
 
@@ -317,44 +323,25 @@ h1 {
         padding-left: 20px;
     }
 
+    .performances {
+        padding: 0px 0px;
+        border-top: white 1px solid;
+        width: 100%;
+    }
+
     .performances p {
         margin-bottom: 0px;
-        border-top: white 1px solid;
-        position: relative;
-        right: 70px;
-        width: 100%;
         align-items: center;
-        margin-right: 30px;
         padding-right: 50px;
-        padding-top: 20px;
     }
 
     .list {
         display: flex;
         justify-content: flex-start;
-        column-count: 1;
-        margin: 5px;
+        color: #a3a3a3;
+        font-weight: Regular;
     }
 
-    .gallery {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .gallery img {
-        display: flex;
-        flex-direction: column;
-        columns: 1;
-        align-items: center;
-    }
-
-    .small-image:nth-child(3) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 
     .performances p {
         font-size: 16px;
@@ -430,9 +417,8 @@ body {
     display: flex;
     justify-content: center;
     justify-items: center;
-    padding-top: 50px;
-    padding-bottom: 40px;
-    padding: 20px 50px;
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 
 
@@ -440,12 +426,16 @@ body {
 .infoleft h3 {
     color: #D5D30F;
     font-size: 40px;
-    padding-right: 20px;
+    padding-right: px;
     width: 500px;
     border-bottom: 1px solid white;
     padding-bottom: 20px;
     margin-right: 30px;
     margin-bottom: 10px;
+}
+
+.infoleft {
+    padding: 20px;
 }
 
 .infoleft div {
@@ -457,12 +447,15 @@ body {
 .infoleft p {
     color: #a3a3a3;
     font-weight: Regular;
-
 }
 
 .infoleft p strong {
     color: white;
     font-family: Roboto;
+}
+
+.performances {
+    padding: 30px;
 }
 
 .performances p {
@@ -471,6 +464,7 @@ body {
 }
 
 .list {
+    font-family: Roboto Regular;
     column-count: 2;
     font-size: 14px;
 }
@@ -526,7 +520,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    align-items: center;
     height: auto;
     width: 100%;
 }
