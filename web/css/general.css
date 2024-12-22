@@ -72,6 +72,10 @@ header {
     }
 }
 
+.menu-item {
+    padding: 0px 8px;
+}
+
 /* ------------------------------- mobilemenu ------------------------------- */
 
 .menu {
@@ -130,92 +134,7 @@ a {
     cursor: pointer;
 }
 
-@media screen and (max-width: 700px) {
-    .submenubtn {
-        font-family: Oswald;
-        width: 100%;
-        font-size: 56px;
-        text-align: left;
-        line-height: 60px;
-    }
-
-    .logo {
-        padding: 0px 40px;
-    }
-
-    .menu {
-        flex-direction: column;
-        padding-top: 60px;
-        display: none;
-        position: fixed;
-        justify-content: right;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #161616;
-        z-index: 1000;
-    }
-
-    .menu a {
-        text-align: center;
-        font-size: 24px;
-        color: white;
-        font-family: Oswald;
-        justify-self: left;
-    }
-
-    .submenubtntext {
-        font-family: Oswald !important;
-        font-size: 56px !important;
-        font-weight: 700 !important;
-        text-decoration: none;
-        margin: 0px;
-    }
-
-    .menu-item {
-        width: 100%;
-        display: grid;
-    }
-
-    .menu-item>a {
-        display: block;
-    }
-
-    .menu-toggle {
-        display: block;
-        padding: 0px 40px;
-    }
-
-    #menu-checkbox:checked+.menu-toggle+.menu {
-        display: flex;
-    }
-
-    #menu-checkbox:checked+.menu-toggle+.menu .close-btn {
-        display: block;
-    }
-
-    .submenu {
-        display: block;
-        position: static;
-
-        a {
-            font-family: Oswald;
-            text-align: left;
-            font-size: 20px;
-            color: #EBEBEB;
-            padding: 3px 0px;
-        }
-
-        a:hover {
-            font-family: Oswald;
-            text-align: left;
-            font-size: 20px;
-            color: #D5D30F;
-            background-color: #161616;
-        }
-    }
-}
+@media screen and (max-width: 700px) {}
 
 
 /* footer */
@@ -435,8 +354,8 @@ h3 {
 .yellowbutton {
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
     border: 1px solid #D5D30F;
     align-items: center;
     background-color: #161616;
@@ -446,19 +365,34 @@ h3 {
     font-size: 14px;
     line-height: 85%;
     text-transform: uppercase;
+
+    a {
+        color: #D5D30F;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 85%;
+        letter-spacing: 0.56px;
+        text-transform: uppercase;
+    }
 }
 
 .yellowbutton:hover {
     border: 1px solid #D5D30F;
     background-color: #D5D30F;
     color: #161616;
+
+    a {
+        color: #161616;
+    }
 }
 
 .whitebutton {
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
     border: 1px solid #EBEBEB;
     background-color: rgb(235, 235, 235, 0.2);
     color: #EBEBEB;
@@ -504,32 +438,38 @@ h3 {
     }
 
     .yellowbutton {
-        width: 100%;
+        width: 90%;
         height: fit-content;
         border: 1px solid #D5D30F;
         align-items: center;
         align-content: center;
         z-index: 1;
         background-color: #161616;
-        color: #D5D30F;
-        text-align: center;
-        font-family: Roboto;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 85%;
-        letter-spacing: 0.56px;
-        text-transform: uppercase;
+
+        a {
+            color: #D5D30F;
+            text-align: center;
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 85%;
+            letter-spacing: 0.56px;
+            text-transform: uppercase;
+        }
     }
 
     .yellowbutton:hover {
         border: 1px solid #D5D30F;
         background-color: #D5D30F;
         color: #161616;
+
+        a {
+            color: #161616;
+        }
     }
 
     .whitebutton {
-        width: 100%;
+        width: 90%;
         height: fit-content;
         border: 1px solid #EBEBEB;
         align-items: center;
@@ -583,6 +523,96 @@ h3 {
     .change .bar3 {
         transform: translate(0, -7.5px) rotate(45deg);
     }
+
+
+    /* header */
+    .submenubtn {
+        font-family: Oswald;
+        width: 100%;
+        font-size: 56px;
+        text-align: center;
+        line-height: 60px;
+    }
+
+    .logo {
+        padding: 0px 40px;
+    }
+
+    .menu {
+        flex-direction: column;
+        padding-top: 60px;
+        padding-left: 0px;
+        padding-right: 0px;
+        display: none;
+        position: fixed;
+        justify-content: right;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #161616;
+        z-index: 1000;
+    }
+
+    .menu a {
+        text-align: center;
+        font-size: 24px;
+        color: white;
+        font-family: Oswald;
+        justify-self: center;
+    }
+
+    .submenubtntext {
+        font-family: Oswald !important;
+        font-size: 36px !important;
+        font-weight: 700 !important;
+        text-decoration: none;
+        margin: 0px;
+    }
+
+    .submenubtntext:hover {
+        align-self: center;
+    }
+
+    .menu-item {
+        display: grid;
+    }
+
+    .menu-item>a {
+        display: block;
+    }
+
+    .menu-toggle {
+        display: block;
+        padding: 0px 40px;
+    }
+
+    #menu-checkbox:checked+.menu-toggle+.menu {
+        display: flex;
+    }
+
+    #menu-checkbox:checked+.menu-toggle+.menu .close-btn {
+        display: block;
+    }
+
+    .submenu {
+        display: block;
+        position: static;
+
+        a {
+            font-family: Oswald;
+            text-align: center;
+            font-size: 20px;
+            color: #EBEBEB;
+            padding: 3px 0px;
+        }
+
+        a:hover {
+            color: #D5D30F;
+            background-color: #161616;
+        }
+    }
+
 
     /* footer */
     .footer {
