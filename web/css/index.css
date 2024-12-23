@@ -226,10 +226,12 @@
 }
 
 .tourcontainerb {
+    display: flex;
+    flex-direction: column;
     padding-top: 80px;
     padding-left: 40px;
     padding-right: 40px;
-    justify-items: center;
+    align-items: center;
 }
 
 .tourbackground {
@@ -373,6 +375,7 @@
     .title {
         font-size: 6em;
         line-height: 100px;
+        letter-spacing: -2.74px;
     }
 
     /* about */
@@ -515,6 +518,11 @@
         text-align: center;
     }
 
+    .tourcontainerb {
+        align-items: center;
+        justify-items: center;
+    }
+
     /* video */
     .videosection {
         background-color: #161616;
@@ -536,7 +544,7 @@
     }
 
     .videocontainerb {
-        width: 90%;
+        padding: 40px 0px;
         align-items: center;
         text-align: center;
     }
