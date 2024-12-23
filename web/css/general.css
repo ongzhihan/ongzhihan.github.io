@@ -363,7 +363,6 @@ h3 {
     text-align: center;
     font-family: Roboto;
     font-size: 14px;
-    line-height: 85%;
     text-transform: uppercase;
 
     a {
@@ -372,7 +371,6 @@ h3 {
         font-family: Roboto;
         font-size: 14px;
         font-weight: 400;
-        line-height: 85%;
         letter-spacing: 0.56px;
         text-transform: uppercase;
     }
@@ -452,7 +450,6 @@ h3 {
             font-family: Roboto;
             font-size: 14px;
             font-weight: 400;
-            line-height: 85%;
             letter-spacing: 0.56px;
             text-transform: uppercase;
         }
