@@ -76,8 +76,6 @@ header {
     padding: 0px 8px;
 }
 
-/* ------------------------------- mobilemenu ------------------------------- */
-
 .menu {
     display: flex;
     align-items: center;
@@ -134,9 +132,6 @@ a {
     color: white;
     cursor: pointer;
 }
-
-@media screen and (max-width: 700px) {}
-
 
 /* footer */
 footer {
@@ -278,7 +273,7 @@ footer {
 .checkbox {
     width: 20px;
     height: 20px;
-    border-radius: 5px;
+    border-radius: 3px;
     border-color: #161616;
 }
 
@@ -353,12 +348,10 @@ h3 {
 }
 
 .yellowbutton {
+    width: 25%;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 80px;
-    padding-right: 80px;
     border: 1px solid #D5D30F;
-    align-items: center;
     background-color: #161616;
     color: #D5D30F;
     text-align: center;
@@ -388,22 +381,35 @@ h3 {
 }
 
 .whitebutton {
+    width: 25%;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 80px;
-    padding-right: 80px;
     border: 1px solid #EBEBEB;
     background-color: rgb(235, 235, 235, 0.2);
     color: #EBEBEB;
     font-family: Roboto;
     font-size: 14px;
     text-transform: uppercase;
+
+    a {
+        color: #D5D30F;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.56px;
+        text-transform: uppercase;
+    }
 }
 
 .whitebutton:hover {
     border: 1px solid #161616;
     background-color: #D5D30F;
     color: #161616;
+
+    a {
+        color: #161616;
+    }
 }
 
 .whitestroke {
@@ -480,7 +486,6 @@ h3 {
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
-        line-height: 85%;
         letter-spacing: 0.56px;
         text-transform: uppercase;
     }

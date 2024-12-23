@@ -226,11 +226,10 @@
 }
 
 .tourcontainerb {
+    width: 100%;
     display: flex;
     flex-direction: column;
     padding-top: 80px;
-    padding-left: 40px;
-    padding-right: 40px;
     align-items: center;
 }
 
@@ -258,8 +257,6 @@
     padding-bottom: 100px;
     justify-items: center;
     overflow: hidden;
-    padding-left: 40px;
-    padding-right: 40px;
 }
 
 .videocontainer {
@@ -294,6 +291,8 @@
     align-items: center;
     justify-items: center;
     text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .videosubtitle {
@@ -310,8 +309,11 @@
 }
 
 .videobutton {
-    margin: 5px;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    margin-top: 10px;
 }
 
 .subvideo {
@@ -320,6 +322,7 @@
 
 /* other */
 .displaygrid {
+    width: 100%;
     display: grid;
 }
 
@@ -331,10 +334,6 @@
 }
 
 @media screen and (max-width: 700px) {
-    .submenu {
-        display: none;
-    }
-
     .background {
         background-image: url('https://www.postmalone.com/files/2024/06/pm-poster-scaled.jpg');
         background-repeat: no-repeat;
@@ -531,11 +530,6 @@
         justify-items: center;
     }
 
-    .videovideo {
-        width: 394px;
-        height: auto;
-    }
-
     .videocontainer {
         padding-top: 50px;
         height: 100%;
@@ -544,7 +538,7 @@
     }
 
     .videocontainerb {
-        padding: 40px 0px;
+        padding: 40px 40px;
         align-items: center;
         text-align: center;
     }
@@ -561,13 +555,10 @@
     }
 
     .videobutton {
-        margin: 5px;
-        width: 380px;
-        height: fit-content;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 20px;
-        padding-right: 20px;
+        justify-self: center;
+        margin-top: 5px;
+        padding-left: 50px;
+        padding-right: 50px;
     }
 
     .videovideocontainer {
