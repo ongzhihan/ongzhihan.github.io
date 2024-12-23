@@ -22,6 +22,9 @@
     rel="stylesheet">
   <!-- Header / Add Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Slider -->
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 </head>
 
 <body>
@@ -147,7 +150,7 @@
     </div>
 
     <div class="carouselcontainer">
-      <div class="aboutswiperwrapper">
+      <div class="slick-slider">
         <div class="aboutslide">
           <img src="images/homepage/about1.jpg" alt="about1" width="270px" />
         </div>
@@ -316,7 +319,7 @@
               </div>
             </div>
             <br />
-            <input type="text" id="email" name="email" value="Your Email Address" class="emailcolumn">
+            <input type="text" id="email" name="email" placeholder="Your Email Address" class="emailcolumn">
           </form>
           <p class="footerdescription">Emails will be sent by or on behalf of Universal Music Group 2220
             Colorado Avenue, Santa Monica , CA
@@ -385,6 +388,20 @@
       <p class="footercopyright">© 2024 Post Malone</p>
     </div>
   </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+
+  <!-- about slider -->
+  <script>
+    $('.slick-slider').slick({
+      slidesToShow: 5.4,
+      slidesToScroll: 0.2,
+      autoplay: true,
+      autoplaySpeed: 1,
+      pauseOnHover: false,
+    });
+  </script>
 </body>
 
 </html>
