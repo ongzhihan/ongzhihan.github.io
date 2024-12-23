@@ -17,15 +17,20 @@ h1 {
     border-top: 1px white solid;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 60px;
 }
 
-h2 {
+.contact-left {
+    color: #D5D30F;
+    font-family: Oswald;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
     display: flex;
     justify-content: flex-start;
-    text-align: center;
-    align-content: flex-start;
-    align-items: flex-start;
-    max-width: 400px;
+    text-align: start;
+    letter-spacing: 2px;
+    max-width: 450px;
     padding-top: 20px;
 
 }
@@ -38,12 +43,94 @@ h2 {
 
 .member-name {
     color: #D5D30F;
+    font-size: 20px;
     font-family: Roboto Roman;
     padding-bottom: 10px;
     padding-top: 20px;
 }
 
+.member-email {
+    font-size: 18px;
+    text-decoration: underline;
+    padding-bottom: 5px;
+}
+
 .member-phonenum {
+    font-size: 18px;
     border-bottom: 1px white solid;
+    width: 500px;
     padding-bottom: 20px;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 990px) {
+    .contact-infopage {
+        display: block;
+        justify-content: center;
+        padding: 40px 40px;
+        padding-top: 60px;
+    }
+
+    h1 {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 60px;
+        font-size: 48px;
+    }
+
+    .contact-container {
+        border-top: none;
+        border-width: 100%;
+        display: inline-block;
+        justify-self: center;
+        align-items: center;
+        padding-bottom: 60px;
+        width: 100%;
+    }
+
+    .contact-left {
+        color: #D5D30F;
+        font-family: Oswald;
+        font-size: 32px;
+        font-weight: bold;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        text-align: start;
+        letter-spacing: 2px;
+        max-width: 450px;
+        padding-top: 20px;
+        padding-bottom: 60px;
+        line-height: 50px;
+    }
+
+    .contact-right {
+        color: white;
+        font-family: Roboto;
+        font-weight: bold;
+        text-align: center;
+        border-top: 1px white solid;
+        width: 100%;
+    }
+
+    .member-name {
+        color: #D5D30F;
+        font-family: Roboto Roman;
+        padding-bottom: 10px;
+        padding-top: 20px;
+    }
+
+    .member-email {
+        text-decoration: underline;
+        padding-bottom: 5px;
+        display: block;
+        justify-content: center;
+    }
+
+    .member-phonenum {
+        border-bottom: 1px white solid;
+        width: 100%;
+        padding-bottom: 20px;
+        text-decoration: underline;
+    }
 }

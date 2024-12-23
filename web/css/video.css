@@ -2,213 +2,166 @@ body {
     background-color: #161616;
 }
 
-.videocontainert {
-    padding-left: 40px;
-    padding-right: 40px;
-    justify-items: center;
-    padding-top: 60px;
-}
-
-.videotitlecontainer {
+.title {
     text-align: center;
+    padding-top: 80px;
+    padding-bottom: 50px;
 }
 
-.titlemargintop {
-    margin-top: 10px;
+.mainvideocontainer {
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.maininfo {
+    width: 40%;
+}
+
+.mainvideo {
+    width: 55%;
+    height: 440px;
+}
+
+.videoname {
+    color: #D5D30F;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0px;
+}
+
+.videodescription {
+    color: #a3a3a3;
+    letter-spacing: 0.8px;
 }
 
 .videobutton {
-    border: none;
-    background-color: #161616;
+    width: 80% !important;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
-.video {
-    margin-top: 20px;
-    width: 100%;
-    height: auto;
-}
-
-.videocontainerb {
-    justify-self: center;
-    align-self: center;
-    width: 70%;
-    padding-top: 50px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.videocontainerbl {
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-}
-
-.videocontainerbr {
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-}
-
-.title {
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.text {
-    color: #a3a3a3;
-    letter-spacing: 1.4px;
-    line-height: 130%;
-}
-
-.textjustify {
-    text-align: justify;
-}
-
-.year {
-    display: flex;
-    justify-content: space-between;
-}
-
-.creditscontainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.creditslist {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    column-gap: 5px;
-}
-
-.creditsl {
-    font-family: Roboto;
-    color: #a3a3a3;
-    text-align: left;
-    font-weight: 700;
-    line-height: 130%;
-}
-
-.creditsr {
-    font-family: Roboto;
-    color: #a3a3a3;
-    text-align: right;
-    line-height: 130%;
-}
-
-.arrow1 {
-    padding-top: 50px;
-    margin: 40px;
-    display: flex;
-    justify-content: end;
-}
-
-.arrow2 {
-    padding-top: 50px;
-    margin: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.arrowbutton {
-    border: none;
-    background-color: #161616;
-    display: flex;
-    flex-direction: row;
-    width: fit-content;
+/* other videos */
+.othervideossection {
     height: fit-content;
-    align-items: center;
+    padding-bottom: 80px;
+}
 
-    .boldtext {
-        font-weight: 700;
-        padding: 10px;
+.subvideocontainerrow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.subvideocontainer {
+    width: 33.2%;
+    border: #ebebeb;
+    border-style: solid;
+    border-width: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding: 20px 0px;
+}
+
+.subvideo {
+    height: 240px;
+}
+
+.subvideoname {
+    color: #D5D30F;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0px;
+    padding: 7px 0px 3px 0px;
+}
+
+.subvideodescription {
+    margin: 0px;
+}
+
+.removeleftsroke {
+    border-left: 0px;
+}
+
+.removerightsroke {
+    border-right: 0px;
+}
+
+@media screen and (max-width: 1220px) {
+    .mainvideo {
+        width: 55%;
+        height: 330px;
+    }
+
+    .subvideocontainer {
+        width: 49.8%;
+        border: #ebebeb;
+        border-style: solid;
+        border-width: 1px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        padding: 20px 0px;
     }
 }
 
-.arrowbutton:hover {
-    border: none;
-    background-color: #161616;
-    display: flex;
-    flex-direction: row;
-    width: fit-content;
-    height: fit-content;
-    align-items: center;
-
-    .boldtext {
-        color: #D5D30F;
-        font-weight: 700;
-        padding: 10px;
+@media screen and (max-width: 810px) {
+    .subvideocontainer {
+        width: 50%;
+        border: #a3a3a3;
+        border-style: solid;
+        border-width: 1px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        padding: 30px 0px;
     }
-}
-
-.modal {
-    display: none;
-    z-index: 1;
-    padding-top: 100px;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
 }
 
 @media screen and (max-width: 700px) {
-    .titlemargintop {
-        margin-top: -6px;
+    .mainvideocontainer {
+        flex-direction: column-reverse;
     }
 
-    .video {
-        margin-top: 10px;
-        padding: 40px 0px;
-        justify-self: center;
-        align-self: center;
+    .reverse {
+        flex-direction: column !important;
     }
 
-    .videocontainerb {
-        width: auto;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 50px;
-        align-self: center;
+    .maininfo {
+        padding-top: 20px;
+        width: 100%;
+    }
+
+    .mainvideo {
+        width: 100%;
+        height: 220px;
+    }
+
+    .videoname {
+        margin-bottom: -10px;
+    }
+
+    .videodescription {
+        text-align: center;
+    }
+
+    .videobutton {
+        width: 100% !important;
+    }
+
+    .subvideocontainer {
+        width: 100%;
+        border: #a3a3a3;
+        border-style: solid;
+        border-width: 1px 0px;
         display: flex;
         flex-direction: column;
-    }
-
-    .videocontainerbl {
-        width: auto;
-        padding-left: 20px;
-        padding-right: 20px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .videocontainerbr {
-        width: auto;
-        margin-top: 70px;
-        padding-left: 20px;
-        padding-right: 20px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .title {
-        text-align: left;
-    }
-
-    .lyrics {
-        margin-top: 0px;
-        text-align: left;
-        letter-spacing: 1px;
-    }
-
-    .arrow {
-        margin-left: 40px;
-        margin-right: 40px;
+        align-items: center;
+        justify-items: center;
+        padding: 30px 0px;
     }
 }
