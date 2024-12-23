@@ -188,7 +188,7 @@
     </div>
     <div class="swiper">
       <div class="musicswiperwrapper">
-        <button class="musicslidecontainer">
+        <div class="musicslidecontainer">
           <img src="images/music/pour me a drink.png" class="musicswipermargintop" alt="pmad cover" width="420px" />
           <div class="mcdetails">
             <div class="musiccontainert">
@@ -201,8 +201,8 @@
               <p class="musictext textalignr">2 Min 58 Sec</p>
             </div>
           </div>
-        </button>
-        <button class="musicslidecontainer">
+        </div>
+        <div class="musicslidecontainer">
           <img src="images/music/austin.png" class="musicswipermargintop" alt="austin cover" width="420px" />
           <div class="mcdetails">
             <div class="musiccontainert">
@@ -215,8 +215,8 @@
               <p class="musictext textalignr">51 Min 47 Sec</p>
             </div>
           </div>
-        </button>
-        <button class="musicslidecontainer">
+        </div>
+        <div class="musicslidecontainer">
           <img src="images/music/twelve carat toothache.jpg" class="musicswipermargintop" alt="tct cover"
             width="420px" />
           <div class="mcdetails">
@@ -230,8 +230,8 @@
               <p class="musictext textalignr">51 Min 47 Sec</p>
             </div>
           </div>
-        </button>
-        <button class="musicslidecontainer">
+        </div>
+        <div class="musicslidecontainer">
           <img src="images/music/beerbongs & bentleys.jpg" class="musicswipermargintop" alt="bnb cover" width="420px" />
           <div class="mcdetails">
             <div class="musiccontainert">
@@ -244,7 +244,7 @@
               <p class="musictext textalignr">1 Hr 4 Min</p>
             </div>
           </div>
-        </button>
+        </div>
       </div>
     </div>
     <div class="displaygrid">
@@ -395,11 +395,43 @@
   <!-- about slider -->
   <script>
     $('.slick-slider').slick({
-      slidesToShow: 5.4,
+      slidesToShow: 5.2,
       slidesToScroll: 0.2,
       autoplay: true,
       autoplaySpeed: 1,
       pauseOnHover: false,
+      responsive: [
+        {
+          breakpoint: 1350,
+          settings: {
+            slidesToShow: 3.5,
+          }
+        },
+        {
+          breakpoint: 1000,
+          settings: {
+            slidesToShow: 2.4,
+          }
+        },
+        {
+          breakpoint: 700,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 575,
+          settings: {
+            slidesToShow: 1.2,
+          }
+        },
+        {
+          breakpoint: 340,
+          settings: {
+            slidesToShow: 1,
+          }
+        }
+      ]
     });
   </script>
 </body>
