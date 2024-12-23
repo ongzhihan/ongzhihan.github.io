@@ -21,10 +21,21 @@ body {
 }
 
 .wrapper {
+  margin: 0 100px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 530px;
+  background-color: #161616;
+}
+
+.wrapper2 {
+  margin: 0 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   height: 530px;
   background-color: #161616;
 }
@@ -34,7 +45,6 @@ body {
     justify-content: flex-start;
     height: 530px;
     background-color: #161616;    */
-
 
 .singletitle {
   margin-left: 20px;
@@ -114,7 +124,7 @@ body {
 }
 
 .albumtitle {
-  margin-left: 18px;
+  justify-content: flex-start;
 }
 
 .album {
@@ -211,3 +221,11 @@ body {
 /*-----------------------------mobile------------------------------*/
 
 @media screen and (max-width: 700px) {
+  .albumbigfamily {
+    flex-direction: column;
+  }
+
+  .wrapper2 {
+    height: 1300px;
+  }
+}
