@@ -1,9 +1,89 @@
+body {
+    background-color: #161616;
+}
+
 .mainvideocontainer {
+    padding: 30px 40px;
     display: flex;
+    justify-content: space-between;
+}
+
+.maininfo {
+    width: 40%;
+}
+
+.mainvideo {
+    width: 55%;
+}
+
+.videoname {
+    color: #D5D30F;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0px;
+}
+
+.videodescription {
+    color: #a3a3a3;
+    letter-spacing: 0.8px;
+}
+
+.videobutton {
+    width: 80% !important;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/* other videos */
+.subvideocontainerrow {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.subvideocontainer {
+    width: 33.2%;
+    border: #ebebeb;
+    border-style: solid;
+    border-width: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding: 20px 0px;
+}
+
+.subvideo {}
+
+.subvideoname {
+    color: #D5D30F;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0px;
+    padding: 7px 0px 3px 0px;
+}
+
+.subvideodescription {
+    margin: 0px;
 }
 
 @media screen and (max-width: 700px) {
     .mainvideocontainer {
-        flex-direction: row;
+        flex-direction: column-reverse;
+    }
+
+    .reverse {
+        flex-direction: column !important;
+    }
+
+    .maininfo {
+        width: 100%;
+    }
+
+    .mainvideo {
+        width: 100%;
+    }
+
+    .videobutton {
+        width: 100% !important;
     }
 }
