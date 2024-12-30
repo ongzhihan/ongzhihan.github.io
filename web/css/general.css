@@ -417,6 +417,10 @@ h3 {
     margin: 0px;
 }
 
+.videoratio {
+    aspect-ratio: 16/9;
+}
+
 @media screen and (max-width: 700px) {
     .submenu {
         display: none;
