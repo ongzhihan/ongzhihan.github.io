@@ -130,7 +130,6 @@ h1 {
         line-height: 70px;
         display: flex;
         justify-content: flex-start;
-        padding-bottom: 0px;
         margin-bottom: 10px;
     }
 
@@ -208,6 +207,13 @@ h1 {
         padding: 20px 20px;
         width: 400px;
     }
+
+
+    .top-mobile-image {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 950px) {
@@ -271,6 +277,7 @@ h1 {
         padding-bottom: 0px;
         margin-bottom: 10px;
         width: 250px;
+        height: 10px;
     }
 
     .tour2dateandlocation {
@@ -278,22 +285,19 @@ h1 {
         justify-content: center;
         text-align: center;
         align-items: center;
-        padding-top: 0px;
         line-height: 40px;
         font-size: 16px;
-        margin-top: 0px;
     }
 
     .viewmore {
         margin-bottom: 20px;
-        padding-top: 5px;
+        padding-top: 20px;
         font-size: 14px;
     }
 
-    .top {
-        background-size: contain;
-        width: 100%;
-        height: auto;
+
+    .tourdetail1 .top {
+        padding-top: 80px;
     }
 
     .tourdetail1 .top h2 {
@@ -304,6 +308,7 @@ h1 {
         line-height: 40px;
         padding: 10px 10px;
         width: 500px;
+
     }
 
     .tourdetail2 .top h2 {
@@ -326,10 +331,6 @@ h1 {
     .tour-information {
         flex-direction: column;
         margin: 0px;
-    }
-
-    .top {
-        background-size: contain;
     }
 
 
@@ -370,7 +371,7 @@ h1 {
     .performances p {
         font-size: 16px;
         text-align: start;
-        padding-left: 20px;
+        padding-left: 30px;
     }
 
     .tourdetail2 .top {
@@ -378,6 +379,16 @@ h1 {
         height: 20%;
     }
 
+    .gallery .image-container1 {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .gallery .image-container2 {
+        display: flex;
+        flex-direction: column;
+    }
 
 
 }
@@ -399,6 +410,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     align-items: center;
+    display: block;
     height: auto;
     width: 100%;
     font-family: Oswald;
@@ -415,6 +427,11 @@ body {
     padding-top: 80px;
     padding-right: 30px;
 }
+
+.mobile-image {
+    display: none;
+}
+
 
 .top {
     margin: 0px;
@@ -449,7 +466,6 @@ body {
 .infoleft h3 {
     color: #D5D30F;
     font-size: 40px;
-    padding-right: px;
     width: 500px;
     border-bottom: 1px solid white;
     padding-bottom: 20px;

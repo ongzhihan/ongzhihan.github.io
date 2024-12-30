@@ -138,6 +138,10 @@
     flex-direction: row;
 }
 
+.musicswiper {
+    height: fit-content;
+}
+
 .swiper {
     padding-left: 40px;
     overflow: hidden;
@@ -148,10 +152,12 @@
 }
 
 .musicslidecontainer {
+    width: 420px;
     border: none;
     outline: none;
     background-color: #161616;
     padding: 10px;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     margin-left: 10px;
@@ -266,6 +272,11 @@
     justify-items: center;
     display: grid;
     justify-content: center;
+}
+
+.videoslider {
+    display: flex;
+    flex-direction: row;
 }
 
 .videovideocontainer {
