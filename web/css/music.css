@@ -2,6 +2,7 @@ body {
   margin: 0;
   background-color: #161616;
   font-family: Arial, sans-serif;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .musicBackground {
@@ -32,6 +33,7 @@ body {
 
 .wrapper2 {
   margin: 0 100px;
+  margin-bottom: 70px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -48,6 +50,7 @@ body {
 
 .singletitle {
   margin-left: 20px;
+  padding-left: 70px;
 }
 
 .single {
@@ -125,17 +128,18 @@ body {
 
 .albumtitle {
   justify-content: flex-start;
+  padding-left: 70px;
 }
 
 .album {
   border: none;
   outline: none;
   background-color: #161616;
-
+  height: 403px;
+  padding: 0 20px;
   display: flex;
-  padding-left: 20px;
-  padding-right: 20px;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   cursor: pointer;
   text-align: center;
@@ -222,10 +226,53 @@ body {
 
 @media screen and (max-width: 700px) {
   .albumbigfamily {
+    height: auto;
+    width: auto;
     flex-direction: column;
   }
 
-  .wrapper2 {
-    height: 1300px;
+  .wrapper {
+    margin: 0 50;
   }
-}
+
+  
+  .wrapper2 {
+    margin: 0 50;
+    height: 1420px;
+  }
+
+  .wrapper h1 {
+    text-align: left;
+  }
+
+  .wrapper2 h1 {
+    text-align: left;
+  }
+
+  .singletitle {
+    margin-left: 0;
+  }
+
+  .austin {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: -10px;
+    color: #d5d30f;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .pour {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: -10px;
+    color: #d5d30f;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .underpour {
+
+    display: flex;
+    justify-content: flex-start;
+  }
