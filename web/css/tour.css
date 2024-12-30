@@ -130,7 +130,6 @@ h1 {
         line-height: 70px;
         display: flex;
         justify-content: flex-start;
-        padding-bottom: 0px;
         margin-bottom: 10px;
     }
 
@@ -286,10 +285,8 @@ h1 {
         justify-content: center;
         text-align: center;
         align-items: center;
-        padding-top: 0px;
         line-height: 40px;
         font-size: 16px;
-        margin-top: 0px;
     }
 
     .viewmore {
@@ -469,7 +466,6 @@ body {
 .infoleft h3 {
     color: #D5D30F;
     font-size: 40px;
-    padding-right: px;
     width: 500px;
     border-bottom: 1px solid white;
     padding-bottom: 20px;
