@@ -421,6 +421,14 @@ h3 {
     aspect-ratio: 16/9;
 }
 
+.textalignl {
+    text-align: left;
+}
+
+.textalignr {
+    text-align: right;
+}
+
 @media screen and (max-width: 700px) {
     .submenu {
         display: none;
