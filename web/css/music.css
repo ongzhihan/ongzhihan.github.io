@@ -50,7 +50,6 @@ body {
 
 .singletitle {
   margin-left: 20px;
-  padding-left: 70px;
 }
 
 .single {
@@ -128,7 +127,6 @@ body {
 
 .albumtitle {
   justify-content: flex-start;
-  padding-left: 70px;
 }
 
 .album {
@@ -232,8 +230,16 @@ body {
   }
 
   .wrapper {
-    margin: 0 50;
+justify-content: center;
+align-items: center;
+
   }
+
+  .wrapper2 {
+    justify-content: center;
+    align-items: center;
+    
+      }
 
   
   .wrapper2 {
@@ -241,29 +247,40 @@ body {
     height: 1420px;
   }
 
+  .singletitle{
+    padding-left: 0px;
+    padding-bottom: 10px;
+  }
+  
+
+.albumtitle{
+  padding-left: 0px;
+  padding-bottom: 10px;
+}
+
   .wrapper h1 {
-    text-align: left;
+    text-align: center;
   }
 
   .wrapper2 h1 {
-    text-align: left;
+    text-align: center;
   }
 
   .singletitle {
-    margin-left: 0;
+    font-size: 56px;
+    text-align: center;
+    line-height: 60px;
   }
 
   .austin {
-    font-size: 14px;
     font-weight: bold;
     margin-bottom: -10px;
-    color: #d5d30f;
+    color: #d5d30f;                                     
     display: flex;
     justify-content: flex-start;
   }
 
   .pour {
-    font-size: 14px;
     font-weight: bold;
     margin-bottom: -10px;
     color: #d5d30f;
