@@ -152,16 +152,48 @@
                 </div>
             </div>
         </div>
+
+        <div class="modal" id="imgModal">
+            <span class="close-btn" onclick="closeModal()">×</span>
+            <img id="modalImage" alt="Modal Content">
+        </div>
+
+        <script>
+
+            function openModal(src) {
+                const modal = document.getElementById("imgModal");
+                const modalImage = document.getElementById("modalImage");
+                modal.style.display = "flex";
+                modalImage.src = src;
+            }
+
+            function closeModal() {
+                const modal = document.getElementById("imgModal");
+                modal.style.display = "none";
+            }
+
+            document.getElementById("imgModal").addEventListener("click", function (e) {
+                if (e.target === this) {
+                    closeModal();
+                }
+            });
+        </script>
         <div class="gallery">
             <div class="image-container1">
-                <img src="images/tour/tour2img1.jpeg" alt="Main Image" class="main-image">
-                <img src="images/tour/tour2img3.jpeg" alt="small-Image" class="small-image">
-                <img src="images/tour/tour2img4.jpeg" alt="Small Image" class="small-image">
+                <img src="images/tour/tour2img1.jpeg" alt="Main Image" class="main-image" onclick="
+                    openModal(this.src)">
+                <img src="images/tour/tour2img3.jpeg" alt="small-Image" class="small-image" onclick="
+                    openModal(this.src)">
+                <img src="images/tour/tour2img4.jpeg" alt="Small Image" class="small-image" onclick="
+                    openModal(this.src)">
             </div>
             <div class="image-container2">
-                <img src="images/tour/tour2img2.jpeg" alt="Small Image" class="main-image">
-                <img src="images/tour/tour2img5.jpeg" alt="Small Image" class="small-image">
-                <img src="images/tour/tour2.jpeg" alt="Small Image" class="small-image">
+                <img src="images/tour/tour2img2.jpeg" alt="Small Image" class="main-image" onclick="
+                    openModal(this.src)">
+                <img src="images/tour/tour2img5.jpeg" alt="Small Image" class="small-image" onclick="
+                    openModal(this.src)">
+                <img src="images/tour/tour2.jpeg" alt="Small Image" class="small-image" onclick="
+                    openModal(this.src)">
             </div>
         </div>
     </div>
