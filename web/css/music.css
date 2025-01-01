@@ -2,6 +2,7 @@ body {
   margin: 0;
   background-color: #161616;
   font-family: Arial, sans-serif;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .musicBackground {
@@ -32,6 +33,7 @@ body {
 
 .wrapper2 {
   margin: 0 100px;
+  margin-bottom: 70px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -131,11 +133,11 @@ body {
   border: none;
   outline: none;
   background-color: #161616;
-
+  height: 403px;
+  padding: 0 20px;
   display: flex;
-  padding-left: 20px;
-  padding-right: 20px;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   cursor: pointer;
   text-align: center;
@@ -222,10 +224,72 @@ body {
 
 @media screen and (max-width: 700px) {
   .albumbigfamily {
+    height: auto;
+    width: auto;
     flex-direction: column;
   }
 
-  .wrapper2 {
-    height: 1300px;
+  .wrapper {
+justify-content: center;
+align-items: center;
+
   }
+
+  .wrapper2 {
+    justify-content: center;
+    align-items: center;
+    
+      }
+
+  
+  .wrapper2 {
+    margin: 0 50;
+    height: 1420px;
+  }
+
+  .singletitle{
+    padding-left: 0px;
+    padding-bottom: 10px;
+  }
+  
+
+.albumtitle{
+  padding-left: 0px;
+  padding-bottom: 10px;
 }
+
+  .wrapper h1 {
+    text-align: center;
+  }
+
+  .wrapper2 h1 {
+    text-align: center;
+  }
+
+  .singletitle {
+    font-size: 56px;
+    text-align: center;
+    line-height: 60px;
+  }
+
+  .austin {
+    font-weight: bold;
+    margin-bottom: -10px;
+    color: #d5d30f;                                     
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .pour {
+    font-weight: bold;
+    margin-bottom: -10px;
+    color: #d5d30f;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .underpour {
+
+    display: flex;
+    justify-content: flex-start;
+  }
