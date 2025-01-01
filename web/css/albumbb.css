@@ -25,11 +25,11 @@ body {
       rgba(0, 0, 0, 0.9) 100%,
       #000000 100%
     ),
-    url("../images/music/bluewave.png");
-  background-size: 200%;
-  background-position: center center;
-  filter: blur(10px);
-  z-index: -1;
+    url("../images/music/bbb.png");
+  background-size: 100%; /* Zoom in by increasing the size of the image */
+  background-position: center center; /* Ensure the focus remains centered */
+  filter: blur(10px); /* Maintain the blur effect */
+  z-index: -1; /* Place it behind the container's content */
 }
 
 h1 {
@@ -46,8 +46,7 @@ h2 {
 }
 
 .content {
-  margin-left: 23px;
-  gap: 50px;
+  margin-left: -10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,9 +56,11 @@ h2 {
 /* ----------------------------------------button----------------------------------- */
 
 .album-image {
+  flex: 1.5;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 50px;
   margin-top: 30px;
 }
 
@@ -85,10 +86,11 @@ h2 {
 }
 
 .upperpart {
+  flex: 1.5;
   min-width: 300px;
   margin: 0 50px;
-  margin-top: 20px;
-  font-size: 14px;
+  margin-top: 25px;
+  font-size: 12px;
   display: flex;
   flex-direction: column;
 }
@@ -105,13 +107,15 @@ h2 {
 }
 
 .upperpart li span {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 /* ----------------------------------album infomation-------------------------------- */
 
 .infofamily {
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .line {
@@ -125,7 +129,7 @@ h2 {
   display: flex;
   justify-content: center;
   position: relative;
-  font-size: 14px;
+  font-size: 12;
 }
 
 .subtittle {
@@ -139,11 +143,7 @@ h2 {
 .gapbetween {
   position: relative;
   justify-content: row;
-}
-
-.gapbetween {
-  margin-top: 30px;
-  line-height: 8.3;
+  line-height: 11;
 }
 
 .lowerpart {
@@ -151,6 +151,7 @@ h2 {
   width: 600px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
 }
 
 .lowerpart ul {
@@ -165,7 +166,7 @@ h2 {
 }
 
 .lowerpart li span {
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .albuminfo {
@@ -205,16 +206,26 @@ h2 {
   justify-content: center;
 }
 
-.arrow {
-  margin-left: 8px;
-  font-size: 30px;
+.downbutton {
+  position: absolute;
+  bottom: -200px;
+  /* Adjust this value to control the distance from the bottom */
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  /* Add horizontal padding if needed */
 }
 
-.twelvecarattoothache {
-  position: relative;
+.austin {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.bb {
   display: flex;
   justify-content: flex-end;
-  margin: 60px 0px;
 }
 
 /* Mobile Responsiveness */
@@ -254,9 +265,13 @@ h2 {
     width: 80%;
   }
 
-  .twelvecarattoothache {
+  .bb {
     justify-content: flex-end;
   }
+}
+
+.austin {
+  justify-content: flex-start;
 }
 
 @media screen and (max-width: 480px) {
@@ -293,11 +308,7 @@ h2 {
     font-size: 16px;
   }
 
-  .right {
-    width: 10%;
-  }
-
-  .twelvecarattoothache {
+  .bb {
     flex-direction: column;
     justify-content: center;
     align-items: center;
