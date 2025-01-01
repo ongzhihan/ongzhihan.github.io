@@ -2,7 +2,7 @@ body {
     background-color: #161616;
 }
 
-.contact-infopage {
+.contact-page {
     padding: 40px 40px;
     padding-top: 80px;
 }
@@ -13,54 +13,34 @@ h1 {
     padding-bottom: 60px;
 }
 
-.contact-container {
-    border-top: 1px white solid;
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 60px;
+.forms {
+    display: inline;
 }
 
-.contact-left {
+input[type=text],
+select {
+    background-color: #4F5051;
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    justify-content: center;
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 50%;
+    background-color: #4F5051;
     color: #D5D30F;
-    font-family: Oswald;
-    font-size: 40px;
-    font-weight: bold;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: flex-start;
-    text-align: start;
-    letter-spacing: 2px;
-    max-width: 450px;
-    padding-top: 20px;
-
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 1px solid #D5D30F;
 }
 
-.contact-right {
-    color: white;
-    font-family: Roboto;
-    font-weight: bold;
-}
-
-.member-name {
-    color: #D5D30F;
-    font-size: 20px;
-    font-family: Roboto;
-    padding-bottom: 10px;
-    padding-top: 20px;
-}
-
-.member-email {
-    font-size: 18px;
-    text-decoration: underline;
-    padding-bottom: 5px;
-}
-
-.member-phonenum {
-    font-size: 18px;
-    border-bottom: 1px white solid;
-    width: 500px;
-    padding-bottom: 20px;
-    text-decoration: underline;
+input[type=submit]:hover {
+    background-color: #D5D30F;
+    color: #161616;
 }
 
 @media screen and (max-width: 990px) {
@@ -78,59 +58,5 @@ h1 {
         font-size: 48px;
     }
 
-    .contact-container {
-        border-top: none;
-        border-width: 100%;
-        display: inline-block;
-        justify-self: center;
-        align-items: center;
-        padding-bottom: 60px;
-        width: 100%;
-    }
 
-    .contact-left {
-        color: #D5D30F;
-        font-family: Oswald;
-        font-size: 32px;
-        font-weight: bold;
-        text-transform: uppercase;
-        display: flex;
-        justify-content: center;
-        text-align: start;
-        letter-spacing: 2px;
-        max-width: 450px;
-        padding-top: 20px;
-        padding-bottom: 60px;
-        line-height: 50px;
-    }
-
-    .contact-right {
-        color: white;
-        font-family: Roboto;
-        font-weight: bold;
-        text-align: center;
-        border-top: 1px white solid;
-        width: 100%;
-    }
-
-    .member-name {
-        color: #D5D30F;
-        font-family: Roboto Roman;
-        padding-bottom: 10px;
-        padding-top: 20px;
-    }
-
-    .member-email {
-        text-decoration: underline;
-        padding-bottom: 5px;
-        display: block;
-        justify-content: center;
-    }
-
-    .member-phonenum {
-        border-bottom: 1px white solid;
-        width: 100%;
-        padding-bottom: 20px;
-        text-decoration: underline;
-    }
 }
