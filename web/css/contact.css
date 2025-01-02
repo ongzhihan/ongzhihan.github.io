@@ -20,7 +20,9 @@ h1 {
 input[type=text],
 select {
     background-color: #4F5051;
-    width: 50%;
+    font-size: 14px;
+    color: white;
+    width: 590px;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -29,8 +31,27 @@ select {
     box-sizing: border-box;
 }
 
+
+textarea {
+    display: inline;
+    width: 590px;
+    height: 150px;
+    padding: 12px 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    border: 1px solid white;
+    background-color: #4F5051;
+    color: #A3A3A3;
+    font-family: roboto;
+    resize: none;
+}
+
+
+
 input[type=submit] {
-    width: 50%;
+    width: 590px;
+    font-size: 14px;
     background-color: #4F5051;
     color: #D5D30F;
     padding: 14px 20px;
