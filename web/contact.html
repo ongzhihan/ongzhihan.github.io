@@ -99,16 +99,44 @@
 
     <div class="contact-page">
         <h1>CONTACT</h1>
-        <div class="forms">
-            <form action="/action_page.php">
-                <input type="text" id="fname" name="fname" placeholder="NAME"><br>
-                <input type="text" id="femail" name="femail" placeholder="EMAIL"><br>
-                <input type="text" id="fsubject" name="fsubject" placeholder="SUBJECT"><br>
-                <textarea>MASSAGE...</textarea>
-                <input type="submit" value="SUBMIT">
-            </form>
+
+        <form action="/action_page.php">
+            <input type="text" id="fname" name="fname" placeholder="NAME"><br>
+            <input type="text" id="femail" name="femail" placeholder="EMAIL"><br>
+            <input type="text" id="fmassage" name="femail" placeholder="MASSAGE..."><br>
+            <button type="button" id="submitbtn">SUBMIT</button>
+        </form>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Thanks for your submission!</p>
         </div>
     </div>
+
+    <script>
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("submitbtn");
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 
     <!-- footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer -->
     <footer>

@@ -68,6 +68,10 @@ h1 {
     font-size: 14px;
 }
 
+p:hover {
+    text-decoration: underline;
+}
+
 /*Tour 2*/
 .Tour2 {
     margin-left: 40px;
