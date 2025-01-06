@@ -16,6 +16,8 @@ body {
 
 .maininfo {
     width: 40%;
+    display: flex;
+    flex-direction: column;
 }
 
 .mainvideo {

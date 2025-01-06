@@ -188,8 +188,6 @@
       </div>
     </div>
     <div class="music-slick-slider musicswiper">
-      <button type="button" class="slick-prev">Previous</button>
-      <button type="button" class="slick-next">Next</button>
       <div class="musicslidecontainer swiper-slide">
         <a href="music1.html">
           <img src="images/music/pour me a drink.png" class="musicswipermargintop" alt="pmad cover" width="420px" />
@@ -239,8 +237,8 @@
           </div>
         </a>
       </div>
-      <a href="music4.html">
-        <div class="musicslidecontainer swiper-slide">
+      <div class="musicslidecontainer swiper-slide">
+        <a href="music4.html">
           <img src="images/music/beerbongs & bentleys.jpg" class="musicswipermargintop" alt="bnb cover" width="420px" />
           <div class="mcdetails">
             <div class="musiccontainert">
@@ -253,9 +251,12 @@
               <p class="musictext textalignr">1 Hr 4 Min</p>
             </div>
           </div>
-        </div>
-      </a>
+        </a>
+      </div>
     </div>
+
+
+
     <div class="displaygrid">
       <a href="music.html" class="yellowbutton musicbutton">View More</a>
     </div>
@@ -286,9 +287,9 @@
   <div class="videosection">
     <div class="videocontainer">
       <h1>Video</h1>
-      <div class="video-slick-slider">
+      <div class="videoslider video-slick-slider">
         <div class="videocontainerb">
-          <img src="images/videos/i had some help.jpg" alt="ihsh video" class="videosubvideo">
+          <img src="images/videos/i had some help.jpg" alt="ihsh video" class="videosubvideo" width="480px">
           <h2>I Had Some Help ft. Morgan Wallen</h2>
           <p class="videosubtitle">2024 - Directed by Chris Villa</p>
           <p class="videodescription">"I Had Some Help" by Post Malone featuring Morgan Wallen delves into the theme of
@@ -469,15 +470,12 @@
   </script>
 
   <!-- music swiper -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
   <script>
     $('.music-slick-slider').slick({
-      infinite: false,
-      slidesToScroll: 1,
-      responsive: [
-        {
-
-        }
-      ]
+      arrows: true,
+      infinite: true,
     });
   </script>
 
@@ -492,6 +490,7 @@
           breakpoint: 768,
           settings: {
             arrows: false,
+
             centerMode: true,
             centerPadding: '40px',
             slidesToShow: 3
