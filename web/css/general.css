@@ -9,10 +9,18 @@ header {
     width: 100%;
     background: #161616;
     padding: 10px;
+    align-items: center;
+    z-index: 999;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 999;
+}
+
+.majorheadercontainer {
+    max-width: 1800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .headercontainer {
@@ -275,6 +283,10 @@ footer {
     height: 20px;
     border-radius: 3px;
     border-color: #161616;
+}
+
+.checkboxpaddingright {
+    padding-left: 4px;
 }
 
 .emailcolumn {
@@ -698,16 +710,18 @@ h3 {
     }
 
     .footercontainerlink {
-        width: 70%;
+        width: 95%;
         display: flex;
         padding-left: 40px;
+        justify-content: space-between;
     }
 
     .footercontainerrt {
         display: flex;
         flex-direction: column;
         margin-left: 0px;
-        width: 100%
+        width: 100%;
+        padding-right: 0px;
     }
 
     .footercategoriestitle {
