@@ -2,7 +2,6 @@ body {
   margin: 0;
   background-color: #161616;
   font-family: Arial, sans-serif;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .musicBackground {
@@ -126,6 +125,7 @@ body {
 }
 
 .albumtitle {
+  margin-left: 20px;
   justify-content: flex-start;
 }
 
@@ -222,7 +222,11 @@ body {
 
 /*-----------------------------mobile------------------------------*/
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 880px) {
+  .body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+
   .albumbigfamily {
     height: auto;
     width: auto;
@@ -230,33 +234,31 @@ body {
   }
 
   .wrapper {
-justify-content: center;
-align-items: center;
-
-  }
-
-  .wrapper2 {
     justify-content: center;
     align-items: center;
-    
-      }
+  }
 
-  
   .wrapper2 {
     margin: 0 50;
     height: 1420px;
+    justify-content: center;
+    align-items: center;
   }
 
-  .singletitle{
+  .singletitle {
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-bottom: 10px;
+    font-size: 56px;
+    text-align: center;
+    line-height: 60px;
+  }
+
+  .albumtitle {
+    margin-left: 0px;
     padding-left: 0px;
     padding-bottom: 10px;
   }
-  
-
-.albumtitle{
-  padding-left: 0px;
-  padding-bottom: 10px;
-}
 
   .wrapper h1 {
     text-align: center;
@@ -266,16 +268,10 @@ align-items: center;
     text-align: center;
   }
 
-  .singletitle {
-    font-size: 56px;
-    text-align: center;
-    line-height: 60px;
-  }
-
   .austin {
     font-weight: bold;
     margin-bottom: -10px;
-    color: #d5d30f;                                     
+    color: #d5d30f;
     display: flex;
     justify-content: flex-start;
   }
@@ -289,7 +285,72 @@ align-items: center;
   }
 
   .underpour {
-
     display: flex;
     justify-content: flex-start;
   }
+}
+/*-----------------------------mobile------------------------------*/
+
+@media screen and (max-width: 480px) {
+  .body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+
+  .albumbigfamily {
+    height: auto;
+    width: auto;
+    flex-direction: column;
+  }
+
+  .wrapper {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wrapper2 {
+    margin: 0 50;
+    height: 1420px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .singletitle {
+    padding-left: 0px;
+    padding-bottom: 10px;
+    margin: 0px;
+  }
+
+  .albumtitle {
+    padding-left: 0px;
+    padding-bottom: 10px;
+  }
+
+  .wrapper h1 {
+    text-align: center;
+  }
+
+  .wrapper2 h1 {
+    text-align: center;
+  }
+
+  .austin {
+    font-weight: bold;
+    margin-bottom: -10px;
+    color: #d5d30f;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .pour {
+    font-weight: bold;
+    margin-bottom: -10px;
+    color: #d5d30f;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .underpour {
+    display: flex;
+    justify-content: flex-start;
+  }
+}

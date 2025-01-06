@@ -8,26 +8,25 @@ body {
 }
 
 .container {
-  position: relative;
   overflow: hidden;
 }
 
 .container::before {
   content: "";
   position: absolute;
-  top: -10px;
-  left: -5px;
-  height: 100vh;
-  width: 100%;
+  top: 0; /* Set to 0 so it sticks to the top */
+  left: 0; /* Align with the left edge */
+  height: 120vh; /* Set height to viewport height for full coverage */
+  width: 100%; /* Match the container width */
   background: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0) 0%,
       rgba(0, 0, 0, 0.9) 100%,
       #000000 100%
     ),
-    url("../images/music/pour me a drink backgroud.png");
-  background-size: 100%; /* Zoom in by increasing the size of the image */
-  background-position: center center; /* Ensure the focus remains centered */
+    url("../images/music/pour me a drink backgroud.png") no-repeat;
+  background-size: cover; /* Adjust image size to fill the container */
+  background-position: center center; /* Ensure the image stays centered */
   filter: blur(10px); /* Maintain the blur effect */
   z-index: -1; /* Place it behind the container's content */
 }
@@ -56,10 +55,10 @@ h2 {
 /* ----------------------------------------button----------------------------------- */
 
 .album-image {
-  flex: 1.5;
+  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   margin-left: 50px;
   margin-top: 30px;
 }
@@ -86,7 +85,7 @@ h2 {
 }
 
 .upperpart {
-  flex: 1.5;
+  flex: 1;
   min-width: 300px;
   margin: 0 50px;
   margin-top: 25px;
@@ -113,6 +112,7 @@ h2 {
 /* ----------------------------------album infomation-------------------------------- */
 
 .infofamily {
+  height: 1200px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -268,10 +268,14 @@ h2 {
   .bb {
     justify-content: flex-end;
   }
-}
 
-.austin {
-  justify-content: flex-start;
+  .austin {
+    justify-content: flex-start;
+  }
+
+  .infofamily {
+    height: 1200px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -308,9 +312,17 @@ h2 {
     font-size: 16px;
   }
 
+  .downbutton {
+    bottom: -150px;
+  }
+
   .bb {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .infofamily {
+    height: 1450px;
   }
 }
