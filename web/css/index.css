@@ -496,6 +496,7 @@
 
     .musicslidecontainer {
         margin-top: 20px;
+        width: 90% !important;
 
         a {
             width: 100%;
