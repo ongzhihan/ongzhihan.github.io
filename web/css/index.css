@@ -141,11 +141,18 @@
 .musicswiper {
     height: fit-content;
     display: flex;
-    padding-left: 40px;
 }
 
 .musicswipermargintop {
     margin-top: 19px;
+}
+
+.displaymusicslider {
+    display: block;
+}
+
+.mobilemusicslider {
+    display: block;
 }
 
 .musicslidecontainer {
@@ -321,7 +328,8 @@
 }
 
 .videocontainerb {
-    width: 90% !important;
+    width: 80%;
+    max-height: 700px;
     align-items: center;
     justify-items: center;
     text-align: center;
@@ -478,6 +486,14 @@
     .musicswipermargintop {
         margin-top: 19px;
         width: 95%;
+    }
+
+    .displaymusicslider {
+        display: none;
+    }
+
+    .mobilemusicslider {
+        display: block;
     }
 
     .musicslidecontainer {
