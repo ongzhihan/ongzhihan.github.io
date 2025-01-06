@@ -450,8 +450,28 @@ h3 {
     text-align: right;
 }
 
+.desktop-appear {
+    display: block;
+}
+
+.mobile-appear {
+    display: none;
+}
+
 
 @media screen and (max-width: 700px) {
+    .desktop-appear {
+        display: none;
+    }
+
+    .mobile-appear {
+        display: block;
+    }
+
+    .width90 {
+        width: 90%;
+    }
+
     .submenu {
         display: none;
     }
@@ -710,7 +730,7 @@ h3 {
     }
 
     .footercontainerlink {
-        width: 95%;
+        width: 90%;
         display: flex;
         padding-left: 40px;
         justify-content: space-between;
