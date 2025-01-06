@@ -16,7 +16,7 @@
 }
 
 .background {
-    background-image: url('https://www.postmalone.com/files/2024/06/pm-poster-scaled.jpg');
+    background-image: url('https://ongzhihan.github.io//web/images/homepage/homehero.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -239,7 +239,7 @@
 
 .tourbackground {
     width: 100%;
-    background-image: url('https://ongzhihan.github.io//web/images/tour/tour1.jpeg');
+    background-image: url('https://ongzhihan.github.io//web/images/homepage/hometour.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center 0px;
