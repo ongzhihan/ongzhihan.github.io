@@ -33,7 +33,7 @@ select {
     justify-content: center;
     border: 1px solid white;
     box-sizing: border-box;
-    margin-top: 0px;
+    margin-top: 5px;
     margin-bottom: 0px;
 }
 
@@ -67,6 +67,7 @@ textarea {
     margin: 8px 0;
     border: 1px solid #D5D30F;
     margin-bottom: 50px;
+    margin-top: 5px;
 }
 
 #submitbtn:hover {
