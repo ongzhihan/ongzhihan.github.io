@@ -3,10 +3,17 @@ body {
     margin-bottom: -10px;
 }
 
+html,
+body {
+    background-color: #161616;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
 /* header */
 header {
-    position: fixed;
-    width: 100%;
+    position: sticky;
+    top: 0;
     background: #161616;
     padding: 10px;
     align-items: center;
@@ -256,7 +263,6 @@ footer {
 
 .footercopyright {
     color: #161616;
-    margin-left: 40px;
 }
 
 .footertext {
