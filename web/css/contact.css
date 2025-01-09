@@ -21,7 +21,7 @@ form {
     margin-top: 50px;
 }
 
-input[type=text],
+input[type=name],
 select {
     background-color: #4F5051;
     font-size: 14px;
@@ -36,6 +36,39 @@ select {
     margin-top: 5px;
     margin-bottom: 0px;
 }
+
+input[type=email],
+select {
+    background-color: #4F5051;
+    font-size: 14px;
+    color: white;
+    width: 590px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    justify-content: center;
+    border: 1px solid white;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+input[type=massage],
+select {
+    background-color: #4F5051;
+    font-size: 14px;
+    color: white;
+    width: 590px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    justify-content: center;
+    border: 1px solid white;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
 
 #fmassage {
     padding-bottom: 80px;
