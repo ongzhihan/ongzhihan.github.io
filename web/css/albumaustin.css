@@ -2,11 +2,9 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin: 0;
-  max-width: 100%;
   color: white;
-  background-color: #03090b;
+  background-color: transparent;
 }
-
 .container {
   overflow: hidden;
 }
@@ -193,7 +191,15 @@ h2 {
 }
 
 /* -------------------------------------------------------buttonlast------------------------------------------------ */
-.button {
+a {
+  color: white;
+}
+
+a:hover {
+  color: #d5d30f;
+}
+
+.buttonlast {
   background-color: transparent;
   color: white;
   border: none;

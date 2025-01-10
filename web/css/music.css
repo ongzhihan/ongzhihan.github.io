@@ -63,11 +63,30 @@ body {
   justify-content: center;
   cursor: pointer;
   text-align: center;
-  transition: background-color 0.3s;
+  transition: 0.8s;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
 }
 
 .single:hover {
-  background-color: #d5d30f;
+  color: #333333;
+}
+
+.single::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  background: #d5d30f;
+  z-index: -1;
+  transition: 0.8s;
+}
+
+.single:hover::before {
+  height: 100%;
 }
 
 .single:hover .underpour {
@@ -133,19 +152,38 @@ body {
   border: none;
   outline: none;
   background-color: #161616;
-  height: 403px;
-  padding: 0 20px;
+  height: 411px;
+  width: 290px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   text-align: center;
-  transition: background-color 0.3s;
+  transition: 0.8s;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
 }
 
 .album:hover {
-  background-color: #d5d30f;
+  color: #333333;
+}
+
+.album::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  background: #d5d30f;
+  z-index: -1;
+  transition: 0.8s;
+}
+
+.album:hover::before {
+  height: 100%;
 }
 
 .album:hover .underaustin {
