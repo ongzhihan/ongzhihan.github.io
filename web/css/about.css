@@ -7,7 +7,6 @@ body {
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-
 /*------------------------About post Malone---------------------*/
 
 .page1 {
@@ -23,9 +22,9 @@ body {
 
 .title1 {
   width: 100%;
-font-size: 56px;
-        text-align: center;
-        line-height: 60px;
+  font-size: 56px;
+  text-align: center;
+  line-height: 60px;
   color: rgb(255, 255, 255);
 }
 
@@ -40,7 +39,7 @@ font-size: 56px;
 }
 
 .page2 {
-  max-width: 1440px;
+  max-width: 1800px;
   height: 1980px;
   background: url("../images/about/hero2.png") no-repeat center center;
   background-size: 100% 100%;
@@ -124,68 +123,130 @@ font-size: 56px;
   color: white;
 }
 
-
-
 /*-----------------------------mobile------------------------------*/
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
   /* General adjustments for mobile screens */
-body {
-  background-color: #161616;
-  font-size: 14px; /* Smaller default font size */
-  padding: 0;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  body {
+    background-color: #161616;
+    font-size: 14px; /* Smaller default font size */
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+
+  .title1.about {
+    font-size: 50px;
+  }
+
+  /* Page Content: Adjust for mobile */
+  .page1 {
+    height: 100vh; /* Reduce hero image height */
+    background-size: cover;
+  }
+
+  .page2container {
+    height: auto; /* Let content determine the height */
+  }
+
+  .page2 {
+    height: 550vh;
+    background: url("../images/about/hero2.png") no-repeat;
+    background-size: contain;
+    padding: 20px;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .earlyday,
+  .cultural {
+    font-size: 14px;
+    width: 65%;
+    margin: 15px 0;
+  }
+
+  /* Timeline: Adjust for better readability */
+  .awardfamily {
+    margin-top: 470px;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .timeline {
+    flex-direction: column; /* Stack timeline items vertically */
+    align-items: center;
+  }
+
+  .timeline-item {
+    margin-bottom: 20px;
+  }
+
+  .timeline-item .details {
+    width: 100%; /* Use a larger width */
+    font-size: 14px; /* Increase readability */
+  }
 }
 
-.title1.about{
-  font-size: 50px;
-}
+@media screen and (max-width: 600px) {
+  /* General adjustments for mobile screens */
+  body {
+    background-color: #161616;
+    font-size: 14px; /* Smaller default font size */
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
 
-/* Page Content: Adjust for mobile */
-.page1 {
-  height: 100vh; /* Reduce hero image height */
-  background-size: cover;
-}
+  .title1.about {
+    font-size: 50px;
+  }
 
-.page2container {
-  height: auto; /* Let content determine the height */
-}
+  /* Page Content: Adjust for mobile */
+  .page1 {
+    height: 100vh; /* Reduce hero image height */
+    background-size: cover;
+  }
 
-.page2 {
-  height: 750vh;
-  background: url("../images/about/hero2.png") no-repeat;
-  background-size: contain;
-  padding: 20px;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-}
+  .page2container {
+    height: auto; /* Let content determine the height */
+  }
 
+  .page2 {
+    height: 1070vh;
+    background: url("../images/about/hero2.png") no-repeat;
+    background-size: contain;
+    padding: 20px;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+  }
 
-.earlyday, .cultural {
-  font-size: 14px; 
-  width: 65%;
-  margin: 15px 0;
-}
+  .earlyday,
+  .cultural {
+    font-size: 14px;
+    width: 65%;
+    margin: 15px 0;
+  }
 
-/* Timeline: Adjust for better readability */
-.awardfamily{
-margin-top: 470px;
-background-position: center;
-display: flex;
-flex-direction: column;
-}
+  /* Timeline: Adjust for better readability */
+  .awardfamily {
+    margin-top: 470px;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+  }
 
-.timeline {
-  flex-direction: column; /* Stack timeline items vertically */
-  align-items: center;
-}
+  .timeline {
+    flex-direction: column; /* Stack timeline items vertically */
+    align-items: center;
+  }
 
-.timeline-item {
-  margin-bottom: 20px;
-}
+  .timeline-item {
+    margin-bottom: 20px;
+  }
 
-.timeline-item .details {
-  width: 100%; /* Use a larger width */
-  font-size: 14px; /* Increase readability */
+  .timeline-item .details {
+    width: 100%; /* Use a larger width */
+    font-size: 14px; /* Increase readability */
+  }
 }
