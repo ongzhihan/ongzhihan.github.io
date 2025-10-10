@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flexbox1</title>
+    <!--Oxygen and Archivo typeface-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background-color: rgba(246, 245, 239);
+        }
+
+        p {
+            font-family: "Oxygen", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            color: rgba(54, 54, 54);
+        }
+
+        h1 {
+            font-family: "Archivo", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 100;
+            font-size: 57px;
+            margin-top: 12px;
+            margin-bottom: 20px;
+            letter-spacing: -0.5px;
+        }
+
+        h2 {
+            font-family: "Archivo", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 100;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        h3 {
+            font-family: "Archivo", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 100;
+            font-size: 28px;
+        }
+
+        .heading {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .main-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            gap: 30px;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px 0;
+            width: 27%;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .image {
+            width: 90%;
+            border-radius: 10px;
+        }
+
+        .description {
+            width: 80%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        <h2>BUILDING A BETTER FUTURE</h2>
+        <h1>We construct & deliver quality projects</h1>
+        <p>Meet our customers and explore their success stories with us</p>
+    </div>
+
+    <div class="main-container">
+        <div class="container">
+            <img src="img/img1.jpg" alt="Image1" class="image">
+            <div class="description">
+                <h3>Residential projects</h3>
+                <p>We build sustainable and modern homes for comfortable living.</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <img src="img/img2.jpg" alt="Image1" class="image">
+            <div class="description">
+                <h3>Commercial spaces</h3>
+                <p>We create efficient, inspiring workspaces for businesses of all sizes.</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <img src="img/img3.jpg" alt="Image1" class="image">
+            <div class="description">
+                <h3>Infrastructure works</h3>
+                <p>We develop strong, reliable infrastructure for growing communities.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
