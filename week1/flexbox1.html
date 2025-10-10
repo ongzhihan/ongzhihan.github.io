@@ -2,7 +2,6 @@
 <html>
 
 <head>
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>flexbox1</title>
     <!--Oxygen and Archivo typeface-->
@@ -90,6 +89,63 @@
 
         .description {
             width: 80%;
+        }
+
+        @media only screen and (max-width: 1200px) {
+            h1 {
+                font-size: 40px;
+                margin-top: 6px;
+                margin-bottom: 8px;
+            }
+
+            h3 {
+                font-size: 22px;
+            }
+
+            .main-container {
+                margin-top: 30px;
+            }
+
+            .container {
+                width: 30%;
+                padding: 10px 0;
+            }
+        }
+
+        @media only screen and (max-width: 760px) {
+            h1 {
+                font-size: 36px;
+                margin-top: 6px;
+                margin-bottom: 30px;
+            }
+
+            h3 {
+                font-size: 22px;
+            }
+
+            .main-container {
+                margin-top: 20px;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .container {
+                width: 100%;
+                padding: 20px 0;
+            }
+
+            .image {
+                width: 95%;
+            }
+
+            .description {
+                width: 90%;
+            }
+
+            p {
+                margin-top: -10px;
+            }
         }
     </style>
 </head>
