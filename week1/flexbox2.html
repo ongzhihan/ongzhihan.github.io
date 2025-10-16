@@ -32,6 +32,10 @@
             max-width: 1500px;
         }
 
+        .mobile-nav {
+            display: none;
+        }
+
         .logo {
             width: 190px;
         }
@@ -70,6 +74,24 @@
             color: #ee5f2c;
         }
 
+        .menu-toggle {
+            display: none;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .close-btn {
+            position: fixed;
+            top: 2px;
+            right: 30px;
+            display: none;
+            font-size: 50px;
+            font-weight: 600;
+            color: white;
+            cursor: pointer;
+        }
+
         #services {
             color: #ee5f2c;
         }
@@ -84,7 +106,7 @@
             height: 22px;
         }
 
-        #phone-no {
+        .phone-no {
             font-weight: 700;
         }
 
@@ -95,6 +117,11 @@
             margin-right: 20px;
         }
 
+        .phone-contact:hover {
+            opacity: 0.7;
+            cursor: pointer;
+        }
+
         .button {
             font-size: 14px;
             padding: 12px 17px;
@@ -102,22 +129,97 @@
             background-color: #ee5f2c;
             border-radius: 7px;
             border: none;
+            cursor: pointer;
+
         }
 
         .button:hover {
             background-color: #be4c23;
         }
 
-        @media screen and (max-width: 1200px) {}
+        @media screen and (max-width: 1200px) {
+
+            .nav,
+            .button {
+                display: none;
+            }
+
+            .mobile-nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 60px;
+                margin: 0 20px;
+                width: 98%;
+                max-width: 1100px;
+            }
+
+            .mobile-nav a:hover {
+                color: #ee5f2c;
+            }
+
+            #services2 {
+                color: #ee5f2c;
+            }
+
+            .menu {
+                flex-direction: column;
+                display: none;
+                position: fixed;
+                top: 0;
+                right: 0;
+                width: 450px;
+                height: 100%;
+                background-color: rgb(30, 30, 30);
+                justify-content: center;
+                align-items: left;
+                z-index: 1000;
+            }
+
+            .menu a {
+                padding: 20px;
+                padding-left: 50px;
+                font-size: 24px;
+                color: white;
+            }
+
+            .menu-item>a {
+                display: block;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            #menu-checkbox:checked+.menu-toggle+.menu {
+                display: flex;
+            }
+
+            #menu-checkbox:checked+.menu-toggle+.menu .close-btn {
+                display: block;
+            }
+
+            .menu-icon {
+                width: 25px;
+            }
+        }
+
+        @media screen and (max-width: 760px) {
+            .phone-contact {
+                display: none;
+            }
+        }
     </style>
 </head>
 
 <body>
     <div class="major-nav">
+        <!-- Desktop -->
         <div class="nav">
             <div><img src="img/logo.png" alt="logo" class="logo"></div>
-
             <div class="menu">
+                <!-- Close button for mobile view -->
+                <label for="menu-checkbox" class="close-btn">&times;</label>
                 <a href="#home">Home</a>
                 <a href="#services" id="services">Services</a>
                 <a href="#work">Work</a>
@@ -127,9 +229,34 @@
             <div class="nav-right">
                 <div class="phone-contact">
                     <img src="img/phone.png" alt="phone" class="phone-icon">
-                    <p id="phone-no">555-123-4567</p>
+                    <p class="phone-no">555-123-4567</p>
                 </div>
                 <button class="button">Contact</button>
+            </div>
+        </div>
+
+        <!-- Mobile -->
+        <div class="mobile-nav">
+            <div><img src="img/logo.png" alt="logo" class="logo"></div>
+            <div class="nav-right">
+                <div class="phone-contact">
+                    <img src="img/phone.png" alt="phone" class="phone-icon">
+                    <p class="phone-no">555-123-4567</p>
+                </div>
+                <button class="button">Contact</button>
+                <!-- Checkbox to toggle menu on mobile -->
+                <input type="checkbox" id="menu-checkbox" style="display: none;">
+                <label for="menu-checkbox" class="menu-toggle"><img src="img/menu-bar.png" alt="menu"
+                        class="menu-icon" /></label>
+                <div class="menu">
+                    <!-- Close button for mobile view -->
+                    <label for="menu-checkbox" class="close-btn">&times;</label>
+                    <a href="#home">Home</a>
+                    <a href="#services" id="services2">Services</a>
+                    <a href="#work">Work</a>
+                    <a href="#details">Project Details</a>
+                    <a href="#contact">Contact</a>
+                </div>
             </div>
         </div>
     </div>
