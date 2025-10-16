@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flexbox2</title>
+    <!--Oxygen and Archivo typeface-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background-color: rgba(246, 245, 239);
+            margin: 0;
+        }
+
+        .major-nav {
+            display: flex;
+            justify-content: center;
+            background-color: white;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+            margin: 0 20px;
+            width: 90%;
+            max-width: 1500px;
+        }
+
+        .logo {
+            width: 190px;
+        }
+
+        .nav-center {
+            overflow: hidden;
+            display: flex;
+        }
+
+        .center-btn {
+            background-color: white;
+            border: none;
+            font-size: 16px;
+            padding: 20px 13px;
+        }
+
+        .center-btn:hover {
+            color: #ee5f2c;
+        }
+
+        p,
+        .nav-center a {
+            font-family: "Archivo", sans-serif;
+            font-weight: 550;
+            font-style: normal;
+            color: rgba(54, 54, 54);
+            margin: 0;
+            text-decoration: none;
+        }
+
+        .nav-center a {
+            padding: 12px 17px;
+            display: block;
+        }
+
+        a:hover {
+            color: #ee5f2c;
+        }
+
+        #services {
+            color: #ee5f2c;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+        }
+
+        .phone-icon {
+            width: 22px;
+            height: 22px;
+        }
+
+        #phone-no {
+            font-weight: 700;
+        }
+
+        .phone-contact {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-right: 20px;
+        }
+
+        .button {
+            font-size: 14px;
+            padding: 12px 17px;
+            color: white;
+            background-color: #ee5f2c;
+            border-radius: 7px;
+            border: none;
+        }
+
+        .button:hover {
+            background-color: #be4c23;
+        }
+
+        @media only screen and (max-width: 1200px) {}
+    </style>
+</head>
+
+<body>
+    <div class="major-nav">
+        <div class="nav">
+            <div><img src="img/logo.png" alt="logo" class="logo"></div>
+            <div class="nav-center" id="myTopnav">
+                <a href="#home">Home</a>
+                <a href="#services" id="services">Services</a>
+                <a href="#work">Work</a>
+                <a href="#details">Project Details</a>
+                <a href="#contact">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <div class="nav-right">
+                <div class="phone-contact">
+                    <img src="img/phone.png" alt="phone" class="phone-icon">
+                    <p id="phone-no">555-123-4567</p>
+                </div>
+                <button class="button">Contact</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "nav") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav";
+            }
+        }
+    </script>
+</body>
+
+</html>
