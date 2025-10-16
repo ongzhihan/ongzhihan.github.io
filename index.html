@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Lesson 5 Exercise 4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        .background {
+            background-image: url('week5/images4/background.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+
+        /* header/container */
+        header {
+            background-color: #133E87;
+            color: #CBDCEB;
+            padding: 0px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            display: justify;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-top: -10px;
+        }
+
+        .htext {
+            display: flex;
+            margin-left: 15px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+        .column {
+            flex: 1;
+            background-color: rgb(243, 243, 224, 0.3);
+            border: #F3F3E0;
+            border-width: 10px;
+            border-radius: 2%;
+            padding: 30px;
+            padding-left: 60px;
+            padding-right: 60px;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .b4footer {
+            margin-bottom: 50px;
+        }
+
+        /* details in header */
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .pd {
+            padding: 2px;
+        }
+
+        .logo {
+            font-size: large;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 600;
+        }
+
+        /*typography*/
+        .h1 {
+            color: #133E87;
+            margin-bottom: -15px;
+            font-size: 24px;
+            font-weight: 1000;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .h2 {
+            color: #133E87;
+            margin-top: -8px;
+            margin-bottom: -2px;
+            font-size: 18px;
+            font-weight: 600;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .text {
+            color: rgb(27, 17, 71);
+            margin-bottom: -8px;
+            margin-left: 15px;
+            margin-right: 15px;
+            font-size: 12px;
+            font-weight: 500;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .ph2 {
+            color: rgb(27, 17, 71);
+            margin-bottom: -2px;
+            font-size: 16px;
+            font-weight: 600;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        /* profile */
+        .profilesection {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 40px;
+            margin-top: 30px;
+        }
+
+        /* footer */
+        .footer {
+            background-color: #133E87;
+            color: #CBDCEB;
+            padding: 15px;
+            text-align: center;
+            margin-bottom: -10px;
+        }
+
+        .footernav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ftext {
+            color: #CBDCEB;
+            margin-bottom: -3px;
+            font-size: 12px;
+            font-weight: 500;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .profile {
+            border-radius: 50%;
+            margin-bottom: -10px;
+        }
+
+        .exe {
+            color: rgb(27, 17, 71);
+            text-decoration: none;
+            margin-bottom: -8px;
+            margin-left: 15px;
+            margin-right: 15px;
+            font-size: 12px;
+            font-weight: 500;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .exe:hover {
+            color: #133E87;
+            text-decoration: none;
+        }
+
+        .stroke {
+            border: #133E87;
+            border: 1px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="background">
+        <header>
+            <div class="nav">
+                <div>
+                    <p class="logo">ZH</p>
+                </div>
+            </div>
+            <div class="nav">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="week5/images4/ig.png" alt="Instagram" width="20" class="pd a"></a>
+
+                <a href="https://www.facebook.com/Daoaconfessions" target="_blank">
+                    <img src="week5/images4/fb.png" alt="Facebook" width="18" class="pd a"></a>
+
+                <a href="https://www.linkedin.com" target="_blank">
+                    <img src="week5/images4/in.png" alt="LinkedIn" width="20" class="pd a"></a>
+            </div>
+        </header>
+        <br />
+        <div class="profilesection">
+            <img src="week5/images4/profile.png" alt="profile" width="90" class="profile">
+            <h1 class="h1">ONG ZHI HAN</h1>
+            <h2 class="ph2">Web Publishing</h2>
+            <p class="text">Hi! I'm Ong Zhi Han, a digital media designer. I love to listen to music and explore new
+                experiences. This is
+                my personal page!</p>
+        </div>
+        <br />
+        <div class="container">
+            <div class="column">
+                <h2 class="h2">Week 2</h2>
+                <a href="week2/exe1.html" target="_blank">
+                    <p class="exe">Exercise 1</p>
+                </a>
+                <a href="week2/exe2.html" target="_blank">
+                    <p class="exe">Exercise 2</p>
+                </a>
+            </div>
+            <div class="column">
+                <h2 class="h2">Week 3</h2>
+                <a href="week3/exe1.html" target="_blank">
+                    <p class="exe">Exercise 1</p>
+                </a>
+                <a href="week3/exe2.html" target="_blank">
+                    <p class="exe">Exercise 2</p>
+                </a>
+            </div>
+            <div class="column">
+                <h2 class="h2">Week 4</h2>
+                <a href="week4/exe1.html" target="_blank">
+                    <p class="exe">Exercise 1</p>
+                </a>
+                <a href="week4/exe2.html" target="_blank">
+                    <p class="exe">Exercise 2</p>
+                </a>
+            </div>
+        </div>
+        <br />
+
+        <div class="container b4footer">
+            <div class="column">
+                <h2 class="h2">Week 5</h2>
+                <a href="week5/exe1.html" target="_blank">
+                    <p class="exe">Exercise 1</p>
+                </a>
+                <a href="week5/exe2.html" target="_blank">
+                    <p class="exe">Exercise 2</p>
+                </a>
+                <a href="week5/exe3.html" target="_blank">
+                    <p class="exe">Exercise 3</p>
+                </a>
+            </div>
+            <div class="column">
+                <h2 class="h2">Week 6</h2>
+                <a href="week6/exe1.html" target="_blank">
+                    <p class="exe">Exercise 1</p>
+                </a>
+                <a href="week6/exe2.html" target="_blank">
+                    <p class="exe">Exercise 2</p>
+                </a>
+                <a href="week6/exe3.html" target="_blank">
+                    <p class="exe">Exercise 3</p>
+                </a>
+                <a href="week6/exe4.html" target="_blank">
+                    <p class="exe">Exercise 4</p>
+                </a>
+            </div>
+        </div>
+        <br />
+
+        <div class="footer">
+            <div class="footernav">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="week5/images4/ig.png" alt="Instagram" width="20" class="pd"></a>
+
+                <a href="https://www.facebook.com/Daoaconfessions" target="_blank">
+                    <img src="week5/images4/fb.png" alt="Facebook" width="18" class="pd"></a>
+
+                <a href="https://www.linkedin.com" target="_blank">
+                    <img src="week5/images4/in.png" alt="LinkedIn" width="20" class="pd"></a>
+            </div>
+            <div>
+                <p class="ftext">© 2024 ONG ZHI HAN. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
