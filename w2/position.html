@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <!--Oxygen and Archivo typeface-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .hero-container {
+            width: 100%;
+        }
+
+        .hero {
+            background-image: url("https://construction.elementra.themerex.net/wp-content/uploads/2025/04/custom-img-024-copyright.jpg");
+            position: relative;
+            height: 840px;
+            border-radius: 20px;
+            margin: 15px;
+        }
+
+        .left-top {
+            padding-top: 30px;
+            padding-left: 20px;
+            width: 50%;
+        }
+
+        .title {
+            font-family: "Archivo", sans-serif;
+            font-size: 90px;
+            letter-spacing: -2px;
+            line-height: 85px;
+            color: white;
+        }
+
+        .subtitle {
+            font-family: "Archivo", sans-serif;
+            font-size: 18px;
+            color: white;
+            line-height: 15px;
+        }
+
+        .buttons-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .button {
+            font-family: "Archivo", sans-serif;
+            padding: 20px 40px;
+            background-color: rgb(255, 232, 25);
+            border-style: solid;
+            border-color: rgb(255, 232, 25);
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        #portfolio {
+            background-color: transparent;
+            color: white;
+            border-color: white;
+            border-width: 2px;
+        }
+
+        .right-bottom {
+            position: absolute;
+            bottom: 50px;
+            right: 20px;
+            width: 600px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .rb-box {
+            background-color: white;
+            padding: 30px;
+            width: 35%;
+            margin: 5px;
+            border-radius: 20px;
+        }
+
+        .number {
+            font-family: "Archivo", sans-serif;
+            font-size: 60px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: rgb(255, 110, 6);
+        }
+
+        .below-number {
+            font-family: "Archivo", sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Hero -->
+    <div class="hero-container">
+        <div class="hero">
+            <div class="left-top">
+                <h1 class="title">MODERN FOUNDATIONS</h1>
+                <p class="subtitle">Your trusted partner for cutting-edge foundation construction.</p>
+                <p class="subtitle">We deliver robust and reliable solutions tailored to your project’s needs.</p>
+                <div class="buttons-container">
+                    <button class="button">Quote Request</button>
+                    <button class="button" id="portfolio">Our Portfolio</button>
+                </div>
+            </div>
+            <div class="right-bottom">
+                <div class="rb-box">
+                    <div class="number">50+</div>
+                    <div class="below-number">Multi-Story Projects</div>
+                </div>
+                <div class="rb-box">
+                    <div class="number">174</div>
+                    <div class="below-number">Residential Designs</div>
+                </div>
+                <div class="rb-box">
+                    <div class="number">21</div>
+                    <div class="below-number">Years in Business</div>
+                </div>
+                <div class="rb-box">
+                    <div class="number">360+</div>
+                    <div class="below-number">Renovation Success</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
