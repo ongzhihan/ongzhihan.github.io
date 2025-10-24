@@ -13,6 +13,137 @@
         rel="stylesheet">
 
     <style>
+        .body {
+            margin: 0px;
+        }
+
+        .major-nav {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            background-color: white;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+            margin: 0 20px;
+            width: 90%;
+            max-width: 1500px;
+        }
+
+        .mobile-nav {
+            display: none;
+        }
+
+        .logo {
+            width: 190px;
+        }
+
+        .menu {
+            display: flex;
+        }
+
+        .center-btn {
+            background-color: white;
+            border: none;
+            font-size: 16px;
+            padding: 20px 13px;
+        }
+
+        .center-btn:hover {
+            color: #ee5f2c;
+        }
+
+        .menu a {
+            font-family: "Archivo", sans-serif;
+            font-weight: 550;
+            font-style: normal;
+            color: rgba(54, 54, 54);
+            margin: 0;
+            text-decoration: none;
+        }
+
+        .menu a {
+            padding: 12px 17px;
+            display: block;
+        }
+
+        a:hover {
+            color: #ee5f2c;
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .close-btn {
+            position: fixed;
+            top: 2px;
+            right: 30px;
+            display: none;
+            font-size: 50px;
+            font-weight: 600;
+            color: white;
+            cursor: pointer;
+        }
+
+        #services {
+            color: #ee5f2c;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+        }
+
+        .phone-icon {
+            width: 22px;
+            height: 22px;
+        }
+
+        .phone-no {
+            font-family: "Archivo", sans-serif;
+            font-weight: 700;
+        }
+
+        .phone-contact {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-right: 20px;
+        }
+
+        .phone-contact:hover {
+            opacity: 0.7;
+            cursor: pointer;
+        }
+
+        .button {
+            font-size: 14px;
+            padding: 12px 17px;
+            color: white;
+            background-color: #ee5f2c;
+            border-radius: 7px;
+            border: none;
+            cursor: pointer;
+
+        }
+
+        .button:hover {
+            background-color: #be4c23;
+        }
+
+        /* ------------------------------------------------------------------------------------------------------------------ Hero */
         .hero-container {
             width: 100%;
         }
@@ -23,11 +154,12 @@
             height: 840px;
             border-radius: 20px;
             margin: 15px;
+            margin-top: 65px;
         }
 
         .left-top {
             padding-top: 30px;
-            padding-left: 20px;
+            padding-left: 50px;
             width: 50%;
         }
 
@@ -51,7 +183,7 @@
             gap: 20px;
         }
 
-        .button {
+        .hero-button {
             font-family: "Archivo", sans-serif;
             padding: 20px 40px;
             background-color: rgb(255, 232, 25);
@@ -60,6 +192,7 @@
             border-radius: 10px;
             text-decoration: none;
             font-size: 16px;
+            cursor: pointer;
         }
 
         #portfolio {
@@ -99,12 +232,250 @@
             font-size: 20px;
             font-weight: 700;
         }
+
+        .right-bottom-mobile {
+            display: none;
+        }
+
+        @media screen and (max-width: 1200px) {
+
+            .nav,
+            .button {
+                display: none;
+            }
+
+            .mobile-nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 60px;
+                margin: 0 20px;
+                width: 98%;
+                max-width: 1100px;
+            }
+
+            .mobile-nav a:hover {
+                color: #ee5f2c;
+            }
+
+            #services2 {
+                color: #ee5f2c;
+            }
+
+            .menu {
+                flex-direction: column;
+                display: none;
+                position: fixed;
+                top: 0;
+                right: 0;
+                width: 450px;
+                height: 100%;
+                background-color: rgb(30, 30, 30);
+                justify-content: center;
+                align-items: left;
+                z-index: 1000;
+            }
+
+            .menu a {
+                padding: 20px;
+                padding-left: 50px;
+                font-size: 24px;
+                color: white;
+            }
+
+            .menu-item>a {
+                display: block;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            #menu-checkbox:checked+.menu-toggle+.menu {
+                display: flex;
+            }
+
+            #menu-checkbox:checked+.menu-toggle+.menu .close-btn {
+                display: block;
+            }
+
+            .menu-icon {
+                width: 25px;
+            }
+
+            .hero {
+                height: 750px;
+            }
+
+            .left-top {
+                padding-top: 15px;
+                padding-left: 30px;
+                width: 80%;
+            }
+
+            .title {
+                font-size: 72px;
+                line-height: 70px;
+                margin-bottom: 30px;
+            }
+
+            .subtitle {
+                line-height: 7px;
+            }
+
+            .buttons-container {
+                margin-top: 50px;
+                display: flex;
+                gap: 20px;
+            }
+
+            .hero-button {
+                font-family: "Archivo", sans-serif;
+                padding: 15px 30px;
+                font-size: 16px;
+            }
+
+            .right-bottom {
+                bottom: 20px;
+                right: 0px;
+                width: 500px;
+            }
+
+            .rb-box {
+                padding: 30px;
+                width: 35%;
+                margin: 5px;
+            }
+
+            .number {
+                font-size: 42px;
+                margin-bottom: 10px;
+                color: rgb(255, 110, 6);
+            }
+
+            .below-number {
+                font-size: 16px;
+            }
+        }
+
+        @media screen and (max-width: 760px) {
+            body {
+                margin: 0;
+            }
+
+            .hero {
+                border-radius: 0px;
+                margin: 0;
+                margin-top: 65px;
+                height: 870px;
+            }
+
+            .phone-contact {
+                display: none;
+            }
+
+            .left-top {
+                padding-top: 15px;
+                padding-left: 15px;
+                width: 90%;
+            }
+
+            .title {
+                font-size: 40px;
+                line-height: 38px;
+                margin-bottom: 30px;
+            }
+
+            .subtitle {
+                color: white;
+                line-height: 25px;
+                margin-top: -10px;
+            }
+
+            .hero-button {
+                margin-top: -30px;
+            }
+
+            .right-bottom {
+                display: none;
+            }
+
+            .right-bottom-mobile {
+                margin-top: 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .rb-box {
+                width: 83%;
+            }
+
+            .number {
+                font-size: 36px;
+            }
+        }
     </style>
 </head>
 
 <body>
+    <!-- ------------------------------------------------------------------------------------------------------------------ Menu -->
+    <div class="major-nav">
+        <!-- Desktop -->
+        <div class="nav">
+            <div><img src="img/logo.png" alt="logo" class="logo"></div>
+            <div class="menu">
+                <!-- Close button for mobile view -->
+                <label for="menu-checkbox" class="close-btn">&times;</label>
+                <a href="#home" id="services">Home</a>
+                <a href="#services">Services</a>
+                <a href="#work">Work</a>
+                <a href="#details">Project Details</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-right">
+                <div class="phone-contact">
+                    <img src="img/phone.png" alt="phone" class="phone-icon">
+                    <p class="phone-no">555-123-4567</p>
+                </div>
+                <button class="button">Contact</button>
+                <!-- Checkbox to toggle menu on mobile -->
+                <input type="checkbox" id="menu-checkbox" style="display: none;">
+                <label for="menu-checkbox" class="menu-toggle"><img src="img/menu-bar.png" alt="menu"
+                        class="menu-icon" /></label>
+            </div>
+        </div>
 
-    <!-- Hero -->
+        <!-- Mobile -->
+        <div class="mobile-nav">
+            <div><img src="img/logo.png" alt="logo" class="logo"></div>
+            <div class="nav-right">
+                <div class="phone-contact">
+                    <img src="img/phone.png" alt="phone" class="phone-icon">
+                    <p class="phone-no">555-123-4567</p>
+                </div>
+                <button class="button">Contact</button>
+                <!-- Checkbox to toggle menu on mobile -->
+                <input type="checkbox" id="menu-checkbox" style="display: none;">
+                <label for="menu-checkbox" class="menu-toggle"><img src="img/menu-bar.png" alt="menu"
+                        class="menu-icon" /></label>
+                <div class="menu">
+                    <!-- Close button for mobile view -->
+                    <label for="menu-checkbox" class="close-btn">&times;</label>
+                    <a href="#home" id="services2">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="#work">Work</a>
+                    <a href="#details">Project Details</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- ------------------------------------------------------------------------------------------------------------------ Hero -->
     <div class="hero-container">
         <div class="hero">
             <div class="left-top">
@@ -112,11 +483,29 @@
                 <p class="subtitle">Your trusted partner for cutting-edge foundation construction.</p>
                 <p class="subtitle">We deliver robust and reliable solutions tailored to your project’s needs.</p>
                 <div class="buttons-container">
-                    <button class="button">Quote Request</button>
-                    <button class="button" id="portfolio">Our Portfolio</button>
+                    <button class="hero-button">Quote Request</button>
+                    <button class="hero-button" id="portfolio">Our Portfolio</button>
                 </div>
             </div>
             <div class="right-bottom">
+                <div class="rb-box">
+                    <div class="number">50+</div>
+                    <div class="below-number">Multi-Story Projects</div>
+                </div>
+                <div class="rb-box">
+                    <div class="number">174</div>
+                    <div class="below-number">Residential Designs</div>
+                </div>
+                <div class="rb-box">
+                    <div class="number">21</div>
+                    <div class="below-number">Years in Business</div>
+                </div>
+                <div class="rb-box">
+                    <div class="number">360+</div>
+                    <div class="below-number">Renovation Success</div>
+                </div>
+            </div>
+            <div class="right-bottom-mobile">
                 <div class="rb-box">
                     <div class="number">50+</div>
                     <div class="below-number">Multi-Story Projects</div>
